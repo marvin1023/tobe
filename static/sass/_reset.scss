@@ -1,0 +1,101 @@
+/* -------------------------------------------------
+ * additional normalize  
+ * author:为之;
+ * email:xuyc_brother@foxmail.com;
+ * blog:http://www.w3cpluscom;
+ * -------------------------------------------------
+*/
+html { 
+	overflow-y: scroll; 
+	-webkit-overflow-scrolling: touch; 
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+	 
+}
+body { 
+	font-size: 62.5%;
+	line-height: 1.5; 
+	color:#333;
+	background-color:#fff;
+}
+body, 
+button, 
+input, 
+select, 
+textarea {
+	font-family: Helvetica, arial, sans-serif;
+}
+img {
+    border:0 none;
+    vertical-align: middle;
+}
+textarea {
+    resize: vertical;
+}
+h1,h2,h3,h4,h5,h6,p,figure,form {
+    margin:0;
+}
+/* links */
+a{
+	text-decoration:none;
+	color:#29B4F0;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover{
+    color:#017CB9;
+	text-decoration:underline;
+}
+/* hn */
+h1{
+	font-size:20px;
+	line-height:40px;
+}
+h2{
+	font-size:18px;
+	line-height:36px;
+}
+h3{
+	line-height:30px;
+}
+h3,h4,h5,h6{
+	font-size:16px;
+}
+/* ul ol dl */
+ul,li,ol,dl,dd{
+	margin: 0;
+	padding:0;
+	list-style: none outside none;
+}
+ul.has-style li,
+.article li{
+	margin-left:25px;
+}
+ul.has-style li,
+.article ul li{
+	list-style:disc;
+}
+.article ol li{
+	list-style:decimal;
+}
+ul.inline-style li,
+ul.links-list li{
+	float:left;
+	display:inline;
+}
+/* clearfix */
+%clearfix{
+	&:before,&:after{
+		content:" ";
+		display:table;
+	}
+	&:after{
+		clear:both;
+	}
+	zoom:1;
+}
+.clearfix{
+	@extend %clearfix;
+}
