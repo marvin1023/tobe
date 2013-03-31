@@ -24,7 +24,7 @@ button,
 input, 
 select, 
 textarea {
-	font-family: Helvetica, arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 img {
     border:0 none;
@@ -94,7 +94,7 @@ ul.links-list li{
 	&:after{
 		clear:both;
 	}
-	zoom:1;
+	*zoom:1;
 }
 .clearfix{
 	@extend %clearfix;

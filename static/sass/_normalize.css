@@ -1,4 +1,3 @@
-@charset "GBK";
 /* normalize.css v1.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -18,8 +17,7 @@ main,
 nav,
 section,
 summary {
-  display: block;
-}
+  display: block; }
 
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -29,8 +27,7 @@ canvas,
 video {
   display: inline-block;
   *display: inline;
-  *zoom: 1;
-}
+  *zoom: 1; }
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -38,16 +35,14 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 /* ==========================================================================
    Base
@@ -64,8 +59,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Address `font-family` inconsistency between `textarea` and other form
@@ -76,15 +70,13 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
 /**
  * Address margins handled incorrectly in IE 6/7.
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Links
@@ -93,16 +85,14 @@ body {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted;
-}
+  outline: thin dotted; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
 a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 /* ==========================================================================
    Typography
@@ -114,59 +104,49 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 h2 {
   font-size: 1.5em;
-  margin: 0.83em 0;
-}
+  margin: 0.83em 0; }
 
 h3 {
   font-size: 1.17em;
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 h4 {
   font-size: 1em;
-  margin: 1.33em 0;
-}
+  margin: 1.33em 0; }
 
 h5 {
   font-size: 0.83em;
-  margin: 1.67em 0;
-}
+  margin: 1.67em 0; }
 
 h6 {
   font-size: 0.67em;
-  margin: 2.33em 0;
-}
+  margin: 2.33em 0; }
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 blockquote {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -175,24 +155,21 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Address styling not present in IE 6/7/8/9.
  */
 mark {
   background: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Address margins set differently in IE 6/7.
  */
 p,
 pre {
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
@@ -203,8 +180,7 @@ pre,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 /**
  * Improve readability of pre-formatted text in all browsers.
@@ -212,15 +188,13 @@ samp {
 pre {
   white-space: pre;
   white-space: pre-wrap;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 /**
  * Address CSS quotes not supported in IE 6/7.
  */
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 /**
  * Address `quotes` property not supported in Safari 4.
@@ -228,15 +202,13 @@ q {
 q:before,
 q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -246,16 +218,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 /* ==========================================================================
    Lists
@@ -267,12 +236,10 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 dd {
-  margin: 0 0 0 40px;
-}
+  margin: 0 0 0 40px; }
 
 /**
  * Address paddings set differently in IE 6/7.
@@ -280,8 +247,7 @@ dd {
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px;
-}
+  padding: 0 0 0 40px; }
 
 /**
  * Correct list images handled incorrectly in IE 7.
@@ -289,8 +255,7 @@ ul {
 nav ul,
 nav ol {
   list-style: none;
-  list-style-image: none;
-}
+  list-style-image: none; }
 
 /* ==========================================================================
    Embedded content
@@ -303,15 +268,13 @@ img {
   border: 0;
   /* 1 */
   -ms-interpolation-mode: bicubic;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* ==========================================================================
    Figures
@@ -320,8 +283,7 @@ svg:not(:root) {
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
 figure {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Forms
@@ -330,8 +292,7 @@ figure {
  * Correct margin displayed oddly in IE 6/7.
  */
 form {
-  margin: 0;
-}
+  margin: 0; }
 
 /**
  * Define consistent border, margin, and padding.
@@ -339,8 +300,7 @@ form {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct color not being inherited in IE 6/7/8/9.
@@ -354,8 +314,7 @@ legend {
   white-space: normal;
   /* 2 */
   *margin-left: -7px;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * 1. Correct font size not being inherited in all browsers.
@@ -374,8 +333,7 @@ textarea {
   vertical-align: baseline;
   /* 3 */
   *vertical-align: middle;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
@@ -383,8 +341,7 @@ textarea {
  */
 button,
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -394,8 +351,7 @@ input {
  */
 button,
 select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -415,16 +371,14 @@ input[type="submit"] {
   cursor: pointer;
   /* 3 */
   *overflow: visible;
-  /* 4 */
-}
+  /* 4 */ }
 
 /**
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 /**
  * 1. Address box sizing set to content-box in IE 8/9.
@@ -441,8 +395,7 @@ input[type="radio"] {
   *height: 13px;
   /* 3 */
   *width: 13px;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -455,8 +408,7 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -464,8 +416,7 @@ input[type="search"] {
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * Remove inner padding and border in Firefox 3+.
@@ -473,8 +424,7 @@ input[type="search"]::-webkit-search-decoration {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
@@ -484,8 +434,7 @@ textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* ==========================================================================
    Tables
@@ -495,242 +444,4 @@ textarea {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* -------------------------------------------------
- * additional normalize  
- * author:为之;
- * email:xuyc_brother@foxmail.com;
- * blog:http://www.w3cpluscom;
- * -------------------------------------------------
-*/
-html {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  font-size: 62.5%;
-  line-height: 1.5;
-  color: #333;
-  background-color: #fff;
-}
-
-body,
-button,
-input,
-select,
-textarea {
-  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-}
-
-img {
-  border: 0 none;
-  vertical-align: middle;
-}
-
-textarea {
-  resize: vertical;
-}
-
-h1, h2, h3, h4, h5, h6, p, figure, form {
-  margin: 0;
-}
-
-/* links */
-a {
-  text-decoration: none;
-  color: #29B4F0;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover {
-  color: #017CB9;
-  text-decoration: underline;
-}
-
-/* hn */
-h1 {
-  font-size: 20px;
-  line-height: 40px;
-}
-
-h2 {
-  font-size: 18px;
-  line-height: 36px;
-}
-
-h3 {
-  line-height: 30px;
-}
-
-h3, h4, h5, h6 {
-  font-size: 16px;
-}
-
-/* ul ol dl */
-ul, li, ol, dl, dd {
-  margin: 0;
-  padding: 0;
-  list-style: none outside none;
-}
-
-ul.has-style li,
-.article li {
-  margin-left: 25px;
-}
-
-ul.has-style li,
-.article ul li {
-  list-style: disc;
-}
-
-.article ol li {
-  list-style: decimal;
-}
-
-ul.inline-style li,
-ul.links-list li {
-  float: left;
-  display: inline;
-}
-
-/* clearfix */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-/* -------------------------------------------------
- * base mixin  
- * author:为之;
- * email:xuyc_brother@foxmail.com;
- * blog:http://www.w3cpluscom;
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * grid
- * author:marvin;
- * email:xuyc_brother@foxmail.com;
- * blog:http://www.w3cpluscom;
- * thanks http://www.blankwork.net/   
- * -------------------------------------------------
-*/
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .hello {
-  float: left;
-  display: inline;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-.span1 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 6.25%;
-}
-
-.span2 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 14.58333%;
-}
-
-.span3 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 22.91667%;
-}
-
-.span4 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 31.25%;
-}
-
-.span5 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 39.58333%;
-}
-
-.span6 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 47.91667%;
-}
-
-.span7 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 56.25%;
-}
-
-.span8 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 64.58333%;
-}
-
-.span9 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 72.91667%;
-}
-
-.span10 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 81.25%;
-}
-
-.span11 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 89.58333%;
-}
-
-.span12 {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 97.91667%;
-}
-
-/* prepend n blank columns */
-/* append n blank columns */
-/* color
- * font:#333
- * link:#29B4F0 #017CB9(滑过颜色)
- * grey:#ccc
- * other:#00A3CF(blue),#F47837(orange),#51B148(green),;
- */
-a {
-  color: #29b4f0;
-}
-
-.hello {
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  width: 22.91667%;
-}
+  border-spacing: 0; }

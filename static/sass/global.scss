@@ -1,5 +1,7 @@
 @import "_normalize.scss";
 @import "_reset.scss";
+@import "_mixin.scss";
+@import "_grid.scss";
 /* color
  * font:#333
  * link:#29B4F0 #017CB9(滑过颜色)
@@ -10,4 +12,7 @@ $baseColor:#333 #ccc ;
 $linkColor:#29B4F0 #017CB9;
 a{
   color: nth($linkColor,1);
+}
+.hello{
+	@include column(3);
 }
