@@ -99,3 +99,37 @@ ul.links-list li{
 .clearfix{
 	@extend %clearfix;
 }
+/* 
+ * help class
+ */
+//Hide from both screenreaders and browsers: h5bp.com/u
+%hidden{
+	display: none !important;
+    visibility: hidden;
+}
+.hidden{
+    @extend %hidden;
+} 
+//Hide only visually, but have it available for screenreaders: h5bp.com/v
+%visuallyhidden{
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden {
+	@extend %visuallyhidden;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+ %invisible{
+ 	visibility: hidden;
+ }
+.invisible {
+    @extend %invisible;
+}

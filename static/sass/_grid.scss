@@ -7,6 +7,7 @@
  * http://www.blankwork.net/
  * http://semantic.gs/
  * http://heygrady.com/blog/2011/02/17/using-sass-with-the-1kb-grid-system/   
+ * https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/functions/_flex-grid.scss
  * -------------------------------------------------
 */
 // Main Variables:
@@ -25,7 +26,7 @@ $total_width: 100%;
 // Uncomment these two lines and the star-hack width/margin lines below to enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
 // $min-width: 999999;
 // $correction: 0.5 / $min-width * 100;
-// get_width($columns:$_columns, $onlyInnerWidth: true, $_subtract:$correction)
+// ie6,7  get_width($columns:$_columns, $onlyInnerWidth: true, $_subtract:$correction)
 
 //float:left & clearfix
 %fl{
@@ -162,14 +163,27 @@ $total_width: 100%;
   width: $columnWidth;
 }
 
+//alpha & omega
 @mixin alpha {
   margin-left:0;
 }
-
 @mixin omega {
   margin-right:0;
 }
 
+// Flexible grid
+@function flex-span($i, $container-columns: $_columns,$onlyInnerWidth: true) {
+  $percentage: percentage($i / $container-columns);
+  @if $onlyInnerWidth == true
+  {
+    $width: $i * $_column-width + ($i - 1) * $_gutter;
+    $container-width: $container-columns * $_column-width + ($container-columns - 1) * $_gutter;
+    $percentage: percentage($width / $container-width);
+  }
+  @return $percentage;
+}
+
+//class   span1-span12
 @for $i from 1 through $_columns{
   .span#{$i} { 
     @include column($i);

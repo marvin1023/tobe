@@ -10,6 +10,42 @@
   display: inline-block;*display: inline;*zoom:1;
 }
 
+//clearfix
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// A CSS image replacement method that does not require the use of text-indent.
+@mixin hide-text{
+  color:            transparent;
+  font:             0/0 a;
+  text-shadow:      none;
+}
+@mixin img-replace{
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+  &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 150%;
+  }
+}
+
+
 //size:width,height 
 //https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_size.scss
 @mixin size($size) {
@@ -85,19 +121,15 @@
   @return ($pxval / $base) * 1em;
 }
 
-//clearfix
-@mixin clearfix {
-  *zoom: 1;
 
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
+// Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
 
-  &:after {
-    clear: both;
-  }
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
 }
 
 // triangle
@@ -145,5 +177,49 @@
     } @else if $direction == down-left {
       border-right: $size dashed transparent;
     }
+  }
+}
+
+//position
+@mixin position ($position: relative, $coordinates: 0 0 0 0) {
+
+  @if type-of($position) == list {
+    $coordinates: $position;
+    $position: relative;
+  }
+
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  position: $position;
+
+  @if $top == auto {
+    top: $top;
+  }
+  @else if not(unitless($top)) {
+    top: $top;
+  }
+
+  @if $right == auto {
+    right: $right;
+  }
+  @else if not(unitless($right)) {
+    right: $right;
+  }
+
+  @if $bottom == auto {
+    bottom: $bottom;
+  }
+  @else if not(unitless($bottom)) {
+    bottom: $bottom;
+  }
+
+  @if $left == auto {
+    left: $left;
+  }
+  @else if not(unitless($left)) {
+    left: $left;
   }
 }
