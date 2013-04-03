@@ -6,10 +6,39 @@
  * blog:http://www.w3cpluscom;
  * -------------------------------------------------
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_setting\.scss}line{font-family:\0000314}}
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000314}}
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .fl {
   float: left;
   display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000320}}
+.fr {
+  float: right;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000341}}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000347}}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000359}}
+.invisible {
+  visibility: hidden;
 }
 
 /* normalize.css v1.1.0 | MIT License | git.io/normalize */
@@ -563,6 +592,128 @@ table {
 }
 
 /* -------------------------------------------------
+ * reset adjust
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\000035}}
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000312}}
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000322}}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000325}}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000329}}
+textarea {
+  resize: vertical;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000332}}
+h1, h2, h3, h4, h5, h6, p, figure, form {
+  margin: 0;
+}
+
+/* links */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000336}}
+a {
+  text-decoration: none;
+  color: #29b4f0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000340}}
+a:focus {
+  outline: thin dotted;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000343}}
+a:hover {
+  color: #017cb9;
+  text-decoration: underline;
+}
+
+/* hn */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000348}}
+h1, h2, h3 {
+  line-height: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000351}}
+h1 {
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000354}}
+h2 {
+  font-size: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000357}}
+h3 {
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000360}}
+h4, h5, h6 {
+  font: 14px/1.5;
+}
+
+/* ul ol dl */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000364}}
+ul, li, ol, dl, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none outside none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000370}}
+ul.has-style li,
+.article li {
+  margin-left: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000374}}
+ul.has-style li,
+.article ul li {
+  list-style: disc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000377}}
+.article ol li {
+  list-style: decimal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000381}}
+ul.inline-style li,
+ul.links-list li {
+  float: left;
+  display: inline;
+}
+
+/* -------------------------------------------------
  * grid
  * thanks 
  * http://www.blankwork.net/
@@ -657,130 +808,12 @@ table {
 
 /* prepend n blank columns */
 /* append n blank columns */
-/* color
- * 
- * 
- * 
- * 
- */
-/* -------------------------------------------------
- * reset adjust
- * -------------------------------------------------
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000322}}
-html {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\000034}}
+.m5 {
+  margin: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000329}}
-body {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #fff;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000339}}
-body,
-button,
-input,
-select,
-textarea {
-  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000342}}
-img {
-  border: 0 none;
-  vertical-align: middle;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000346}}
-textarea {
-  resize: vertical;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000349}}
-h1, h2, h3, h4, h5, h6, p, figure, form {
-  margin: 0;
-}
-
-/* links */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000353}}
-a {
-  text-decoration: none;
-  color: #29b4f0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000357}}
-a:focus {
-  outline: thin dotted;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000360}}
-a:hover {
-  color: #017cb9;
-  text-decoration: underline;
-}
-
-/* hn */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000365}}
-h1, h2, h3 {
-  line-height: 2;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000368}}
-h1 {
-  font-size: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000371}}
-h2 {
-  font-size: 18px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000374}}
-h3 {
-  font-size: 16px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000377}}
-h4, h5, h6 {
-  font: 14px/1.5;
-}
-
-/* ul ol dl */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000381}}
-ul, li, ol, dl, dd {
-  margin: 0;
-  padding: 0;
-  list-style: none outside none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000387}}
-ul.has-style li,
-.article li {
-  margin-left: 25px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000391}}
-ul.has-style li,
-.article ul li {
-  list-style: disc;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000394}}
-.article ol li {
-  list-style: decimal;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/global\.scss}line{font-family:\0000398}}
-ul.inline-style li,
-ul.links-list li {
-  float: left;
-  display: inline;
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\000037}}
+.mr5 {
+  margin-right: 5px;
 }
