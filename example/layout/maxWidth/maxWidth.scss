@@ -1,0 +1,43 @@
+@import "../demo.css";
+@import "../../../static/sass/global.scss";
+
+/*----------------------------------------------------*\
+ * Grid
+\*----------------------------------------------------*/
+
+// Specify the number of columns and set column and gutter widths
+$_columns: 12 !default;      // Total number of columns
+$_column-width: 60px !default;   // Width of a single column
+$_gutter: 20px !default;     // Width of the gutter
+
+// Uncomment the definition below for a percentage-based layout
+// Set $total-width to 100% for a fluid layout
+//$total_width: $_gridsystem-width;
+$total-width: 100%;
+
+
+/*----------------------------------------------------*\
+ * LAYOUT
+\*----------------------------------------------------*/
+
+.container {
+	max-width: $_gridsystem-width;
+	margin: 0 auto;
+	overflow: hidden;
+	//header and footer
+	.column {
+		@include column(12);
+	}
+}
+// header
+#header .column {
+	margin-bottom: 1em;
+}
+
+// main and sidebar
+#maincolumn {
+	@include column(9);
+}
+#sidebar {
+	@include column(3);
+}
