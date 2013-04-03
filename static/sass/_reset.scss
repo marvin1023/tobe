@@ -14,7 +14,11 @@ html {
 	 
 }
 body { 
+<<<<<<< HEAD
+	font-size: 14px;
+=======
 	font-size: 62.5%;
+>>>>>>> parent of 8f78e1d... _mixin
 	line-height: 1.5; 
 	color:#333;
 	background-color:#fff;
@@ -23,7 +27,7 @@ body,
 button, 
 input, 
 select, 
-textarea {
+textarea{
 	font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 img {
@@ -49,19 +53,20 @@ a:hover{
 	text-decoration:underline;
 }
 /* hn */
+h1,h2,h3{
+	line-height: 2;
+}
 h1{
 	font-size:20px;
-	line-height:40px;
 }
 h2{
 	font-size:18px;
-	line-height:36px;
 }
 h3{
-	line-height:30px;
-}
-h3,h4,h5,h6{
 	font-size:16px;
+}
+h4,h5,h6{
+	font:14px/1.5;
 }
 /* ul ol dl */
 ul,li,ol,dl,dd{
@@ -84,52 +89,4 @@ ul.inline-style li,
 ul.links-list li{
 	float:left;
 	display:inline;
-}
-/* clearfix */
-%clearfix{
-	&:before,&:after{
-		content:" ";
-		display:table;
-	}
-	&:after{
-		clear:both;
-	}
-	*zoom:1;
-}
-.clearfix{
-	@extend %clearfix;
-}
-/* 
- * help class
- */
-//Hide from both screenreaders and browsers: h5bp.com/u
-%hidden{
-	display: none !important;
-    visibility: hidden;
-}
-.hidden{
-    @extend %hidden;
-} 
-//Hide only visually, but have it available for screenreaders: h5bp.com/v
-%visuallyhidden{
-	border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-.visuallyhidden {
-	@extend %visuallyhidden;
-}
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
- %invisible{
- 	visibility: hidden;
- }
-.invisible {
-    @extend %invisible;
 }

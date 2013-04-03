@@ -1,8 +1,5 @@
 /* -------------------------------------------------
  * grid
- * author:marvin;
- * email:xuyc_brother@foxmail.com;
- * blog:http://www.w3cpluscom;
  * thanks 
  * http://www.blankwork.net/
  * http://semantic.gs/
@@ -21,30 +18,30 @@ $_gutter: 20px !default;     // Width of the gutter
 $_gridsystem-width: $_columns * ($_column-width + $_gutter); //grid system width
 
 // Set $total-width to 100% for a fluid layout
-$total_width: 100%;
+$total_width: 960px;
 
 // Uncomment these two lines and the star-hack width/margin lines below to enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
 // $min-width: 999999;
 // $correction: 0.5 / $min-width * 100;
 // ie6,7  get_width($columns:$_columns, $onlyInnerWidth: true, $_subtract:$correction)
 
-//float:left & clearfix
-%fl{
-  float: left;
-  display: inline;
-}
-%clearfix{
-  *zoom:1;
-  &:before, &:after
-  {
-    content: "";
-    display:table;
-  }
-  &:after
-  {
-    clear:both;
-  }
-}
+//float:left & clearfix，if no _setting.scss,please enable it
+// %fl{
+//   float: left;
+//   display: inline;
+// }
+// %clearfix{
+//   *zoom:1;
+//   &:before, &:after
+//   {
+//     content: "";
+//     display:table;
+//   }
+//   &:after
+//   {
+//     clear:both;
+//   }
+// }
 
 // A Function to calculate width:
 // Example usage: (based on default values)

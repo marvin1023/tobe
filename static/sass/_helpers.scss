@@ -1,0 +1,29 @@
+
+$mpSize:5px 10px 15px 20px;
+
+.m5{
+  margin: 5px;
+}
+.mr5{
+  margin-right: 5px;
+}
+
+
+.fl{
+  @extend %fl;
+}
+.fr{
+  @extend %fr;
+}
+.clearfix{
+  @extend %clearfix;
+}
+.hidden{
+  @extend %hidden;
+}
+.visuallyhidden {
+  @extend %visuallyhidden;
+}
+.invisible {
+  @extend %invisible;
+}
