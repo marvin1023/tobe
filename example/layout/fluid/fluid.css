@@ -605,14 +605,14 @@ ul.links-list li {
 
 /* clearfix */
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000389}}
-.clearfix, .container {
+.clearfix {
   *zoom: 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000390}}
-  .clearfix:before, .container:before, .clearfix:after, .container:after {
+  .clearfix:before, .clearfix:after {
     content: " ";
     display: table; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_reset\.scss}line{font-family:\0000394}}
-  .clearfix:after, .container:after {
+  .clearfix:after {
     clear: both; }
 
 /* 
@@ -661,19 +661,19 @@ ul.links-list li {
  * -------------------------------------------------
 */
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\0000332}}
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .hello, .container .column, #maincolumn, #sidebar {
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .hello, #maincolumn, #sidebar {
   float: left;
   display: inline; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\0000336}}
-.clearfix, .container {
+.clearfix {
   *zoom: 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\0000339}}
-  .clearfix:before, .container:before, .clearfix:after, .container:after {
+  .clearfix:before, .clearfix:after {
     content: "";
     display: table; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\0000344}}
-  .clearfix:after, .container:after {
+  .clearfix:after {
     clear: both; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003188}}
@@ -772,29 +772,22 @@ a {
 /*----------------------------------------------------*\
  * LAYOUT
 \*----------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fixed\/fixed\.scss}line{font-family:\0000324}}
-.container {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fixed\/fixed\.scss}line{font-family:\0000327}}
-  .container .column {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 940px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fixed\/fixed\.scss}line{font-family:\0000333}}
-#header .column {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fluid\/fluid\.scss}line{font-family:\0000322}}
+#header {
   margin-bottom: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fixed\/fixed\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fluid\/fluid\.scss}line{font-family:\0000327}}
 #maincolumn {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 700px; }
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  width: 72.91667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fixed\/fixed\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fluid\/fluid\.scss}line{font-family:\0000330}}
 #sidebar {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 220px; }
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  width: 22.91667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/www\/tobe\/example\/layout\/fluid\/fluid\.scss}line{font-family:\0000333}}
+#footer {
+  clear: both; }

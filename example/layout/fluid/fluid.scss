@@ -12,25 +12,14 @@ $_gutter: 20px !default;     // Width of the gutter
 
 // Uncomment the definition below for a percentage-based layout
 // Set $total-width to 100% for a fluid layout
-//$total-width: 100%;
-$total_width: $_gridsystem-width;
-
-
-
+//$total_width: $_gridsystem-width;
+ $total-width: 100%;
 /*----------------------------------------------------*\
  * LAYOUT
 \*----------------------------------------------------*/
 
-.container {
-	@include wrapper;
-	//header and footer
-	.column {
-		@include column(12);
-	}
-}
-
 // header
-#header .column {
+#header {
 	margin-bottom: 1em;
 }
 
@@ -40,4 +29,7 @@ $total_width: $_gridsystem-width;
 }
 #sidebar {
 	@include column(3);
+}
+#footer {
+	clear:both;
 }
