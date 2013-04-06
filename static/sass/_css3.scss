@@ -1,44 +1,44 @@
 // Border Radius
-@mixin border-radius($radius:$global-radius) {
+@mixin border-radius($radius:$baseRadius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
           border-radius: $radius;
 }
 // Single Corner Border Radius
-@mixin border-top-left-radius($radius:$global-radius) {
+@mixin border-top-left-radius($radius:$baseRadius) {
   -webkit-border-top-left-radius: $radius;
       -moz-border-radius-topleft: $radius;
           border-top-left-radius: $radius;
 }
-@mixin border-top-right-radius($radius:$global-radius) {
+@mixin border-top-right-radius($radius:$baseRadius) {
   -webkit-border-top-right-radius: $radius;
       -moz-border-radius-topright: $radius;
           border-top-right-radius: $radius;
 }
-@mixin border-bottom-right-radius($radius:$global-radius) {
+@mixin border-bottom-right-radius($radius:$baseRadius) {
   -webkit-border-bottom-right-radius: $radius;
       -moz-border-radius-bottomright: $radius;
           border-bottom-right-radius: $radius;
 }
-@mixin border-bottom-left-radius($radius:$global-radius) {
+@mixin border-bottom-left-radius($radius:$baseRadius) {
   -webkit-border-bottom-left-radius: $radius;
       -moz-border-radius-bottomleft: $radius;
           border-bottom-left-radius: $radius;
 }
 // Single Side Border Radius
-@mixin border-top-radius($radius:$global-radius) {
+@mixin border-top-radius($radius:$baseRadius) {
   @include border-top-right-radius($radius);
   @include border-top-left-radius($radius);
 }
-@mixin border-right-radius($radius:$global-radius) {
+@mixin border-right-radius($radius:$baseRadius) {
   @include border-top-right-radius($radius);
   @include border-bottom-right-radius($radius);
 }
-@mixin border-bottom-radius($radius:$global-radius) {
+@mixin border-bottom-radius($radius:$baseRadius) {
   @include border-bottom-right-radius($radius);
   @include border-bottom-left-radius($radius);
 }
-@mixin border-left-radius($radius:$global-radius) {
+@mixin border-left-radius($radius:$baseRadius) {
   @include border-top-left-radius($radius);
   @include border-bottom-left-radius($radius);
 }
@@ -63,7 +63,7 @@
 }
 
 // Transitions
-@mixin transition($transition:all 0.3s ease-out) {
+@mixin transition($transition:all 0.3s ease-in-out) {
   -webkit-transition: $transition;
      -moz-transition: $transition;
        -o-transition: $transition;
@@ -147,7 +147,7 @@
 
 // User select
 // For selecting text on the page
-@mixin user-select($select) {
+@mixin user-select($select:none) {
   -webkit-user-select: $select;
      -moz-user-select: $select;
       -ms-user-select: $select;
@@ -159,19 +159,6 @@
 @mixin resizable($direction) {
   resize: $direction; // Options: horizontal, vertical, both
   overflow: auto; // Safari fix
-}
-
-// BACKGROUNDS
-// --------------------------------------------------
-
-// Add an alphatransparency value to any background or border color (via Elyse Holladay)
-@mixin translucent-background($color: $white, $alpha: 1) {
-  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
-}
-
-@mixin translucent-border($color: $white, $alpha: 1) {
-  border-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
-  @include background-clip(padding-box);
 }
 
 // Gradient Bar Colors for buttons and alerts
@@ -242,4 +229,97 @@
 // Reset filters for IE
 @mixin reset-filter() {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+//************************************************************************//
+// Example: @include prefixer(border-radius, $radii, webkit ms spec);
+//************************************************************************//
+$prefix-for-webkit: true !default;
+$prefix-for-mozilla: true !default;
+$prefix-for-microsoft: true !default;
+$prefix-for-opera: true !default;
+$prefix-for-spec: true !default; // required for keyframe mixin
+
+@mixin prefixer ($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+
+    @if $prefix == webkit and $prefix-for-webkit == true {
+      -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz and $prefix-for-mozilla == true {
+      -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms and $prefix-for-microsoft == true {
+      -ms-#{$property}: $value;
+    }
+    @else if $prefix == o and $prefix-for-opera == true {
+      -o-#{$property}: $value;
+    }
+    @else if $prefix == spec and $prefix-for-spec == true {
+      #{$property}: $value;
+    }
+    @else {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin disable-prefix-for-all() {
+  $prefix-for-webkit: false;
+  $prefix-for-mozilla: false;
+  $prefix-for-microsoft: false;
+  $prefix-for-opera: false;
+  $prefix-for-spec: false;
+}
+
+// Adds keyframes blocks for supported prefixes, removing redundant prefixes in the block's content
+@mixin keyframes($name) {
+  $original-prefix-for-webkit: $prefix-for-webkit;
+  $original-prefix-for-mozilla: $prefix-for-mozilla;
+  $original-prefix-for-microsoft: $prefix-for-microsoft;
+  $original-prefix-for-opera: $prefix-for-opera;
+  $original-prefix-for-spec: $prefix-for-spec;
+
+  @if $original-prefix-for-webkit {
+    @include disable-prefix-for-all();
+    $prefix-for-webkit: true;
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+  }
+  @if $original-prefix-for-mozilla {
+    @include disable-prefix-for-all();
+    $prefix-for-mozilla: true;
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+  }
+  @if $original-prefix-for-microsoft {
+    @include disable-prefix-for-all();
+    $prefix-for-microsoft: true;
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+  }
+  @if $original-prefix-for-opera {
+    @include disable-prefix-for-all();
+    $prefix-for-opera: true;
+    @-o-keyframes #{$name} {
+      @content;
+    }
+  }
+  @if $original-prefix-for-spec {
+    $prefix-for-spec: true !default;
+    @include disable-prefix-for-all();
+    $prefix-for-spec: true;
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+
+  $prefix-for-webkit: $original-prefix-for-webkit;
+  $prefix-for-mozilla: $original-prefix-for-mozilla;
+  $prefix-for-microsoft: $original-prefix-for-microsoft;
+  $prefix-for-opera: $original-prefix-for-opera;
+  $prefix-for-spec: $original-prefix-for-spec;
 }

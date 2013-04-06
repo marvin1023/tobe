@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%; 
 }
 body { 
-  font-size: $rootSize;
+  font-size: $baseFontSize;
   line-height: 1.5; 
   color:#333;
   background-color:#fff;
@@ -20,65 +20,21 @@ button,
 input, 
 select, 
 textarea{
-  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-family: $baseFontFamily;
 }
 img {
-    border:0 none;
-    vertical-align: middle;
+  border:0 none;
+  vertical-align: middle;
 }
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 h1,h2,h3,h4,h5,h6,p,figure,form {
-    margin:0;
-}
-/* links */
-a{
-  text-decoration:none;
-  color:nth($linkColor,1);
-}
-a:focus {
-    outline: thin dotted;
-}
-a:hover{
-    color:nth($linkColor,2);
-  text-decoration:underline;
-}
-/* hn */
-h1,h2,h3{
-  line-height: 2;
-}
-h1{
-  font-size:20px;
-}
-h2{
-  font-size:18px;
-}
-h3{
-  font-size:16px;
-}
-h4,h5,h6{
-  font:14px/1.5;
+  margin:0;
 }
 /* ul ol dl */
 ul,li,ol,dl,dd{
   margin: 0;
   padding:0;
   list-style: none outside none;
-}
-ul.has-style li,
-.article li{
-  margin-left:25px;
-}
-ul.has-style li,
-.article ul li{
-  list-style:disc;
-}
-.article ol li{
-  list-style:decimal;
-}
-ul.inline-style li,
-ul.links-list li{
-  float:left;
-  display:inline;
 }

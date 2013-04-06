@@ -1,5 +1,7 @@
 
-$rootSize:14px;
+$baseFontSize:14px;
+$baseLineHeight:1.5;
+$baseFontFamily:"Helvetica Neue", Helvetica, arial, sans-serif;
 
 //basic color
 $baseColor:#333;
@@ -30,4 +32,4 @@ $linkColor:#29B4F0 #017CB9;
 //     compliment($color)
 //more:http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
 
-$global-radius:5px;
+$baseRadius:5px;

@@ -1,0 +1,51 @@
+/* links */
+a{
+  text-decoration:none;
+  color:nth($linkColor,1);
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover{
+    color:nth($linkColor,2);
+  }
+}
+/* hn */
+h1,h2,h3{
+  line-height: 2;
+}
+h1{
+  font-size:20px;
+}
+h2{
+  font-size:18px;
+}
+h3{
+  font-size:16px;
+}
+h4,h5,h6{
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+}
+/* ul/ol has list style*/
+ul.has-style li{
+  margin-left:25px;
+  list-style:disc;
+}
+.article{
+  li{
+    margin-left: 25px;
+  }
+  ul li{
+    list-style:disc;
+  }
+  ol li{
+    list-style:decimal;
+  }
+}
+/*li float*/
+ul.inline-style{
+  @include clearfix;
+  li{
+    @include fl;
+  }
+}

@@ -186,6 +186,12 @@
 	background-color: rgba($color, $value);
 }
 
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
 // Convert pixels to ems
 // eg. for a relational value of 12px write em(12) when the parent is 16px
 // if the parent is another value say 24px write em(12, 24)
@@ -252,50 +258,6 @@
     } @else if $direction == down-left {
       border-right: $size dashed transparent;
     }
-  }
-}
-
-//position
-@mixin position ($position: relative, $coordinates: 0 0 0 0) {
-
-  @if type-of($position) == list {
-    $coordinates: $position;
-    $position: relative;
-  }
-
-  $top: nth($coordinates, 1);
-  $right: nth($coordinates, 2);
-  $bottom: nth($coordinates, 3);
-  $left: nth($coordinates, 4);
-
-  position: $position;
-
-  @if $top == auto {
-    top: $top;
-  }
-  @else if not(unitless($top)) {
-    top: $top;
-  }
-
-  @if $right == auto {
-    right: $right;
-  }
-  @else if not(unitless($right)) {
-    right: $right;
-  }
-
-  @if $bottom == auto {
-    bottom: $bottom;
-  }
-  @else if not(unitless($bottom)) {
-    bottom: $bottom;
-  }
-
-  @if $left == auto {
-    left: $left;
-  }
-  @else if not(unitless($left)) {
-    left: $left;
   }
 }
 
