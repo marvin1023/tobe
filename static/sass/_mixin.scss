@@ -1,23 +1,41 @@
 /* -------------------------------------------------
- * base mixin  
- * author:为之;
- * email:xuyc_brother@foxmail.com;
- * blog:http://www.w3cpluscom;
+ * mixin  &  placeholder selector
  * -------------------------------------------------
 */
+
 //inline-block
+//ie6-7 *display: inline;*zoom:1;
 @mixin inline-block {
   display: inline-block;*display: inline;*zoom:1;
 }
 
-//float left
+// Center-align a block level element
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
+//float left & float right
 %fl{
   float: left;
   display: inline;
 }
-
-//float right
+@mixin fl{
+  float: left;
+  display: inline;
+}
 %fr{
+  float: right;
+  display: inline;
+}
+@mixin fr{
   float: right;
   display: inline;
 }
@@ -28,8 +46,23 @@
 
   &:before,
   &:after {
-    content: " ";
+    content: "";
     display: table;
+    font: 0/0 a;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+%clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    font: 0/0 a;
   }
 
   &:after {
@@ -40,7 +73,7 @@
 //Hide from both screenreaders and browsers: h5bp.com/u
 %hidden{
   display: none !important;
-    visibility: hidden;
+  visibility: hidden;
 }
 
 //Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -73,6 +106,16 @@
       width: 0;
       height: 150%;
   }
+}
+// CSS image replacement
+// Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+//ie7+ 
+@mixin hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
 
 //size:width,height 
@@ -149,7 +192,10 @@
 @function em($pxval, $base: 16) {
   @return ($pxval / $base) * 1em;
 }
-
+// Creating rems and pixels
+@function rem($pxval) {
+  @return $pxval / $rootSize * 1rem;
+}
 
 // Add percentage of white to a color
 @function tint($color, $percent){
@@ -252,3 +298,26 @@
     left: $left;
   }
 }
+
+// Placeholder text
+@mixin placeholder($color: $grey) {
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+// Text overflow
+// Requires inline-block or block for proper styling
+@mixin text-overflow($substract:0) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:100% - $substract;
+}
+

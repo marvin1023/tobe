@@ -1,7 +1,31 @@
-$baseSize:14px;
+
+$rootSize:14px;
+
+//basic color
 $baseColor:#333;
 $grey:#ccc;
 $blue:#00A3CF;
 $orange:#F47837;
 $green:#51B148;
 $linkColor:#29B4F0 #017CB9;
+
+//color function
+//     red($color)
+//     green($color)
+//     blue($color)
+//     hue($color)
+//     saturation($color)
+//     lightness($color)
+//     alpha($color)
+// Mutators:
+//     lighten($color, $amount)
+//     darken($color, $amount)
+//     saturate($color, $amount)
+//     desaturate($color, $amount)
+//     adjust-hue($color, $amount)
+//     opacify($color, $amount)
+//     transparentize($color, $amount)
+//     mix($color1, $color2[, $amount])
+//     grayscale($color)
+//     compliment($color)
+//more:http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
