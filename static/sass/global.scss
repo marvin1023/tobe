@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "_setting";
 @import "_normalize";
 @import "_reset";
@@ -16,3 +17,18 @@ a{
 .hello{
 	@include column(3);
 }
+=======
+@charset "UTF-8";
+/*
+ * author:为之;
+ * email:xuyc_brother@foxmail.com;
+ * blog:http://www.w3cpluscom;
+*/
+@import "_normalize";
+@import "_setting";
+@import "_mixin";
+@import "_reset";
+@import "_grid";
+@import "_helpers";
+@import "_typography";
+>>>>>>> 804eb5ca37fff574a5a9cc57073620c23a8f2d79
