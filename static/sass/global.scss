@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-@import "_setting";
-@import "_normalize";
-@import "_reset";
-@import "_grid";
-/* color
- * font:#333
- * link:#29B4F0 #017CB9(滑过颜色)
- * grey:#ccc
- * other:#00A3CF(blue),#F47837(orange),#51B148(green),;
- */
-$baseColor:#333 #ccc ;
-$linkColor:#29B4F0 #017CB9;
-a{
-  color: nth($linkColor,1);
-}
-.hello{
-	@include column(3);
-}
-=======
 @charset "UTF-8";
 /*
  * author:为之;
@@ -31,4 +11,4 @@ a{
 @import "_grid";
 @import "_helpers";
 @import "_typography";
->>>>>>> 804eb5ca37fff574a5a9cc57073620c23a8f2d79
+
