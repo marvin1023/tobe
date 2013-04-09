@@ -4,52 +4,6 @@
  * email:xuyc_brother@foxmail.com;
  * blog:http://www.w3cpluscom;
 */
-/* -------------------------------------------------
- * mixin  &  placeholder selector
- * -------------------------------------------------
-*/
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .fl {
-  float: left;
-  display: inline;
-}
-
-.fr {
-  float: right;
-  display: inline;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-  font: 0/0 a;
-}
-.clearfix:after {
-  clear: both;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 /* normalize.css v1.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -550,6 +504,52 @@ table {
 }
 
 /* -------------------------------------------------
+ * mixin  &  placeholder selector
+ * -------------------------------------------------
+*/
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+  font: 0/0 a;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* -------------------------------------------------
  * reset adjust
  * -------------------------------------------------
 */
@@ -589,67 +589,11 @@ h1, h2, h3, h4, h5, h6, p, figure, form {
   margin: 0;
 }
 
-/* links */
-a {
-  text-decoration: none;
-  color: #29b4f0;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover {
-  color: #017cb9;
-  text-decoration: underline;
-}
-
-/* hn */
-h1, h2, h3 {
-  line-height: 2;
-}
-
-h1 {
-  font-size: 20px;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-h3 {
-  font-size: 16px;
-}
-
-h4, h5, h6 {
-  font: 14px/1.5;
-}
-
 /* ul ol dl */
 ul, li, ol, dl, dd {
   margin: 0;
   padding: 0;
   list-style: none outside none;
-}
-
-ul.has-style li,
-.article li {
-  margin-left: 25px;
-}
-
-ul.has-style li,
-.article ul li {
-  list-style: disc;
-}
-
-.article ol li {
-  list-style: decimal;
-}
-
-ul.inline-style li,
-ul.links-list li {
-  float: left;
-  display: inline;
 }
 
 /* -------------------------------------------------
@@ -897,4 +841,71 @@ ul.links-list li {
 
 .pl20 {
   padding-left: 20px;
+}
+
+/* links */
+a {
+  text-decoration: none;
+  color: #29b4f0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover {
+  color: #017cb9;
+}
+
+/* hn */
+h1, h2, h3 {
+  line-height: 2;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4, h5, h6 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ul/ol has list style*/
+ul.has-style li {
+  margin-left: 25px;
+  list-style: disc;
+}
+
+.article li {
+  margin-left: 25px;
+}
+.article ul li {
+  list-style: disc;
+}
+.article ol li {
+  list-style: decimal;
+}
+
+/*li float*/
+ul.inline-style {
+  *zoom: 1;
+}
+ul.inline-style:before, ul.inline-style:after {
+  content: "";
+  display: table;
+  font: 0/0 a;
+}
+ul.inline-style:after {
+  clear: both;
+}
+ul.inline-style li {
+  float: left;
+  display: inline;
 }

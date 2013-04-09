@@ -273,6 +273,8 @@ $prefix-for-spec: true !default; // required for keyframe mixin
 }
 
 // Adds keyframes blocks for supported prefixes, removing redundant prefixes in the block's content
+// Example @include keyframes(){}
+// http://bourbon.io/docs/#keyframes
 @mixin keyframes($name) {
   $original-prefix-for-webkit: $prefix-for-webkit;
   $original-prefix-for-mozilla: $prefix-for-mozilla;
