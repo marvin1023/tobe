@@ -46,6 +46,7 @@ ul.has-style li{
 ul.inline-style{
   @include clearfix;
   li{
-    @include fl;
+    float: left;
+    display: inline;
   }
 }

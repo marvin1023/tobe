@@ -22,24 +22,6 @@
   filter: alpha(opacity=$opacity);
 }
 
-//float left & float right
-%fl{
-  float: left;
-  display: inline;
-}
-@mixin fl{
-  float: left;
-  display: inline;
-}
-%fr{
-  float: right;
-  display: inline;
-}
-@mixin fr{
-  float: right;
-  display: inline;
-}
-
 //clearfix
 @mixin clearfix {
   *zoom: 1;
@@ -200,7 +182,7 @@
 }
 // Creating rems and pixels
 @function rem($pxval) {
-  @return $pxval / $rootSize * 1rem;
+  @return $pxval / $baseFontSize * 1rem;
 }
 
 // Add percentage of white to a color

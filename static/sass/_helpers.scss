@@ -4,10 +4,12 @@
 */
 
 .fl{
-  @extend %fl;
+  float: left;
+  display: inline;
 }
 .fr{
-  @extend %fr;
+  float: right;
+  display: inline;
 }
 .clearfix{
   @extend %clearfix;

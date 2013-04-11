@@ -25,11 +25,7 @@ $total_width: 960px;
 // $correction: 0.5 / $min-width * 100;
 // ie6,7  get_width($columns:$_columns, $onlyInnerWidth: true, $_subtract:$correction)
 
-//float:left & clearfix，if no _setting.scss,please enable it
-// %fl{
-//   float: left;
-//   display: inline;
-// }
+// clearfix，if no _setting.scss,please enable it
 // %clearfix{
 //   *zoom:1;
 //   &:before, &:after
@@ -73,7 +69,7 @@ $total_width: 960px;
 @mixin column($columns: $_columns, $_subtract:0, $_offset: false, $gutter:$_gutter)
 {
   // Default Properties for a column:
-  @extend %fl;
+  float:left;display:inline;
    $getWidth: get_width($columns, true, $_subtract); // Use the width calculation function to get the width 
 
     @if unit($total_width) == "%" {
@@ -154,7 +150,7 @@ $total_width: 960px;
 // So: @include container(x_number_of_columns)
 @mixin container($i:$_columns, $_subtract:0)
 {
-  @extend %fl;
+  float:left;display:inline;
   $getWidth: get_width($i, false); // Use the width calculation function to get 
   $columnWidth: $getWidth - $_subtract;
   width: $columnWidth;
