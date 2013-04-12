@@ -1,4 +1,4 @@
-/* links */
+//links 
 a{
   text-decoration:none;
   color:nth($linkColor,1);
@@ -9,57 +9,64 @@ a{
     color:nth($linkColor,2);
   }
 }
-/* hn */
-// h1,h2,h3{
-//   line-height: 2;
-// }
-// h1{
-//   font-size:20px;
-// }
-// h2{
-//   font-size:18px;
-// }
-// h3{
-//   font-size:16px;
-// }
-// h4,h5,h6{
-//   font-size: $baseFontSize;
-//   line-height: $baseLineHeight;
-// }
-h1, h2, h3, h4, h5, h6 {
-  line-height:1.3;
-  margin-bottom:10px;
+// hn
+h1,h2,h3{
+  line-height: 2;
+  font-weight: normal;
 }
 h1 {
-  font-size:$baseFontSize * 2;
-}
-h2 {
   font-size:$baseFontSize * 1.5;
 }
+h2 {
+  font-size:$baseFontSize * 1.3;
+}
 h3 {
-  font-size:$baseFontSize * 1.3333333333;
+  font-size:$baseFontSize * 1.17;
 }
 h4 { 
-  font-size:$baseFontSize * 1.1666666667;
+  font-size:$baseFontSize;
 }
 h5,h6 {
-  font-size:$baseFontSize;
+  font-size:$baseFontSize * 0.85;
   text-transform:uppercase;
 }
 /* ul/ol has list style*/
-ul.has-style li{
-  margin-left:25px;
-  list-style:disc;
+ul.has-style,ul.disc,ul.circle,ul.square{
+  @extend %ul-has-style;
 }
-.article{
+ul.circle{
+  list-style:circle;
+}
+ul.square{
+  list-style:square;
+}
+// li float
+ul.inline-float{
+  @include clearfix;
   li{
+    float: left;
+    display: inline;
+  }
+}
+// li inline-block
+ul.inline-block{
+  li{
+    @include inline-block; 
+    margin-right: 8px;
+  }
+}
+// article style
+.article{
+  h1, h2, h3, h4, h5, h6 {
+    line-height:1.3;
+    margin-bottom:10px;
+  }
+  ul,ol{
     margin-left: 25px;
+    list-style-type:disc;
   }
-  ul li{
-    list-style:disc;
-  }
-  ol li{
-    list-style:decimal;
+  ol{
+    list-style-type:decimal;
   }
   p, ul, ol, dl{
     margin-bottom:10px;
@@ -67,19 +74,41 @@ ul.has-style li{
   ul ul, ul ol, ol ol, ol ul{
     margin-bottom: 0;
   }
-  dl dt{
+  dt{
     font-weight: bold;
   }
   dd{
     margin-left: 10px;
-    margin-bottom: 10px;
   }
 }
-/*li float*/
-ul.inline-style{
-  @include clearfix;
-  li{
-    float: left;
-    display: inline;
+// Blockquotes
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 10px;
+  border-left: 3px solid $gray;
+  small {
+    font-size: $baseFontSize * 0.85;
+    display: block;
+    line-height: $baseLineHeight;
+    color: $graydarken;
+    &:before {
+      content: '\2014 \00A0';
+    }
   }
+}
+
+// Quotes
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+// Addresses
+address {
+  display: block;
+  margin-bottom: 10px;
+  font-style: normal;
+  line-height: $baseLineHeight;
 }

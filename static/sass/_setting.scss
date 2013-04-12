@@ -1,32 +1,9 @@
-// =============================================================================
-// Normalize.scss settings
-// =============================================================================
-
+@charset "UTF-8";
 
 // Set to true if you want to add support for IE6 and IE7
 // Notice: setting to true might render some elements
 // slightly differently than when set to false
 $legacy_support_for_ie: true !default; // Used also in Compass
-
-
-// Set the default font family here so you don't have to override it later
-$normalized_font_family: sans-serif !default;
-
-$normalize_headings: false !default;
-
-$h1_font_size: 2em !default;
-$h2_font_size: 1.5em !default;
-$h3_font_size: 1.17em !default;
-$h4_font_size: 1em !default;
-$h5_font_size: 0.83em !default;
-$h6_font_size: 0.75em !default;
-
-$h1_margin: 0.67em 0 !default;
-$h2_margin: 0.83em 0 !default;
-$h3_margin: 1em 0 !default;
-$h4_margin: 1.33em 0 !default;
-$h5_margin: 1.67em 0 !default;
-$h6_margin: 2.33em 0 !default;    
 
 
 //font相关
@@ -37,7 +14,8 @@ $baseFontFamily:"Helvetica Neue", Helvetica, arial, sans-serif;
 //basic color
 $baseColor:#333;
 $white:#fff;
-$grey:#ccc;
+$gray:#ccc;
+$graydarken:#999;
 $blue:#00A3CF;
 $orange:#F47837;
 $green:#51B148;

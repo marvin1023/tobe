@@ -1,8 +1,9 @@
+@charset "UTF-8";
 /* -------------------------------------------------
  * some useful class
  * -------------------------------------------------
 */
-
+/* 浮动及清除浮动*/
 .fl{
   float: left;
   display: inline;
@@ -14,6 +15,7 @@
 .clearfix{
   @extend %clearfix;
 }
+/* 不同形式的隐藏 */
 .hidden{
   @extend %hidden;
 }
@@ -23,7 +25,18 @@
 .invisible {
   @extend %invisible;
 }
+/* text-align:left/right/center; */
+.tal{
+	text-align: left;
+}
+.tar{
+	text-align: right;
+}
+.tac{
+	text-align: center;
+}
 
+//margin & padding
 .m5{margin: 5px;}
 .mt5{margin-top: 5px;}
 .mr5{margin-right: 5px;}
