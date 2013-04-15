@@ -1,12 +1,9 @@
 //links 
 a{
   text-decoration:none;
-  color:nth($linkColor,1);
-  &:focus {
-    outline: thin dotted;
-  }
+  color:$linkColor;
   &:hover{
-    color:nth($linkColor,2);
+    color:darken($linkColor,10%);
   }
 }
 // hn

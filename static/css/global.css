@@ -24,8 +24,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\0000371}}
@@ -41,7 +39,6 @@ audio:not([controls]) {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\0000391}}
 html {
-  font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -116,11 +113,6 @@ strong {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003192}}
-blockquote {
-  margin: 1em 40px;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003199}}
 dfn {
   font-style: italic;
@@ -132,19 +124,12 @@ mark {
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003213}}
-p,
-pre {
-  margin: 1em 0;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003224}}
 code,
 kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
@@ -158,11 +143,6 @@ pre {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003242}}
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003251}}
-q {
-  quotes: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003258}}
@@ -196,36 +176,9 @@ sub {
   bottom: -0.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003297}}
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003303}}
-dd {
-  margin: 0 0 0 40px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003312}}
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003321}}
-nav ul,
-nav ol {
-  list-style-image: none;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003336}}
 img {
   border: 0;
-  -ms-interpolation-mode: bicubic;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003345}}
@@ -235,11 +188,6 @@ svg:not(:root) {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003355}}
 figure {
-  margin: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003365}}
-form {
   margin: 0;
 }
 
@@ -255,7 +203,6 @@ legend {
   border: 0;
   padding: 0;
   white-space: normal;
-  *margin-left: -7px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003400}}
@@ -267,7 +214,6 @@ textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
-  *vertical-align: middle;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003413}}
@@ -289,7 +235,6 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-  *overflow: visible;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003449}}
@@ -303,8 +248,6 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
-  *height: 13px;
-  *width: 13px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_normalize\.scss}line{font-family:\00003471}}
@@ -343,28 +286,28 @@ table {
  * mixin  &  placeholder selector
  * -------------------------------------------------
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000339}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000345}}
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
   font: 0/0 a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000351}}
 .clearfix:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000357}}
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000363}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -376,15 +319,21 @@ table {
   width: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000375}}
 .invisible {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000380}}
 ul.has-style, ul.disc, ul.circle, ul.square {
   margin-left: 25px;
   list-style: disc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003267}}
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .fl, .fr {
+  float: left;
+  display: inline;
 }
 
 /* -------------------------------------------------
@@ -454,109 +403,85 @@ ul, ol {
  * https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/functions/_flex-grid.scss
  * -------------------------------------------------
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span1 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 60px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span2 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 140px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span3 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 220px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span4 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 300px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span5 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 380px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span6 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 460px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span7 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 540px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span8 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 620px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span9 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 700px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span10 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 780px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span11 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 860px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
 .span12 {
-  float: left;
-  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   width: 940px;
@@ -569,233 +494,21 @@ ul, ol {
  * -------------------------------------------------
 */
 /* 浮动及清除浮动*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\000037}}
-.fl {
-  float: left;
-  display: inline;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000311}}
-.fr {
-  float: right;
-  display: inline;
-}
-
 /* 不同形式的隐藏 */
 /* text-align:left/right/center; */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000327}}
 .tal {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000330}}
 .tar {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000333}}
 .tac {
   text-align: center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000340}}
-.m5 {
-  margin: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000341}}
-.mt5 {
-  margin-top: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000342}}
-.mr5 {
-  margin-right: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000343}}
-.mb5 {
-  margin-bottom: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000344}}
-.ml5 {
-  margin-left: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000345}}
-.m10 {
-  margin: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000346}}
-.mt10 {
-  margin-top: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000347}}
-.mr10 {
-  margin-right: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000348}}
-.mb10 {
-  margin-bottom: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000349}}
-.ml10 {
-  margin-left: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000350}}
-.m15 {
-  margin: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000351}}
-.mt15 {
-  margin-top: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000352}}
-.mr15 {
-  margin-right: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000353}}
-.mb15 {
-  margin-bottom: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000354}}
-.ml15 {
-  margin-left: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000355}}
-.m20 {
-  margin: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000356}}
-.mt20 {
-  margin-top: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000357}}
-.mr20 {
-  margin-right: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000358}}
-.mb20 {
-  margin-bottom: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000359}}
-.ml20 {
-  margin-left: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000361}}
-.p5 {
-  padding: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000362}}
-.pt5 {
-  padding-top: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000363}}
-.pr5 {
-  padding-right: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000364}}
-.pb5 {
-  padding-bottom: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000365}}
-.pl5 {
-  padding-left: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000366}}
-.p10 {
-  padding: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000367}}
-.pt10 {
-  padding-top: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000368}}
-.pr10 {
-  padding-right: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000369}}
-.pb10 {
-  padding-bottom: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000370}}
-.pl10 {
-  padding-left: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000371}}
-.p15 {
-  padding: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000372}}
-.pt15 {
-  padding-top: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000373}}
-.pr15 {
-  padding-right: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000374}}
-.pb15 {
-  padding-bottom: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000375}}
-.pl15 {
-  padding-left: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000376}}
-.p20 {
-  padding: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000377}}
-.pt20 {
-  padding-top: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000378}}
-.pr20 {
-  padding-right: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000379}}
-.pb20 {
-  padding-bottom: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_helpers\.scss}line{font-family:\0000380}}
-.pl20 {
-  padding-left: 20px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\000032}}
@@ -804,78 +517,74 @@ a {
   color: #29b4f0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\000035}}
-a:focus {
-  outline: thin dotted;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\000038}}
 a:hover {
-  color: #017cb9;
+  color: #0f9bd7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000310}}
 h1, h2, h3 {
   line-height: 2;
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000314}}
 h1 {
   font-size: 21px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000317}}
 h2 {
   font-size: 18.2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000320}}
 h3 {
   font-size: 16.38px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000323}}
 h4 {
   font-size: 14px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000326}}
 h5, h6 {
   font-size: 11.9px;
   text-transform: uppercase;
 }
 
 /* ul/ol has list style*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000334}}
 ul.circle {
   list-style: circle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000337}}
 ul.square {
   list-style: square;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000341}}
 ul.inline-float {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000329}}
 ul.inline-float:before, ul.inline-float:after {
   content: "";
   display: table;
   font: 0/0 a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000335}}
 ul.inline-float:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000343}}
 ul.inline-float li {
   float: left;
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000350}}
 ul.inline-block li {
   display: inline-block;
   *display: inline;
@@ -883,56 +592,56 @@ ul.inline-block li {
   margin-right: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000357}}
 .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
   line-height: 1.3;
   margin-bottom: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000361}}
 .article ul, .article ol {
   margin-left: 25px;
   list-style-type: disc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000365}}
 .article ol {
   list-style-type: decimal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000368}}
 .article p, .article ul, .article ol, .article dl {
   margin-bottom: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000371}}
 .article ul ul, .article ul ol, .article ol ol, .article ol ul {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000374}}
 .article dt {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000377}}
 .article dd {
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000382}}
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 10px;
   border-left: 3px solid #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000386}}
 blockquote small {
   font-size: 11.9px;
   display: block;
   line-height: 1.5;
   color: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\0000391}}
 blockquote small:before {
   content: '\2014 \00A0';
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\00003101}}
 q:before,
 q:after,
 blockquote:before,
@@ -940,7 +649,7 @@ blockquote:after {
   content: "";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\00003106}}
 address {
   display: block;
   margin-bottom: 10px;

@@ -8,7 +8,7 @@
 //ie6-7 *display: inline;*zoom:1;
 @mixin inline-block {
   display: inline-block;
-  @if $legacy_support_for_ie {
+  @if $lte7 {
     *display: inline;*zoom:1;
   }
 }
@@ -20,16 +20,11 @@
   margin-right: auto;
 }
 
-// Opacity
-@mixin opacity($opacity) {
-  opacity: $opacity / 100;
-  filter: alpha(opacity=$opacity);
-}
-
 //clearfix
 @mixin clearfix {
-  *zoom: 1;
-
+  @if $lte7 {
+    *zoom: 1;
+  }
   &:before,
   &:after {
     content: "";
@@ -42,7 +37,9 @@
   }
 }
 %clearfix {
-  *zoom: 1;
+  @if $lte7 {
+    *zoom: 1;
+  }
 
   &:before,
   &:after {
@@ -90,8 +87,10 @@
   background-color: transparent;
   border: 0;
   overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px;
+  @if $lte7 {
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+  }
   &:before {
       content: "";
       display: block;
@@ -173,7 +172,7 @@
 
 // HEX to RGB
 // http://codepen.io/sturobson/pen/hdKyv
-@mixin rgba($color, $value) {
+@mixin bgcolor-rgba($color, $value) {
 	background-color: $color;
 	background-color: rgba($color, $value);
 }
@@ -253,18 +252,6 @@
   }
 }
 
-// Placeholder text
-@mixin placeholder($color: $grey) {
-  &:-moz-placeholder {
-    color: $color;
-  }
-  &:-ms-input-placeholder {
-    color: $color;
-  }
-  &::-webkit-input-placeholder {
-    color: $color;
-  }
-}
 
 // Text overflow
 // Requires inline-block or block for proper styling
@@ -275,3 +262,17 @@
   width:100% - $substract;
 }
 
+
+//float left & right
+%float-left{
+  float: left;
+  @if $lte7 {
+    display: inline;
+  }
+}
+%float-right{
+  float: right;
+  @if $lte7 {
+    display: inline;
+  }
+}
