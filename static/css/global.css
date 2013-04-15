@@ -331,7 +331,7 @@ ul.has-style, ul.disc, ul.circle, ul.square {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003267}}
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .fl, .fr {
+.fl, .fr {
   float: left;
   display: inline;
 }
@@ -403,90 +403,6 @@ ul, ol {
  * https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/functions/_flex-grid.scss
  * -------------------------------------------------
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span1 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 60px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span2 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 140px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span3 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 220px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span4 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 300px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span5 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 380px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span6 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 460px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span7 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 540px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span8 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 620px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span9 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 700px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span10 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 780px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span11 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 860px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_grid\.scss}line{font-family:\00003190}}
-.span12 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 940px;
-}
-
 /* prepend n blank columns */
 /* append n blank columns */
 /* -------------------------------------------------

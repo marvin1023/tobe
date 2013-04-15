@@ -165,14 +165,6 @@ $total_width: 960px;
   width: $columnWidth;
 }
 
-//alpha & omega
-@mixin alpha {
-  margin-left:0;
-}
-@mixin omega {
-  margin-right:0;
-}
-
 // Flexible grid
 @function flex-span($i, $container-columns: $_columns,$onlyInnerWidth: true) {
   $percentage: percentage($i / $container-columns);
@@ -185,11 +177,12 @@ $total_width: 960px;
   @return $percentage;
 }
 
-//class   span1-span12
-@for $i from 1 through $_columns{
-  .span#{$i} { 
-    @include column($i);
-  }
+//alpha & omega
+@mixin alpha {
+  margin-left:0;
+}
+@mixin omega {
+  margin-right:0;
 }
 
 //http://bjorkoy.com/2010/05/css-grids-with-sass/
