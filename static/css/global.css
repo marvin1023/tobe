@@ -330,7 +330,7 @@ ul.has-style, ul.disc, ul.circle, ul.square {
   list-style: disc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003251}}
 .fl, .fr {
   float: left;
   display: inline;
@@ -571,6 +571,16 @@ address {
   margin-bottom: 10px;
   font-style: normal;
   line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_typography\.scss}line{font-family:\00003114}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /* 浮动 及 清除 */
