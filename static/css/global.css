@@ -283,59 +283,64 @@ table {
 }
 
 /* -------------------------------------------------
- * mixin  &  placeholder selector
+ * mixin
+ * 通过@include调用，样式通过拷贝的方式使用
+ * 尤其适用于传递参数  
  * -------------------------------------------------
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000339}}
-.clearfix {
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000345}}
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-  font: 0/0 a;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000351}}
-.clearfix:after {
-  clear: both;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000357}}
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000363}}
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000375}}
-.invisible {
-  visibility: hidden;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000380}}
-ul.has-style, ul.disc, ul.circle, ul.square {
-  margin-left: 25px;
-  list-style: disc;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003251}}
+/* -------------------------------------------------
+ * placeholder selector 
+ * 通过@extend调用，样式组合申明，适用于无参数
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003230}}
 .fl, .fr {
   float: left;
   display: inline;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003238}}
+.clearfix {
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000340}}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+  font: 0/0 a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000345}}
+.clearfix:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003243}}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003248}}
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003253}}
+.invisible {
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\00003258}}
+ul.has-style, ul.disc, ul.circle, ul.square {
+  margin-left: 25px;
+  list-style: disc;
+}
+
+/* -------------------------------------------------
+ * function
+ * -------------------------------------------------
+*/
 /* -------------------------------------------------
  * reset adjust
  * -------------------------------------------------
@@ -484,13 +489,13 @@ ul.square {
 ul.inline-float {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000340}}
 ul.inline-float:before, ul.inline-float:after {
   content: "";
   display: table;
   font: 0/0 a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/static\/sass\/_mixin\.scss}line{font-family:\0000345}}
 ul.inline-float:after {
   clear: both;
 }
@@ -582,5 +587,3 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/* 浮动 及 清除 */

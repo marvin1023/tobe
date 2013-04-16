@@ -1,8 +1,12 @@
 @charset "UTF-8";
 /* -------------------------------------------------
- * mixin  &  placeholder selector
+ * mixin
+ * 通过@include调用，样式通过拷贝的方式使用
+ * 尤其适用于传递参数  
  * -------------------------------------------------
 */
+// 如果没有引入_setting.scss（里面定义了$lte7），请取消下面的注释
+//$lte7:true !default;
 
 //inline-block
 //ie6-7 *display: inline;*zoom:1;
@@ -15,9 +19,16 @@
 
 // Center-align a block level element
 @mixin center-block() {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+//float left & right
+@mixin float($float:left){
+  float: $float;
+  @if $lte7 {
+    display: inline;
+  }
 }
 
 //clearfix
@@ -31,66 +42,55 @@
     display: table;
     font: 0/0 a;
   }
-
-  &:after {
-    clear: both;
-  }
-}
-%clearfix {
-  @if $lte7 {
-    *zoom: 1;
-  }
-
-  &:before,
-  &:after {
-    content: "";
-    display: table;
-    font: 0/0 a;
-  }
-
   &:after {
     clear: both;
   }
 }
 
 //Hide from both screenreaders and browsers: h5bp.com/u
-%hidden{
+@mixin hidden{
   display: none !important;
   visibility: hidden;
 }
 
-//Hide only visually, but have it available for screenreaders: h5bp.com/v
-%visuallyhidden{
-  border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+//Hide only visually, but have it available for screenreaders
+@mixin visuallyhidden{
+  position: absolute;
+  clip:rect(1px 1px 1px 1px);
 }
 
 // Hide visually and from screenreaders, but maintain layout
- %invisible{
+@mixin invisible{
   visibility: hidden;
  }
 
 //ul has list style
-%ul-has-style{
+@mixin ul-has-style{
   margin-left:25px;
   list-style:disc;
 }
 
 // CSS image replacement
-// Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
-//ie7+ 
-@mixin hide-text {
+@mixin img-replace {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
+  @if $lte7 {
+    _font-size:12px;
+    _line-height:999;
+    _overflow:hidden;
+  }
+}
+
+// Text overflow
+// Requires inline-block or block for proper styling
+@mixin text-overflow($substract:0) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:100% - $substract;
 }
 
 //size:width,height 
@@ -154,38 +154,11 @@
   }
 }
 
-// HEX to RGB
-// http://codepen.io/sturobson/pen/hdKyv
-@mixin bgcolor-rgba($color, $value) {
-	background-color: $color;
-	background-color: rgba($color, $value);
-}
 
 // Opacity
 @mixin opacity($opacity) {
   opacity: $opacity / 100;
   filter: alpha(opacity=$opacity);
-}
-
-// Convert pixels to ems
-// eg. for a relational value of 12px write em(12) when the parent is 16px
-// if the parent is another value say 24px write em(12, 24)
-@function em($pxval, $base: 16) {
-  @return ($pxval / $base) * 1em;
-}
-// Creating rems and pixels
-@function rem($pxval) {
-  @return $pxval / $baseFontSize * 1rem;
-}
-
-// Add percentage of white to a color
-@function tint($color, $percent){
-  @return mix(white, $color, $percent);
-}
-
-// Add percentage of black to a color
-@function shade($color, $percent){
-  @return mix(black, $color, $percent);
 }
 
 // triangle
@@ -237,26 +210,86 @@
 }
 
 
-// Text overflow
-// Requires inline-block or block for proper styling
-@mixin text-overflow($substract:0) {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width:100% - $substract;
+/* -------------------------------------------------
+ * placeholder selector 
+ * 通过@extend调用，样式组合申明，适用于无参数
+ * -------------------------------------------------
+*/
+
+//inline-block
+%inline-block{
+  @include inline-block;
 }
 
+// Center-align a block level element
+%center-block{
+  @include center-block;
+}
 
 //float left & right
 %float-left{
-  float: left;
-  @if $lte7 {
-    display: inline;
-  }
+  @include float;
 }
 %float-right{
-  float: right;
-  @if $lte7 {
-    display: inline;
-  }
+  @include float(right);
+}
+
+//clearfix
+%clearfix {
+  @include clearfix;
+}
+
+//Hide from both screenreaders and browsers: h5bp.com/u
+%hidden{
+  @include hidden;
+}
+
+//Hide only visually, but have it available for screenreaders
+%visuallyhidden{
+  @include visuallyhidden;
+}
+
+// Hide visually and from screenreaders, but maintain layout
+%invisible{
+  @include invisible;
+}
+
+//ul has list style
+%ul-has-style{
+  @include ul-has-style;
+}
+
+// image replacement
+%img-replace{
+  @include img-replace;
+}
+
+// text overflow
+%text-overflow{
+  @include text-overflow;
+}
+
+/* -------------------------------------------------
+ * function
+ * -------------------------------------------------
+*/
+
+// pixels to ems
+@function em($px, $base: 16) {
+  @return ($px / $base) * 1em;
+}
+
+// pixels to rems 
+@function rem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+
+// add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+// add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
 }
