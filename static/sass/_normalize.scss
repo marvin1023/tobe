@@ -3,35 +3,6 @@
 // normalize.css v2.1.0 | MIT License | git.io/normalize
 // =============================================================================
 
-// =============================================================================
-// Normalize.scss settings
-// =============================================================================
-
-
-// Set to true if you want to add support for IE6 and IE7
-// Notice: setting to true might render some elements
-// slightly differently than when set to false
-$legacy_support_for_ie: false !default; // Used also in Compass
-
-
-// Set the default font family here so you don't have to override it later
-$normalized_font_family: sans-serif !default;
-
-$normalize_headings: true !default;
-
-$h1_font_size: 2em !default;
-$h2_font_size: 1.5em !default;
-$h3_font_size: 1.17em !default;
-$h4_font_size: 1em !default;
-$h5_font_size: 0.83em !default;
-$h6_font_size: 0.75em !default;
-
-$h1_margin: 0.67em 0 !default;
-$h2_margin: 0.83em 0 !default;
-$h3_margin: 1em 0 !default;
-$h4_margin: 1.33em 0 !default;
-$h5_margin: 1.67em 0 !default;
-$h6_margin: 2.33em 0 !default;    
 
 // =============================================================================
 // HTML5 display definitions
@@ -59,7 +30,7 @@ audio,
 canvas,
 video {
     display: inline-block;
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         *display: inline;
         *zoom: 1;
     }
@@ -89,7 +60,7 @@ audio:not([controls]) {
 //    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
 
 html {
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         font-size: 100%; // 1
     }
     -webkit-text-size-adjust: 100%; // 2
@@ -136,45 +107,6 @@ a {
     }
 }
 
-// =============================================================================
-// Typography
-// =============================================================================
-
-// Addresses font sizes and margins set differently in IE6/7
-// Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
-
-@if $normalize_headings == true {
-    h1 {
-        font-size: $h1_font_size;
-        margin: $h1_margin;
-    }
-
-    h2 {
-        font-size: $h2_font_size;
-        margin: $h2_margin;
-    }
-
-    h3 {
-        font-size: $h3_font_size;
-        margin: $h3_margin;
-    }
-
-    h4 {
-        font-size: $h4_font_size;
-        margin: $h4_margin;
-    }
-
-    h5 {
-        font-size: $h5_font_size;
-        margin: $h5_margin;
-    }
-
-    h6 {
-        font-size: $h6_font_size;
-        margin: $h6_margin;
-    }
-}
-
 // Addresses styling not present in IE 8/9, S5, Chrome
 
 abbr[title] {
@@ -188,7 +120,7 @@ strong {
     font-weight: bold; 
 }
 
-@if $legacy_support_for_ie {
+@if $lte7 {
     blockquote {
         margin: 1em 40px;
     }
@@ -208,7 +140,7 @@ mark {
 }
 
 // Addresses margins set differently in IE6/7
-@if $legacy_support_for_ie {
+@if $lte7 {
     p,
     pre {
         margin: 1em 0;
@@ -223,7 +155,7 @@ kbd,
 pre,
 samp {
     font-family: monospace, serif;
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         _font-family: 'courier new', monospace;
     }    
     font-size: 1em;
@@ -247,7 +179,7 @@ q {
 // 2. Addresses quote property not supported in S4
 
 // 1
-@if $legacy_support_for_ie {
+@if $lte7 {
     q {
         quotes: none;
     }
@@ -290,7 +222,7 @@ sub {
 // =============================================================================
 
 // Addresses margins set differently in IE6/7
-@if $legacy_support_for_ie {
+@if $lte7 {
     dl,
     menu,
     ol,
@@ -299,14 +231,14 @@ sub {
     }
 }
 
-@if $legacy_support_for_ie {
+@if $lte7 {
     dd {
         margin: 0 0 0 40px;
     }
 }
 
 // Addresses paddings set differently in IE6/7
-@if $legacy_support_for_ie {
+@if $lte7 {
     menu,
     ol,
     ul {
@@ -319,7 +251,7 @@ sub {
 nav {
     ul,
     ol {
-        @if $legacy_support_for_ie {
+        @if $lte7 {
             list-style-image: none;
         }    
     }
@@ -335,7 +267,7 @@ nav {
 
 img {
     border: 0; // 1
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         -ms-interpolation-mode: bicubic; // 2
     }    
 }
@@ -361,7 +293,7 @@ figure {
 // =============================================================================
 
 // Corrects margin displayed oddly in IE6/7
-@if $legacy_support_for_ie {
+@if $lte7 {
     form {
         margin: 0;
     }
@@ -384,7 +316,7 @@ legend {
     border: 0; // 1
     padding: 0; // 2
     white-space: normal; // 3
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         *margin-left: -7px; // 4
     }    
 }
@@ -402,7 +334,7 @@ textarea {
     font-size: 100%; // 2
     margin: 0; // 3
     vertical-align: baseline; // 4
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         *vertical-align: middle; // 4
     }    
 }
@@ -438,7 +370,7 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button; // 2
     cursor: pointer; // 3
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         *overflow: visible;  // 4
     }    
 }
@@ -459,7 +391,7 @@ input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; // 1
     padding: 0; // 2
-    @if $legacy_support_for_ie {
+    @if $lte7 {
         *height: 13px; // 3
         *width: 13px; // 3
     }
