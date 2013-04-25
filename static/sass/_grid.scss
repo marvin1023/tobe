@@ -19,7 +19,7 @@ $_gutter: 20px !default;     // Width of the gutter
 $_gridsystem-width: $_columns * ($_column-width + $_gutter); //grid system width
 
 // Set $total-width to 100% for a fluid layout
-$total_width: 960px;
+$total_width: 960px !default;
 
 // a fluid layout 
 // ie6,7  get_width($columns:$_columns, $onlyInnerWidth: true, $_subtract:$correction)

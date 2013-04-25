@@ -6,7 +6,7 @@
  * -------------------------------------------------
 */
 // 如果没有引入_setting.scss（里面定义了$lte7），请取消下面的注释
-//$lte7:true !default;
+//$lte7:true !default;// Set to true if you want to add support for IE6 and IE7
 
 //inline-block
 //ie6-7 *display: inline;*zoom:1;
@@ -57,6 +57,7 @@
 @mixin visuallyhidden{
   position: absolute;
   clip:rect(1px 1px 1px 1px);
+  clip:rect(1px, 1px, 1px, 1px);
 }
 
 // Hide visually and from screenreaders, but maintain layout
@@ -72,13 +73,11 @@
 
 // CSS image replacement
 @mixin img-replace {
-  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
   @if $lte7 {
-    _font-size:12px;
     _line-height:999;
     _overflow:hidden;
   }

@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/* -------------------------------------------------
+ * 需要引入的变量 和 placeholder selector
+ * 变量       ：$linkColor，$baseFontSize，$gray，$graydarken，$baseLineHeight
+ * placeholder：%ul-has-style，%inline-block，%clearfix
+ * -------------------------------------------------
+*/
+
 //links 
 a{
   text-decoration:none;
@@ -39,7 +47,7 @@ ul.square{
 }
 // li float
 ul.inline-float{
-  @include clearfix;
+  @extend %clearfix;
   li{
     float: left;
     display: inline;
@@ -48,7 +56,7 @@ ul.inline-float{
 // li inline-block
 ul.inline-block{
   li{
-    @include inline-block; 
+    @extend %inline-block; 
     margin-right: 8px;
   }
 }

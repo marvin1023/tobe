@@ -3,7 +3,7 @@
 //http://bourbon.io/
 //https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_mixins.scss
 
-$baseRadius:5px;
+$baseRadius:5px !default;
 
 //************************************************************************//
 // Example: @include prefixer(border-radius, $radii, webkit ms spec);
@@ -53,7 +53,7 @@ $prefix-for-spec: true !default; // required for keyframe mixin
 
 // Border Radius
 @mixin border-radius($radius:$baseRadius) {
-  @include prefixer(box-sizing, $radius, webkit spec);
+  @include prefixer(box-radius, $radius, webkit spec);
 }
 
 // Single Corner Border Radius
@@ -75,7 +75,8 @@ $prefix-for-spec: true !default; // required for keyframe mixin
 
 
 // box-sizing
-@mixin box-sizing($type:padding-box) {
+@mixin box-sizing($type:border-box) {
+  // border-box | padding-box | content-box
   @include prefixer(box-sizing, $type, webkit moz spec);
 }
 
@@ -91,7 +92,6 @@ $prefix-for-spec: true !default; // required for keyframe mixin
 
 //Transform
 @mixin transform($property: none) {
-//  none | <transform-function>
   @include prefixer(transform, $property, webkit moz o spec);
 }
 
@@ -102,7 +102,8 @@ $prefix-for-spec: true !default; // required for keyframe mixin
   @include prefixer(transform-origin, $axes, webkit moz o spec);
 }
 
-@mixin transform-style ($style: flat) {
+@mixin transform-style ($style: preserve-3d) {
+  // flat | preserve-3d
   @include prefixer(transform-style, $style, webkit moz o spec);
 }
 
@@ -110,63 +111,88 @@ $prefix-for-spec: true !default; // required for keyframe mixin
 @mixin rotate($degrees) {
   @include prefixer(transform, rotate($degrees), webkit moz o spec);
 }
+@mixin rotate3d($degrees) {
+  @include prefixer(transform, rotate3d($degrees), webkit moz o spec);
+}
+@mixin rotateX($degrees) {
+  @include prefixer(transform, rotateX($degrees), webkit moz o spec);
+}
+@mixin rotateY($degrees) {
+  @include prefixer(transform, rotateY($degrees), webkit moz o spec);
+}
+@mixin rotateZ($degrees) {
+  @include prefixer(transform, rotateZ($degrees), webkit moz o spec);
+}
 
 @mixin scale($ratio) {
   @include prefixer(transform, scale($ratio), webkit moz o spec);
 }
-
-@mixin translate($x, $y) {
-  @include prefixer(transform, translate($x, $y), webkit moz o spec);
+@mixin scale3d($ratio) {
+  @include prefixer(transform, scale3d($ratio), webkit moz o spec);
+}
+@mixin scaleX($ratio) {
+  @include prefixer(transform, scaleX($ratio), webkit moz o spec);
+}
+@mixin scaleY($ratio) {
+  @include prefixer(transform, scaleY($ratio), webkit moz o spec);
+}
+@mixin scaleZ($ratio) {
+  @include prefixer(transform, scaleZ($ratio), webkit moz o spec);
 }
 
-@mixin skew($x, $y) {
-  @include prefixer(transform, skew($x, $y), webkit moz o spec);
+@mixin translate($px) {
+  @include prefixer(transform, translate($px), webkit moz o spec);
+}
+@mixin translate3d($px) {
+  @include prefixer(transform, translate3d($px), webkit moz o spec);
+}
+@mixin translateX($px) {
+  @include prefixer(transform, translateX($px), webkit moz o spec);
+}
+@mixin translateY($px) {
+  @include prefixer(transform, translateY($px), webkit moz o spec);
+}
+@mixin translateZ($px) {
+  @include prefixer(transform, translateZ($px), webkit moz o spec);
+}
+
+@mixin skew($degrees) {
+  @include prefixer(transform, skew($degrees), webkit moz o spec);
+  -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
+}
+@mixin skewX($degrees) {
+  @include prefixer(transform, skewX($degrees), webkit moz o spec);
+  -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
+}
+@mixin skewY($degrees) {
+  @include prefixer(transform, skewY($degrees), webkit moz o spec);
   -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
 }
 
 
-// Shorthand mixin. Supports multiple parentheses-deliminated values for each variable.
-// Example: @include transition (all, 2.0s, ease-in-out);
-//          @include transition ((opacity, width), (1.0s, 2.0s), ease-in, (0, 2s));
-//          @include transition ($property:(opacity, width), $delay: (1.5s, 2.5s));
-
-@mixin transition ($properties) {
-  @if length($properties) >= 1 {
-    @include prefixer(transition, $properties, webkit moz spec);
-  }
-
-  @else {
-    $properties: all 0.15s ease-out 0;
-    @include prefixer(transition, $properties, webkit moz spec);
-  }
-}
-
-@mixin transition-property ($properties:all) {
-   -webkit-transition-property: transition-property-names($properties, 'webkit');
-      -moz-transition-property: transition-property-names($properties, 'moz');
-           transition-property: transition-property-names($properties, false);
+// transition
+@mixin transition ($properties:all 0.3s ease) {
+    @include prefixer(transition, $properties, webkit moz o spec);
 }
 
 @mixin transition-duration ($times:0.3s) {
-  @include prefixer(transition-duration, $times, webkit moz spec);
+  @include prefixer(transition-duration, $times, webkit moz o spec);
 }
 
 @mixin transition-timing-function ($motions:ease) {
 // ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier()
-  @include prefixer(transition-timing-function, $motions, webkit moz spec);
+  @include prefixer(transition-timing-function, $motions, webkit moz o spec);
 }
 
 @mixin transition-delay ($times) {
-  @include prefixer(transition-delay, $times, webkit moz spec);
+  @include prefixer(transition-delay, $times, webkit moz o spec);
 }
 
 
 // Backface visibility
-// Prevent browsers from flickering when using CSS 3D transforms.
-// Default value is `visible`, but can be changed to `hidden
-// See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
 @mixin backface-visibility($visibility:hidden){
-  @include prefixer(backface-visibility, $visibility, webkit spec);
+  // visible | hidden
+  @include prefixer(backface-visibility, $visibility, webkit moz spec);
 }
 
 //perspective
@@ -183,44 +209,44 @@ $prefix-for-spec: true !default; // required for keyframe mixin
 // http://www.w3.org/TR/css3-animations/#the-animation-name-property-
 // Each of these mixins support comma separated lists of values, which allows different transitions for individual properties to be described in a single style rule. Each value in the list corresponds to the value at that same position in the other properties.
 // Official animation shorthand property.
-@mixin animation ($animations...) {
+@mixin animation ($animations) {
   @include prefixer(animation, $animations, webkit moz spec);
 }
 
 // Individual Animation Properties
-@mixin animation-name ($names...) {
+@mixin animation-name ($names) {
   @include prefixer(animation-name, $names, webkit moz spec);
 }
 
-@mixin animation-duration ($times...) {
+@mixin animation-duration ($times) {
   @include prefixer(animation-duration, $times, webkit moz spec);
 }
 
-@mixin animation-timing-function ($motions...) {
+@mixin animation-timing-function ($motions) {
 // ease | linear | ease-in | ease-out | ease-in-out
   @include prefixer(animation-timing-function, $motions, webkit moz spec);
 }
 
-@mixin animation-iteration-count ($values...) {
+@mixin animation-iteration-count ($values) {
 // infinite | <number>
   @include prefixer(animation-iteration-count, $values, webkit moz spec);
 }
 
-@mixin animation-direction ($directions...) {
+@mixin animation-direction ($directions) {
 // normal | alternate
   @include prefixer(animation-direction, $directions, webkit moz spec);
 }
 
-@mixin animation-play-state ($states...) {
+@mixin animation-play-state ($states) {
 // running | paused
   @include prefixer(animation-play-state, $states, webkit moz spec);
 }
 
-@mixin animation-delay ($times...) {
+@mixin animation-delay ($times) {
   @include prefixer(animation-delay, $times, webkit moz spec);
 }
 
-@mixin animation-fill-mode ($modes...) {
+@mixin animation-fill-mode ($modes) {
 // none | forwards | backwards | both
   @include prefixer(animation-fill-mode, $modes, webkit moz spec);
 }
@@ -507,4 +533,27 @@ $prefix-for-spec: true !default; // required for keyframe mixin
 @mixin flex($flex){
   //initial || auto || none || number
   @include prefixer(flex, $flex, webkit moz spec);
+}
+
+//webkit
+@mixin text-fill-color($color){
+  @include prefixer(text-fill-color, $color, webkit spec);
+}
+
+@mixin text-stroke-color($color){
+  @include prefixer(text-stroke-color, $color, webkit spec);
+}
+
+@mixin text-stroke-width($width){
+  @include prefixer(text-stroke-color, $width, webkit spec);
+}
+
+@mixin grayscale($percent:100%){
+  @include prefixer(filter, grayscale($percent), webkit spec);
+}
+@mixin drop-shadow($shadow:3px 3px 5px rgba(0,0,0,0.3)){
+  @include prefixer(filter, drop-shadow($shadow), webkit spec);
+}
+@mixin blur($px){
+  @include prefixer(filter, blur($px), webkit spec);
 }

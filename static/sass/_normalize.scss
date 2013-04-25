@@ -1,7 +1,13 @@
+@charset "UTF-8";
 // =============================================================================
 // Normalize.scss based on Nicolas Gallagher and Jonathan Neal's
 // normalize.css v2.1.0 | MIT License | git.io/normalize
 // =============================================================================
+
+
+// 如果没有引入_setting.scss（里面定义了$lte7），请取消下面的注释
+//$lte7:true !default;// Set to true if you want to add support for IE6 and IE7
+
 
 // =============================================================================
 // HTML5 display definitions

@@ -6,19 +6,19 @@
 $lte7: true !default; 
 
 //font相关
-$baseFontSize:14px;
-$baseLineHeight:1.5;
-$baseFontFamily:"Helvetica Neue", Helvetica, arial, sans-serif;
+$baseFontSize:14px !default;
+$baseLineHeight:1.5 !default;
+$baseFontFamily:"Helvetica Neue", Helvetica, arial, sans-serif !default;
 
 //basic color
-$baseColor:#333;
-$white:#fff;
-$gray:#ccc;
-$graydarken:#999;
-$linkColor:#29B4F0;
-$blue:#00A3CF;
-$orange:#F47837;
-$green:#51B148;
+$baseColor:#333 !default;
+$white:#fff !default;
+$gray:#ccc !default;
+$graydarken:#999 !default;
+$linkColor:#29B4F0 !default;
+$blue:#00A3CF !default;
+$orange:#F47837 !default;
+$green:#51B148 !default;
 
 //color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
 //     lighten($color, $amount)
