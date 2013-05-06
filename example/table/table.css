@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* -------------------------------------------------
+ * table scss
+ * -------------------------------------------------
+*/
 /*
  * author:为之;
  * email:xuyc_brother@foxmail.com;
@@ -604,4 +608,194 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003117}}
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003128}}
+.table {
+  width: 100%;
+  margin-bottom: 1.5;
+  _border-bottom: 1px solid #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003133}}
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003139}}
+.table th {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003143}}
+.table thead th {
+  vertical-align: bottom;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003152}}
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003159}}
+.table tbody + tbody {
+  border-top: 2px solid #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003164}}
+.table .table {
+  background-color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003176}}
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003185}}
+.table-bordered {
+  border: 1px solid #cccccc;
+  border-left: 0;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000373}}
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000385}}
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000320}}
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child,
+.table-bordered tbody:first-child tr:first-child > th:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000326}}
+.table-bordered thead:first-child tr:first-child > th:last-child,
+.table-bordered tbody:first-child tr:first-child > td:last-child,
+.table-bordered tbody:first-child tr:first-child > th:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000334}}
+.table-bordered thead:last-child tr:last-child > th:first-child,
+.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table-bordered tbody:last-child tr:last-child > th:first-child,
+.table-bordered tfoot:last-child tr:last-child > td:first-child,
+.table-bordered tfoot:last-child tr:last-child > th:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000342}}
+.table-bordered thead:last-child tr:last-child > th:last-child,
+.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table-bordered tbody:last-child tr:last-child > th:last-child,
+.table-bordered tfoot:last-child tr:last-child > td:last-child,
+.table-bordered tfoot:last-child tr:last-child > th:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000347}}
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000350}}
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000358}}
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000364}}
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003109}}
+.table-striped th {
+  background-color: #00a3cf;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\0000393}}
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003102}}
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+  background-color: whitesmoke;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003215}}
+.table tbody tr.success td {
+  background-color: #e6efc2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003218}}
+.table tbody tr.error td {
+  background-color: #fbe3e4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003221}}
+.table tbody tr.warning td {
+  background-color: #fff6bf;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003224}}
+.table tbody tr.info td {
+  background-color: #d5edf8;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003231}}
+.table-hover tbody tr.success:hover td {
+  background-color: #deeaae;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003234}}
+.table-hover tbody tr.error:hover td {
+  background-color: #f8cdce;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003237}}
+.table-hover tbody tr.warning:hover td {
+  background-color: #fff2a6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/example\/table\/table\.scss}line{font-family:\00003240}}
+.table-hover tbody tr.info:hover td {
+  background-color: #bfe4f4;
 }

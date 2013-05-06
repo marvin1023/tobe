@@ -49,7 +49,10 @@ $textarea:500px 80px !default;//the width and height of textarea
 	label{
 		display: block;
 		font-size:14px;
-	    line-height:28px;
+	  line-height:28px;
+		.form-inline &{
+			display:inline;
+		}
 	}
 	.form-item{
 		margin-bottom:$formItemMargin;
@@ -66,23 +69,12 @@ $textarea:500px 80px !default;//the width and height of textarea
 		padding:4px;
 	}
 	.form-text, textarea{
-		-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-		-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-		-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-		-o-transition: border linear 0.2s, box-shadow linear 0.2s;
-		transition: border linear 0.2s, box-shadow linear 0.2s;
-		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-		-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+		@include transition(border linear 0.2s, box-shadow linear 0.2s);
+		@include box-shadow(inset 0 1px 3px rgba(0, 0, 0, 0.1));
 	}
 	.form-text:focus, textarea:focus, select:focus{
 		outline: 0 none;
 	}
-	.form-text:focus, textarea:focus {
-		border-color: rgba(82, 168, 236, 0.8);
-		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-		-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
 	}
 	.form-field-rc, .form-text, textarea, select{
 		margin-bottom: 9px;

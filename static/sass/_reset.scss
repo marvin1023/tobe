@@ -13,8 +13,8 @@ html {
 body { 
   font-size: $baseFontSize;
   line-height: $baseLineHeight; 
-  color:$baseColor;
-  background-color:$white;
+  color:$textColor;
+  background-color:$bodyBgColor;
 }
 body, 
 button, 

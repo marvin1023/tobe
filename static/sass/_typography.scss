@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* -------------------------------------------------
  * 需要引入的变量 和 placeholder selector
- * 变量       ：$linkColor，$baseFontSize，$gray，$graydarken，$baseLineHeight
+ * 变量       ：$linkColor，$baseFontSize，$grayDark, $gray，$baseLineHeight
  * placeholder：%ul-has-style，%inline-block，%clearfix
  * -------------------------------------------------
 */
@@ -95,7 +95,7 @@ blockquote {
     font-size: $baseFontSize * 0.85;
     display: block;
     line-height: $baseLineHeight;
-    color: $graydarken;
+    color: $grayDark;
     &:before {
       content: '\2014 \00A0';
     }
