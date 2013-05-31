@@ -1,0 +1,29 @@
+@import "../demo.css";
+
+@import "D:/sassCore/function";
+
+/*----------------------------------------------------*\
+ * Grid
+\*----------------------------------------------------*/
+
+// $_percentLayout: true;
+/*----------------------------------------------------*\
+ * LAYOUT
+\*----------------------------------------------------*/
+
+// header
+#header {
+	margin-bottom: 1em;
+}
+
+// main and sidebar
+#maincolumn {
+	width:get-width(9,false);
+	@include float;
+}
+#sidebar {
+	@include column(3);
+}
+#footer {
+	clear:both;
+}

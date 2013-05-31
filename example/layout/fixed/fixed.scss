@@ -1,0 +1,35 @@
+@import "../demo.css";
+$_percentLayout:false;
+@import "D:/sassCore/base";
+
+/*----------------------------------------------------*\
+ * Grid
+\*----------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------*\
+ * LAYOUT
+\*----------------------------------------------------*/
+
+.container {
+	@include wrapper;
+	//header and footer
+	.column {
+		@include column(12);
+	}
+}
+
+// header
+#header .column {
+	margin-bottom: 1em;
+}
+
+// main and sidebar
+#maincolumn {
+	@include column(9);
+}
+#sidebar {
+	@include column(3);
+}

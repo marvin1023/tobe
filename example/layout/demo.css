@@ -1,0 +1,14 @@
+#header,
+#footer {
+	background: #333;
+	color: #eee;
+}
+
+#maincolumn,
+#sidebar {
+	min-height: 300px;
+	background: #00A3CF;
+}
+#maincolumn {
+	background: #51B148;
+}

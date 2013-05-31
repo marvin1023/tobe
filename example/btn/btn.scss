@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * form scss
+ * -------------------------------------------------
+*/
+@import '../../static/sass/global';
+@import '../../static/sass/_css3';
+
+
+@mixin btn($padding:16px,$height:30px,$radius:$baseRadius){
+	@include inline-block;
+	cursor: pointer;
+	text-align:center;
+    padding:0 $padding;
+	font-size:$baseFontSize;
+	line-height: $height;
+	@include border-radius($radius);
+}
+@mixin inputbtn($padding:16px,$height:30px,$radius:$baseRadius){
+	@include inline-block;
+	cursor: pointer;
+	text-align:center;
+    padding:0 $padding;
+	font-size:$baseFontSize;
+	height: $height;
+	@include border-radius($radius);
+
+	@if $lte7 {
+		*overflow:visible;
+		*zoom:1;
+	}
+}
+.btn{
+	@include btn;
+}
+.large-btn{
+	@include btn(40px,40px,8px);
+}
+.small-btn{
+	@include btn(5px,20px,3px);
+}
