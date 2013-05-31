@@ -1,0 +1,54 @@
+@charset "UTF-8";
+//pager-nav variables
+//---------------------------------
+$pagerNavTextColor:         #2965B1 !default;
+$pagerNavBorderColor:       $gray #2965B1 !default;
+$pagerNavActiveColor:       #2965B1 $white !default;
+$pagerNavDisabledColor:     #efefef #999 !default;
+
+//pager-nav
+//默认居中
+.pager-nav{
+  font-family: $fontCn;
+  margin:20px 0 0;
+  text-align: center;
+
+  ul{
+    @include inline-block;
+  }
+  li{
+    margin:0 5px;
+    @include float;
+  }
+  span,
+  a{
+    @include float;
+    padding:0 7px;
+    line-height:20px;
+    height:20px;
+    text-decoration:none;
+    border:1px solid nth($pagerNavBorderColor,1);
+  }
+  a{
+    color: $pagerNavTextColor;
+    &:hover{
+      border-color:nth($pagerNavBorderColor,2);
+      text-decoration:none;
+    }
+  }
+  .active span{
+      background-color: nth($pagerNavActiveColor,1);
+      color: nth($pagerNavActiveColor,2);
+  }
+  .disabled span{
+      background-color:nth($pagerNavDisabledColor,1);
+      color:nth($pagerNavDisabledColor,2);
+  }
+}
+//向左，向右对齐
+.pager-nav-left{
+  text-align: left;
+}
+.pager-nav-right{
+  text-align: right;
+}
