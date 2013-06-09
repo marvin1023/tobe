@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* -------------------------------------------------
+ * imgtextH scss
+ * -------------------------------------------------
+*/
+
+//变量
+//---------------------------------
+$imgtextHDefaultImg:    250px 160px !default;//默认图片大小，用于imgtext-h-list
+$imgtextGap:            10px !default;//图片与文字的间距
+
+
+//左边图片与右边文字的距离
+//---------------------------------
+@mixin imgtext-gutter($px:$imgtextGap){
+  margin-right: $px;
+  @if $lte7{
+    _margin-right: $px - 3px;//ie6 3px bug
+  }
+}
+
+//左右混排基本样式
+//---------------------------------
+%imgtext-base{
+  .img-left{
+    @include float;
+  }
+
+  .text-right{
+    overflow: hidden;
+    @extend %zoom;
+    h3{
+      line-height: 1.3;
+      font-weight: bold;
+    }
+  }  
+}
+
+//.img-left，.text-right
+.imgtext-h,
+.imgtext-h-list,
+.imgtext-h-block{ 
+  @extend %imgtext-base;
+}
+
+//适用于单个图文左右混排
+//---------------------------------
+.imgtext-h{
+  @extend %clearfix;
+  .img-left{
+    @include imgtext-gutter(20px);
+  }
+  .text-right{
+    h3{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//适用于列表，罗列图文左右混排数据
+//---------------------------------
+.imgtext-h-list{
+  li{
+      @extend %clearfix;
+      border-bottom:1px dashed $gray; 
+      padding-top:15px; 
+      padding-bottom:15px;
+  }
+  .img-left{
+    @include imgtext-gutter;
+    img{
+      width:nth($imgtextHDefaultImg,1);
+      height:nth($imgtextHDefaultImg,2);
+    }
+  }
+  .text-right{
+    h3{
+      font-size:$baseFontSize + 2px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//区块类列表
+//---------------------------------
+.imgtext-h-block{
+  font-size: 12px;
+  li{
+    @extend %clearfix;
+    padding: 5px 0;
+  }
+  .img-left{
+    @include imgtext-gutter(5px);
+  }
+  .text-right{
+    h3{
+      font-size: 12px;
+      font-weight: normal;
+      @extend %ellipsis;
+    }
+  }
+}

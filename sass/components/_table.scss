@@ -4,16 +4,20 @@
  * -------------------------------------------------
 */
 
+//thanks:https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_tables.scss
+
 // 变量
-// -------------------------
+//---------------------------------
+$zebraLte8:                      false !default; //斑马线效果是否支持ie8，如果支持请在tr里面添加class odd
 $tableBgColor:                   transparent !default; // overall background-color
-$tableBgColorAccent:             #f9f9f9 !default; // for striping zebra
+$tableBgColorOdd:                #f9f9f9 !default; // for striping zebra
 $tableBgColorHover:              #f5f5f5 !default; // for hover
 $tableBorderColor:               $gray !default; // table and cell border
+$tableThBgColor:                 #f4f4f4 !default;
 
 
 //table mixin
-// -----------------
+//---------------------------------
 @mixin table-radius($baseRadius){
   border-collapse: separate; // Done so we can round those corners!
   @if $lte7 {
@@ -93,11 +97,17 @@ $tableBorderColor:               $gray !default; // table and cell border
   } 
 }
 
-@mixin zebra-stripe($tableBgColorAccent){
+@mixin zebra-stripe($tableBgColorOdd){
   tbody {
     > tr:nth-child(odd) > td,
-    > tr:nth-child(odd) > th {
-      background-color: $tableBgColorAccent;
+    > tr:nth-child(odd) > th{
+      background-color: $tableBgColorOdd;
+    } 
+  }
+  @if $zebraLte8 {
+    tr.odd td,
+    tr.odd th {
+      background-color: $tableBgColorOdd;
     }
   }
 }
@@ -120,7 +130,7 @@ $tableBorderColor:               $gray !default; // table and cell border
 
 
 // BASE TABLES
-// -----------------
+//---------------------------------
 table {
   max-width: 100%;
   background-color: $tableBgColor;
@@ -130,17 +140,20 @@ table {
 
 
 // BASELINE STYLES
-// ---------------
+//---------------------------------
 .table {
   width: 100%;
-  margin-bottom: $baseLineHeight;
+  margin-bottom: $baseGap;
+  border:1px solid $tableBorderColor;
+  border-width:0 1px 1px 0;
   // Cells
   th,
   td {
     padding: 8px;
     text-align: left;
     vertical-align: top;
-    border-top: 1px solid $tableBorderColor;
+    border: 1px solid $tableBorderColor;
+    border-width:1px 0 0 1px;
   }
   th {
     font-weight: bold;
@@ -148,22 +161,6 @@ table {
   // Bottom align for column headings
   thead th {
     vertical-align: bottom;
-  }
-  // Remove top border from thead by default
-  caption + thead tr:first-child th,
-  caption + thead tr:first-child td,
-  colgroup + thead tr:first-child th,
-  colgroup + thead tr:first-child td,
-  thead:first-child tr:first-child th,
-  thead:first-child tr:first-child td {
-    border-top: 0;
-  }
-  @if $lte7 {
-    _border-bottom:1px solid $tableBorderColor;
-  }
-  // Account for multiple tbody instances
-  tbody + tbody {
-    border-top: 2px solid $tableBorderColor;
   }
 
   // Nesting
@@ -174,7 +171,7 @@ table {
 
 
 // CONDENSED TABLE W/ HALF PADDING
-// -------------------------------
+//---------------------------------
 .table-condensed {
   th,
   td {
@@ -182,28 +179,42 @@ table {
   }
 }
 
+.table-line{
+  border:none;
+  th,td{
+    border-left:none;
+  }
+  // Remove top border from thead by default
+  thead:first-child tr:first-child th,
+  thead:first-child tr:first-child td {
+    border-top: 0;
+  }
+  @if $lte7 {
+    _border-bottom:1px solid $tableBorderColor;
+  }
+}
 
 // BORDERED VERSION
-// ----------------
-.table-bordered {
-  @include table-border($tableBorderColor);
+//---------------------------------
+.table-radius {
+  // @include table-border($tableBorderColor);
   @include table-radius($baseRadius);
 }
 
 
 
 // ZEBRA-STRIPING
-// --------------
+//---------------------------------
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 .table-striped {
   @include table-thead;
-  @include zebra-stripe($tableBgColorAccent);
+  @include zebra-stripe($tableBgColorOdd);
 }
 
 
 // HOVER EFFECT
-// ------------
+//---------------------------------
 // Placed here since it has to come after the potential zebra striping
 .table-hover {
   @include tr-hover($tableBgColorHover);
@@ -211,10 +222,10 @@ table {
 
 
 // TABLE BACKGROUNDS
-// -----------------
 // Exact selectors below required to override .table-striped
+//---------------------------------
 
-.table tbody tr {
+.table tr {
   &.success td {
     background-color: $successBgColor;
   }
@@ -230,7 +241,7 @@ table {
 }
 
 // Hover states for .table-hover
-.table-hover tbody tr {
+.table-hover tr {
   &.success:hover td {
     background-color: darken($successBgColor, 5%);
   }

@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * tabs scss
+ * -------------------------------------------------
+*/
+
+//tabs变量
+//---------------------------------
+$tabsRadius:             false !default;//是否启用圆角，启用之后，对于tabs-gutter的tabs-content-wrap的top-right的角度是方的，特殊处理下就可以
+$tabsHeight:             36px !default;//tabs导航高度
+$tabsPrimaryColor:       $blue !default;//主色
+$tabsTextColor:          #333 #fff !default;//文字两种颜色，一种为深色，一种为浅色
+$tabsNavBgColor:         $grayLight !default;
+$tabsContentBgColor:     #fff !default;
+$tabsAWidth:             100px;
+$tabsBorderColor:        $gray !default;
+$tabsFullAWidth:         25% !default;//宽度为100%除以选项的个数，这里以四个为例,当然请注意ie6/7解析百分比有问题
+
+
+//tabs placeholder selectors
+//---------------------------------
+
+//圆角tabs
+%tabs-radius{
+  @if $tabsRadius{
+    @include border-radius($baseRadius $baseRadius 0 0);
+    > :first-child{
+      @include border-top-left-radius($baseRadius);
+    }
+  }
+}
+//tabs nav的基本样式
+%tabs-nav{
+  @extend %clearfix;
+  @extend %tabs-radius;
+  font-size: $baseFontSize;
+  border:1px solid $tabsBorderColor;
+  background-color: $tabsNavBgColor;
+  a,span{
+    color:nth($tabsTextColor,1);
+    @include float;
+    line-height: $tabsHeight;
+    width: $tabsAWidth;
+    text-align: center;
+
+    @if $lte7{
+      *position: relative;
+    }
+  }
+}
+
+
+//tabs 样式
+//---------------------------------
+
+//外层包裹所有的tabs-content
+.tabs-content-wrap{
+  padding: 10px;
+  border:1px solid $tabsBorderColor;
+  border-top:none;
+  @if $tabsRadius{
+    @include border-radius(0 0 $baseRadius $baseRadius);
+  }
+}
+
+//颜色类tabs nav，没有底部的border-bottom处理
+.tabs-color{
+  @extend %tabs-nav;
+  border-top:3px solid $tabsPrimaryColor;
+  border-width:3px 1px 0 0;
+
+  a{
+    margin-top: -3px;
+    margin-right: 1px;
+    border-top:3px solid $tabsPrimaryColor;
+    &.active,&:hover{
+      background-color: $tabsPrimaryColor;
+      color:nth($tabsTextColor,2);
+    }
+  }
+}
+
+//边框类tabs nav，宽度没有布满整行
+.tabs-border{
+  @extend %tabs-nav;
+  
+  a{
+    border:1px solid $tabsBorderColor;
+    border-left:none;
+    margin:-1px 0;
+
+    &.active{
+      border-bottom-color:$tabsContentBgColor;
+      border-top-color:$tabsPrimaryColor;
+      background-color: $tabsContentBgColor;
+      color:$tabsPrimaryColor;  
+    }
+    &:hover{
+      color:$tabsPrimaryColor;
+    }
+  }
+}
+
+//边框类tabs nav，宽度正好布满整行
+.tabs-full{
+  @extend %tabs-nav;
+  a{
+    width: $tabsFullAWidth;
+    @if lte7{
+      *width: $tabsFullAWidth - 0.05%;
+    }
+    margin:-1px 0 -1px -1px;
+    border:1px solid $tabsBorderColor;
+    border-right:none;
+
+    &.active{
+      border-bottom-color:$tabsContentBgColor;
+      background-color: $tabsContentBgColor;
+      border-top-color:$tabsPrimaryColor;
+      color:$tabsPrimaryColor;
+    }
+    &:hover{
+      color:$tabsPrimaryColor;
+    }
+  }
+  @if $tabsRadius{
+    :last-child{
+      @include border-top-right-radius($baseRadius);
+    }
+  }
+}
+
+//边框类tabs-nav，但是单个之间分开有间距
+.tabs-gutter{
+  @extend %clearfix;
+  border-bottom:1px solid $tabsBorderColor;
+  a{
+    width: $tabsAWidth;
+    border:1px solid $tabsBorderColor;
+    margin-bottom: -1px;
+    margin-right: 10px;
+    background-color: $tabsNavBgColor;
+    color:nth($tabsTextColor,1);
+    @include float;
+    line-height: $tabsHeight;
+    width: $tabsAWidth;
+    text-align: center;
+
+    @if $lte7{
+      *position: relative;
+    }
+
+    @if $tabsRadius{
+      @include border-radius($baseRadius $baseRadius 0 0);
+    }
+
+    &.active{
+      border-bottom-color:$tabsContentBgColor;
+      background-color: $tabsContentBgColor;
+      color:$tabsPrimaryColor;
+    }
+    &:hover{
+      color:$tabsPrimaryColor;
+    }
+  }
+}

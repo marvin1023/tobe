@@ -1,12 +1,15 @@
 @charset "UTF-8";
-//pager-nav variables
+/* -------------------------------------------------
+ * pagerNav scss
+ * -------------------------------------------------
+*/
+
+//变量
 //---------------------------------
 $pagerNavTextColor:         #2965B1 !default;
 $pagerNavBorderColor:       $gray #2965B1 !default;
 $pagerNavActiveColor:       #2965B1 $white !default;
-$pagerNavDisabledColor:     #efefef #999 !default;
 
-//pager-nav
 //默认居中
 .pager-nav{
   font-family: $fontCn;
@@ -20,7 +23,8 @@ $pagerNavDisabledColor:     #efefef #999 !default;
     margin:0 5px;
     @include float;
   }
-  span,
+  .active span,
+  .disabled span,
   a{
     @include float;
     padding:0 7px;
@@ -41,10 +45,10 @@ $pagerNavDisabledColor:     #efefef #999 !default;
       color: nth($pagerNavActiveColor,2);
   }
   .disabled span{
-      background-color:nth($pagerNavDisabledColor,1);
-      color:nth($pagerNavDisabledColor,2);
+      @include disabled;
   }
 }
+
 //向左，向右对齐
 .pager-nav-left{
   text-align: left;

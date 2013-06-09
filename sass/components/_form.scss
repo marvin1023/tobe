@@ -6,7 +6,7 @@
 
 
 //变量
-//--------------------
+//---------------------------------
 $formItemMargin:           9px !default;//上下元素的间距
 $labelWidth:               100px !default;//当label和元素同行时，label的宽度
 $inputTextWidth:           200px !default;//输入框的宽度
@@ -21,7 +21,7 @@ $enableMessageBg:          true !default;//对warning,error,sucess是否开启�
 
 
 //mixin
-//--------------------
+//---------------------------------
 
 //radio & checkbox 的重置
 @mixin resetRadioCheckbox{
@@ -125,7 +125,7 @@ $enableMessageBg:          true !default;//对warning,error,sucess是否开启�
 
 //默认表单
 //label独立一行
-//--------------------
+//---------------------------------
 .form{
 	font-size: 12px;
 	margin-bottom: $formItemMargin;
@@ -392,7 +392,7 @@ $enableMessageBg:          true !default;//对warning,error,sucess是否开启�
 
 //form-inline
 //单行表单,所有的元素一行显示，用于单行登录表单
-//--------------------
+//---------------------------------
 .form-inline{
 	@extend %clearfix;
 
@@ -423,7 +423,7 @@ $enableMessageBg:          true !default;//对warning,error,sucess是否开启�
 
 // form-horizontal
 //label与input元素同行表单
-//--------------------
+//---------------------------------
 .form-horizontal{
 	label{
 		@include float;
@@ -440,7 +440,7 @@ $enableMessageBg:          true !default;//对warning,error,sucess是否开启�
 }
 
 // form messages
-//--------------------
+//---------------------------------
 .form{
 	/* block status tips */
 	.error, .alert, .warning, .success, .info {

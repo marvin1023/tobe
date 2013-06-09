@@ -3,218 +3,277 @@
 <head>
 <meta charset="UTF-8">
 <meta name="keywords" content="">
-<meta name="description" content="">	
+<meta name="description" content="">  
 <title>table</title>
+<link rel="stylesheet" type="text/css" href="../../css/global.css">
 <link rel="stylesheet" type="text/css" href="table.css">
-<style type="text/css">
-	.page{
-		width: 1000px;
-		margin: 0 auto;
-	}
-</style>
 </head>
 <body>
-<div class="page">
-<h2>默认</h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<div class="page layout-lm">
+    <div class="wrap-container">
+        <div id="container" class="clearfix">
+            <div id="aside_first" class="aside">
+              <div class="add-inner clearfix">
+                <div id="component_nav" class="aside-bock">
+                  <div class="block-content">
+                    <ul class="aside-nav">
+                      <li><a href="#">文字排版</a></li>
+                      <li><a href="#">表格</a></li>
+                      <li><a href="#">表单</a></li>
+                      <li><a href="#">按钮</a></li>
+                      <li><a href="#">分页导航</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="main">
+                <div class="add-inner clearfix">
+                  <div id="table_page">
+                    <h2>默认</h2>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
 
-<h2>边框及圆角</h2>
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2">1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@TwBootstrap</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+                    <h2>单线</h2>
+                    <table class="table table-line">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
 
-<h2>斑马线效果</h2>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+                    <h2>边框及圆角</h2>
+                    <table class="table table-radius">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan="2">1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@TwBootstrap</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
 
-<h2>鼠标滑过</h2>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+                    <h2>斑马线效果</h2>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
 
-<h2>小空间</h2>
-<table class="table table-condensed">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+                    <h2>鼠标滑过</h2>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
 
-<h2>不同状态</h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Product</th>
-      <th>Payment Taken</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="success">
-      <td>1</td>
-      <td>TB - Monthly</td>
-      <td>01/04/2012</td>
-      <td>Approved</td>
-    </tr>
-    <tr class="error">
-      <td>2</td>
-      <td>TB - Monthly</td>
-      <td>02/04/2012</td>
-      <td>Declined</td>
-    </tr>
-    <tr class="warning">
-      <td>3</td>
-      <td>TB - Monthly</td>
-      <td>03/04/2012</td>
-      <td>Pending</td>
-    </tr>
-    <tr class="info">
-      <td>4</td>
-      <td>TB - Monthly</td>
-      <td>04/04/2012</td>
-      <td>Call in to confirm</td>
-    </tr>
-  </tbody>
-</table>
+                    <h2>小空间</h2>
+                    <table class="table table-condensed">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
 
-</div>
+                    <h2>不同状态</h2>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Product</th>
+                          <th>Payment Taken</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="success">
+                          <td>1</td>
+                          <td>TB - Monthly</td>
+                          <td>01/04/2012</td>
+                          <td>Approved</td>
+                        </tr>
+                        <tr class="error">
+                          <td>2</td>
+                          <td>TB - Monthly</td>
+                          <td>02/04/2012</td>
+                          <td>Declined</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>3</td>
+                          <td>TB - Monthly</td>
+                          <td>03/04/2012</td>
+                          <td>Pending</td>
+                        </tr>
+                        <tr class="info">
+                          <td>4</td>
+                          <td>TB - Monthly</td>
+                          <td>04/04/2012</td>
+                          <td>Call in to confirm</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+            </div><!--main-->
+        </div>
+    </div><!--wrap-container-->
+    <div class="wrap-footer">
+        <div id="footer">
+            <div class="add-inner clearfix">
+              <p>@copyright 天涯社区</p>
+            </div>
+        </div>
+    </div><!--wrap-footer-->
+</div>  
 </body>
 </html>
+

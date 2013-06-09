@@ -3,48 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="keywords" content="">
-<meta name="description" content="">	
+<meta name="description" content="">  
 <title>btn</title>
+<link rel="stylesheet" type="text/css" href="../../css/global.css">
 <link rel="stylesheet" type="text/css" href="btn.css">
-<style type="text/css">
-	.page{
-		width: 1000px;
-		margin: 0 auto;
-	}
-</style>
 </head>
 <body>
-<div class="page">
-    <h3>green btn</h3>
+<div class="page layout-lm">
+    <div class="wrap-container">
+        <div id="container" class="clearfix">
+            <div id="aside_first" class="aside">
+              <div class="add-inner clearfix">
+                <div id="component_nav" class="aside-bock">
+                  <div class="block-content">
+                    <ul class="aside-nav">
+                      <li><a href="#">文字排版</a></li>
+                      <li><a href="#">表格</a></li>
+                      <li><a href="#">表单</a></li>
+                      <li><a href="#">按钮</a></li>
+                      <li><a href="#">分页导航</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="main">
+                <div class="add-inner clearfix">
+                    <div id="btn_page">
+                        <h3>不同的元素a,button,submit</h3>
+                        <div><a href="#" class="btn">normal btn</a><button class="formbtn">form button btn</button><input type="submit" value="form submit btn" class="formbtn"></div>
 
-    <div><a href="#" class="greenbtn small-btn">samll</a><a href="#" class="btn greenbtn">default</a><a href="#" class="greenbtn large-btn">large</a></div>
-    <h3>red btn</h3>
+                        <h3>不同颜色</h3>
+                        <div><a href="#" class="btn btn-primary">primary btn</a><a href="#" class="btn btn-green">green btn</a><a href="#" class="btn btn-red">red btn</a><a href="#" class="btn btn-orange">orange btn</a><a href="#" class="btn btn-blue">blue btn</a><a href="#" class="btn">gray btn</a><a href="#" class="btn btn-gray-light">gray light btn</a><a href="#" class="btn btn-gray-dark">gray dark btn</a></div>
 
-    <div><a href="#" class="redbtn small-btn">samll</a><a href="#" class="btn redbtn">default</a><a href="#" class="redbtn large-btn">large</a></div>
-    <h3>light blue btn</h3>
-
-    <div><a href="#" class="lightbluebtn small-btn">samll</a><a href="#" class="btn lightbluebtn">default</a><a href="#" class="lightbluebtn large-btn">large</a></div>
-    <h3>dark blue btn</h3>
-
-    <div><a href="#" class="darkbluebtn small-btn">samll</a><a href="#" class="btn darkbluebtn">default</a><a href="#" class="darkbluebtn large-btn">large</a></div>
-    <h3>orange btn</h3>
-
-    <div><a href="#" class="orangebtn small-btn">samll</a><a href="#" class="btn orangebtn">default</a><a href="#" class="orangebtn large-btn">large</a></div>
-    <h3>light gray btn</h3>
-
-    <div><a href="#" class="lightgraybtn small-btn">samll</a><a href="#" class="btn lightgraybtn">default</a><a href="#" class="lightgraybtn large-btn">large</a></div>
-    <h3>gray btn</h3>
-
-    <div><a href="#" class="graybtn small-btn">samll</a><a href="#" class="btn graybtn">default</a><a href="#" class="graybtn large-btn">large</a></div>
-    <h3>dark gray btn</h3>
-
-    <div><a href="#" class="darkgraybtn small-btn">samll</a><a href="#" class="btn darkgraybtn">default</a><a href="#" class="darkgraybtn large-btn">large</a></div>
-    <h3>black btn</h3>
-
-    <div><a href="#" class="blackbtn small-btn">samll</a><a href="#" class="btn blackbtn">default</a><a href="#" class="blackbtn large-btn">large</a></div>
-    <h3>input btn</h3>
-
-    <div><input type="submit" value="提交" class="lightgraybtn small-inputbtn"><input type="submit" value="提交" class="lightgraybtn inputbtn"><input type="submit" value="提交" class="lightgraybtn large-inputbtn"></div>
-</div>
+                        <h3>不同大小</h3>
+                        <div><a href="#" class="btn btn-small">small btn</a><a href="#" class="btn">nomal btn</a><a href="#" class="btn btn-large">large btn</a><br />
+                        <button class="formbtn formbtn-small">small form button btn</button><button class="formbtn">form button btn</button><button class="formbtn formbtn-large">large form button btn</button></div>  
+                    </div>
+                </div>
+            </div><!--main-->
+        </div>
+    </div><!--wrap-container-->
+    <div class="wrap-footer">
+        <div id="footer">
+            <div class="add-inner clearfix">
+              <p>@copyright 天涯社区</p>
+            </div>
+        </div>
+    </div><!--wrap-footer-->
+</div>  
 </body>
 </html>

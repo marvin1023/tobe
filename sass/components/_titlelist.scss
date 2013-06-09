@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * titlelist scss
+ * -------------------------------------------------
+*/
+
+//变量
+//---------------------------------
+$titleListBg:                true !default;//默认是否开启circle背景，如果默认没有，可通过添加circle-list这个class来搞定
+$titleListLiHeight:          22px !default;//行高
+$titleListTitleWidth:        300px !default;//默认标题链接宽度
+$titleListBgPaddingLeft:     12px !default;//开启图片后li的左padding
+
+
+//title-list
+//---------------------------------
+.title-list{
+	li{
+		line-height:$titleListLiHeight;
+	}
+	.title-link{ 
+		@extend %ellipsis;
+		display: block;
+		width:$titleListTitleWidth;
+	}
+} 
+.title-left{
+	li{
+		text-align:right;
+	}
+	.title-link{
+		@include float;
+		width:$titleListTitleWidth;
+		text-align:left;
+	}
+} 
+
+//开启circle背景
+//---------------------------------
+@if $titleListBg{
+	.title-list li{
+		background:url('images/icon-circle.gif') no-repeat 0; /*1*/
+		padding-left:$titleListBgPaddingLeft;
+	}
+}@else{
+	.circle-list li{
+		background:url('images/icon-circle.gif') no-repeat 0; /*1*/
+		padding-left:$titleListBgPaddingLeft;
+	}
+}
