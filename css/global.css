@@ -38,17 +38,17 @@ ul.inline-block li {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/core\/_mixin\.scss}line{font-family:\00003292}}
-.clearfix, ul.inline-float {
+.clearfix, ul.inline-float, #top_nav {
   *zoom: 1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/core\/_mixin\.scss}line{font-family:\0000342}}
-.clearfix:before, ul.inline-float:before, .clearfix:after, ul.inline-float:after {
+.clearfix:before, ul.inline-float:before, #top_nav:before, .clearfix:after, ul.inline-float:after, #top_nav:after {
   content: "";
   display: table;
   font: 0/0 a;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/core\/_mixin\.scss}line{font-family:\0000347}}
-.clearfix:after, ul.inline-float:after {
+.clearfix:after, ul.inline-float:after, #top_nav:after {
   clear: both;
 }
 
@@ -84,6 +84,11 @@ ul.has-style, ul.disc, ul.circle, ul.square {
   border: 0;
   _line-height: 99;
   _overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/core\/_mixin\.scss}line{font-family:\00003405}}
+.aside-nav li a {
+  *zoom: 1;
 }
 
 /* -------------------------------------------------
@@ -765,4 +770,95 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+
+/* -------------------------------------------------
+ * menu scss
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000314}}
+.wrap-top-bar {
+  background-color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000317}}
+#top_nav {
+  line-height: 36px;
+  text-transform: capitalize;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000321}}
+#top_nav li {
+  float: left;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000324}}
+#top_nav a {
+  display: block;
+  padding: 0 15px;
+  color: #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000329}}
+#top_nav a:hover {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000333}}
+#top_nav .active a {
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000345}}
+.aside-nav {
+  background-color: #ebebeb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000347}}
+.aside-nav li {
+  border-bottom: 1px solid #f8f8f8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000349}}
+.aside-nav li:last-child {
+  border-bottom: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000352}}
+.aside-nav li a {
+  display: block;
+  line-height: 30px;
+  color: #333333;
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000359}}
+.aside-nav li a:hover {
+  background-color: #00a3cf;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000366}}
+.aside-nav .active a {
+  background-color: #00a3cf;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000382}}
+#nav {
+  background-color: #ebebeb;
+  line-height: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000386}}
+#nav li {
+  border-right: 1px solid #f8f8f8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000389}}
+#nav a {
+  color: #333333;
+  width: 120px;
+  text-align: center;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\0000395}}
+#nav a:hover {
+  background-color: #00a3cf;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_nav\.scss}line{font-family:\00003100}}
+#nav .active a {
+  background-color: #00a3cf;
+  color: white;
 }

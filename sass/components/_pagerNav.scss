@@ -6,9 +6,9 @@
 
 //变量
 //---------------------------------
-$pagerNavTextColor:         #2965B1 !default;
-$pagerNavBorderColor:       $gray #2965B1 !default;
-$pagerNavActiveColor:       #2965B1 $white !default;
+$pagerNavTextColor:           $primary $white !default;//文本色：默认色，激活色
+$pagerNavBorderColor:         $gray $primary !default;//边框色:默认色，激活色
+$pagerNavActiveBgColor:       $primary !default;//激活背景色
 
 //默认居中
 .pager-nav{
@@ -34,15 +34,15 @@ $pagerNavActiveColor:       #2965B1 $white !default;
     border:1px solid nth($pagerNavBorderColor,1);
   }
   a{
-    color: $pagerNavTextColor;
+    color: nth($pagerNavTextColor,1);
     &:hover{
       border-color:nth($pagerNavBorderColor,2);
       text-decoration:none;
     }
   }
   .active span{
-      background-color: nth($pagerNavActiveColor,1);
-      color: nth($pagerNavActiveColor,2);
+      background-color: $pagerNavActiveBgColor;
+      color: nth($pagerNavTextColor,2);
   }
   .disabled span{
       @include disabled;

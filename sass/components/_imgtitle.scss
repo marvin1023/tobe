@@ -7,30 +7,38 @@
 
 //图片,标题列表变量
 //---------------------------------
-$imgtitleDefaultGutter:     20px !default;
-$imgtitleDefaultImg:        150px 150px !default;//图片的宽高
+$imgtitleGutter:            20px !default;
+$imgtitleImg:               150px 150px !default;//图片的宽高
 $imgtitleItemWidth:         150px !default;//没有边框的情况下，宽度等于图片的宽度
 
+//变量mixin
+//---------------------------------
+@mixin imgtitle-variables($itemWidth:$imgtitleItemWidth, $img:$imgtitleImg, $gutter:$imgtitleGutter){
+	
+	margin-right:-$gutter;
+
+	@if $lte7{
+		*padding-bottom: $gutter;
+	}
+	li,strong{
+		width: $itemWidth;
+	}
+	li{
+		margin:0 $gutter $gutter 0;
+	}
+	img{
+		width: nth($img,1);
+		height: nth($img,2);
+	}
+}
 
 //默认样式
 //---------------------------------
-.img-title{
+.imgtitle{
 	@extend %clearfix;
-	margin-right:-$imgtitleDefaultGutter;
-
-	@if $lte7{
-		*padding-bottom: $imgtitleDefaultGutter;
-	}
-	li,strong{
-		width: $imgtitleItemWidth;
-	}
+	@include imgtitle-variables;
 	li{
 		@include float;
-		margin:0 $imgtitleDefaultGutter $imgtitleDefaultGutter 0;
-	}
-	img{
-		width: nth($imgtitleDefaultImg,1);
-		height: nth($imgtitleDefaultImg,2);
 	}
 	strong{
 		font-weight:normal;
@@ -44,13 +52,13 @@ $imgtitleItemWidth:         150px !default;//没有边框的情况下，宽度�
 
 //标题半透明背景，在上面的class基础上加上title-alpha class
 //---------------------------------
-.title-alpha{
+.imgtitle-alpha{
 	li{
 		position:relative;
 	}
 	strong{
-		top:nth($imgtitleDefaultImg,2) - 30px;
-		width:nth($imgtitleDefaultImg,1) - 10px;
+		top:nth($imgtitleImg,2) - 30px;
+		width:nth($imgtitleImg,1) - 10px;
 		position:absolute;
 		left:0;
 		color:#fff;

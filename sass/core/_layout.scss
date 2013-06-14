@@ -25,13 +25,15 @@
 	@include float;
 }
 @if $_percentLayout{
-	#header,#footer{
-		.add-inner{
-			@extend %marginLeftRight;
-		}
+	#header,#footer,#container{
+		width:get-width(12);
+	}
+	.layout-lmr #container,
+	.layout-lm #container,
+	.layout-mr #container{
+		width:get-width(12,false);
 	}
 }
-
 //单边栏
 //----------------------------------------
 
@@ -50,6 +52,7 @@
 		width: get_width(9,false);
 		.add-inner{
 			margin-left:$_gutter;
+			margin-right: 0;
 		}
 	}
 }
@@ -69,6 +72,7 @@
 		width: get_width(9,false);
 		.add-inner{
 			margin-right:$_gutter;
+			margin-left: 0;
 		}
 	}
 }

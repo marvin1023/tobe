@@ -6,32 +6,38 @@
 
 //变量
 //---------------------------------
-$imgtextVDefaultGutter:     20px !default;
-$imgtextVDefaultImg:        220px 130px !default;//图片的宽高
+$imgtextVGutter:            20px !default;
+$imgtextVImg:               220px 130px !default;//图片的宽高
 $imgtextVItemWidth:         220px !default;//没有边框的情况下，宽度等于图片的宽度
+
+//变量mixin
+//---------------------------------
+@mixin imgtext-v-variables($itemWidth:$imgtextVItemWidth, $img:$imgtextVImg, $gutter:$imgtextVGutter){
+	margin-right:-$gutter;
+	@if $lte7{
+		*padding-bottom: $gutter;
+	}
+	li{
+		width: $itemWidth;
+		margin:0 $gutter $gutter 0;
+	}
+	img{
+		width:nth($img,1);
+		height:nth($img,2);
+	}
+}
 
 
 //默认样式
 //---------------------------------
 .imgtext-v-list{
 	@extend %clearfix;
-	margin-right:-$imgtextVDefaultGutter;
-
-	@if $lte7{
-		*padding-bottom: $imgtextVDefaultGutter;
-	}
-
+	@include imgtext-v-variables;
 	li{
 		@include float;
-		width: $imgtextVItemWidth;
-		margin:0 $imgtextVDefaultGutter $imgtextVDefaultGutter 0;
 	}
 	.img-link{
 		display: block;
-	}
-	img{
-		width:nth($imgtextVDefaultImg,1);
-		height:nth($imgtextVDefaultImg,2);
 	}
 	h3{
 		@extend %ellipsis;

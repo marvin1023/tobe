@@ -6,16 +6,22 @@
 
 //变量
 //---------------------------------
-$imgtextHDefaultImg:    250px 160px !default;//默认图片大小，用于imgtext-h-list
-$imgtextGap:            10px !default;//图片与文字的间距
+$imgtextHImg:              250px 160px !default;//默认图片大小，用于imgtext-h-list
+$imgtextGutter:            10px !default;//图片与文字的间距
 
 
-//左边图片与右边文字的距离
+//变量mixin
 //---------------------------------
-@mixin imgtext-gutter($px:$imgtextGap){
-  margin-right: $px;
-  @if $lte7{
-    _margin-right: $px - 3px;//ie6 3px bug
+@mixin imgtext-h-variables($img:$imgtextHImg,$gutter:$imgtextGutter){
+  .img-left{
+    margin-right: $gutter;
+    @if $lte7{
+      _margin-right: $gutter - 3px;//ie6 3px bug
+    }
+    img{
+      width:nth($img,1);
+      height:nth($img,2);
+    }
   }
 }
 
@@ -47,9 +53,7 @@ $imgtextGap:            10px !default;//图片与文字的间距
 //---------------------------------
 .imgtext-h{
   @extend %clearfix;
-  .img-left{
-    @include imgtext-gutter(20px);
-  }
+  @include imgtext-h-variables;
   .text-right{
     h3{
       margin-bottom: 10px;
@@ -60,18 +64,12 @@ $imgtextGap:            10px !default;//图片与文字的间距
 //适用于列表，罗列图文左右混排数据
 //---------------------------------
 .imgtext-h-list{
+  @include imgtext-h-variables;
   li{
       @extend %clearfix;
       border-bottom:1px dashed $gray; 
       padding-top:15px; 
       padding-bottom:15px;
-  }
-  .img-left{
-    @include imgtext-gutter;
-    img{
-      width:nth($imgtextHDefaultImg,1);
-      height:nth($imgtextHDefaultImg,2);
-    }
   }
   .text-right{
     h3{
@@ -89,9 +87,7 @@ $imgtextGap:            10px !default;//图片与文字的间距
     @extend %clearfix;
     padding: 5px 0;
   }
-  .img-left{
-    @include imgtext-gutter(5px);
-  }
+  @include imgtext-h-variables(50px 50px,5px);
   .text-right{
     h3{
       font-size: 12px;
