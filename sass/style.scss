@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* -------------------------------------------------
+ * style scss
+ * -------------------------------------------------
+*/
+
+@import 'D:/tobe/core/setting';
+$simpleBtn:         $baseFontSize 16px 40px #fff $primary 0 ;
+
+@import "D:/tobe/function";
+@import 'D:/tobe/components/col';
+@import 'D:/tobe/components/imgstyle';
+
+//index
+//--------------------------
+.wrap-featured{
+	background-color: $grayLight;
+}
+#featured{
+	@extend %center-block;
+	width:getWidth(12);
+	padding: 20px 0;
+	text-align: center;
+
+	h1{
+		font-size: 48px;
+	}
+	p{
+		font-size: 20px;
+	}
+}
+.col-four{
+	h2{
+		font-size: 20px;
+	}
+	font-size:16px;
+	line-height:1.6;
+}
+.start-zone{
+	text-align: center;
+
+	p{
+		@include inline-block;
+		// @include border-radius(10px);
+		font-size: 16px;
+		line-height: 2;
+		padding: 10px 30px 10px 10px;
+		background-color: $primary;
+		color: #fff;
+		margin-right: -10px;
+		vertical-align: middle;
+
+	}
+	.link-start{
+		@include inline-block;
+		background-color: $orange;
+		color: #fff;
+		padding: 0 10px;
+		font-size: 20px;
+		line-height: 2;
+		position: relative;
+		vertical-align: middle;
+
+		&:after{
+			@include triangle(right, 25px, $orange);
+			position: absolute;
+			right: -25px;
+			top: -5px;
+		}
+
+		&:hover{
+			background-color: darken($orange,5%);
+			&:after{
+				border-left-color: darken($orange,5%);
+			}
+		}
+
+	}
+}
+
+// template
+//--------------------------
+.col-four{
+	img{
+		@extend %img-border;
+		width: getWidth(3,true,6px);
+	}
+}
+.btn{
+	@extend %simple-btn;
+	margin-right: 10px;
+}
+pre{
+	border:3px solid darken($grayLight,5%);
+	@include border-radius(3px);
+	padding: 10px;
+}
+
+//begin
+//--------------------------
+.col-two{
+	@extend %col-span;
+	.col{
+		width:getWidth(6);
+	}
+}
+.col-begin{
+	.col{
+		background-color: $grayLight;
+	}
+	h2{
+		background-color: $primary;
+		color: #fff;
+		padding-left: 10px;
+		line-height: 36px;
+	}
+	.col-content{
+		padding: 10px;
+	}
+}

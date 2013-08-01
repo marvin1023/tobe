@@ -1,0 +1,42 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// search scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$searchFormTextWidth:             140px !default;
+
+
+// 样式
+//---------------------------------
+%search-form{
+	.search-text{
+		@extend %simple-text;
+		width: $searchFormTextWidth;
+	}
+	.search-submit{
+		@extend %simple-formbtn;
+		@include border-radius(3px);
+	}	
+}
+
+//
+%search-form-rounded{
+	.search-text,
+	.search-submit{
+		@include float;
+	}
+	.search-text{
+		@extend %simple-text;
+		padding-left: 10px;
+		width: $searchFormTextWidth;
+		@include border-radius(15px 0 0 15px);
+	}
+	.search-submit{
+		@extend %simple-formbtn;
+		padding-left: 12px;
+		@include border-radius(0 15px 15px 0);
+	}
+}

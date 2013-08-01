@@ -1,77 +1,45 @@
 <!DOCTYPE HTML>
 <html lang="zh-cn">
 <head>
-<meta charset="UTF-8">
-<meta name="keywords" content="">
-<meta name="description" content="">  
+<?php include "../pub/meta.html";?> 
 <title>btn</title>
-<link rel="stylesheet" type="text/css" href="../../css/global.css">
+<?php include "../pub/head-cssjs.html";?> 
 <link rel="stylesheet" type="text/css" href="btn.css">
 </head>
 <body>
 <div class="page layout-lm">
-    <div class="wrap-top-bar">
-      <div id="top_bar">
-          <ul id="top_nav">
-              <li class="active"><a href="">首页</a></li>
-               <li><a href="">sassCore</a></li>
-               <li><a href="">布局模板</a></li>
-               <li><a href="">开始使用</a></li>
-               <li><a href="">组件</a></li>
-               <li><a href="">关于/联系</a></li>
-          </ul>
-      </div><!--top_bar-->
-    </div>  
-    <div class="wrap-container">
-        <div id="container" class="clearfix">
-            <div id="aside_first" class="aside">
-              <div class="add-inner clearfix">
-                <div id="component_nav" class="aside-bock">
-                  <div class="block-content">
-                    <ul class="aside-nav">
-                      <li><a href="../typo/Typography.html">文字排版</a></li>
-                      <li><a href="../table/table.html">表格</a></li>
-                      <li><a href="../form/form.html">表单</a></li>
-                      <li><a href="../btn/btn.html">按钮</a></li>
-                      <li><a href="../nav/nav.html">导航</a></li>
-                      <li><a href="../pager-nav/pager-nav.html">分页导航</a></li>
-                      <li><a href="../hdtitle/hdtitle.html">右侧信息标题</a></li>
-                      <li><a href="../titlelist/titlelist.html">标题列表</a></li>
-                      <li><a href="../rank/rank.html">排行榜</a></li>
-                      <li><a href="../imgtitle/imgtitle.html">图片标题列表</a></li>
-                      <li><a href="../imgtext-vertical/imgtext-vertical.html">图文垂直列表</a></li>
-                      <li><a href="../imgtext-horizontal/imgtext-horizontal.html">图文水平列表</a></li>
-                      <li><a href="../tabs/tabs.html">选项卡</a></li>
-                      <li><a href="../imgslide/imgslide.html">图片滚动</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="main">
-                <div class="add-inner clearfix">
-                    <div id="btn_page">
-                        <h3>不同的元素a,button,submit</h3>
-                        <div><a href="#" class="btn">normal btn</a><button class="formbtn">form button btn</button><input type="submit" value="form submit btn" class="formbtn"></div>
+<?php include "../pub/top-bar.html";?> 
+<div class="wrap-container">
+<div id="container" class="clearfix">
+    <div id="aside_first" class="aside">
+      <div class="inner-aside">
+        <?php include "../pub/asidenav-basic-css-block.html";?> 
+      </div>
+    </div>
+    <div id="main">
+        <div class="inner-main">
+            <div id="btn_page">
+                <h3>不同的元素a,button,submit</h3>
+                <div><a href="#" class="btn">normal btn</a><button class="formbtn">form button btn</button><input type="submit" value="form submit btn" class="formbtn"></div>
 
-                        <h3>不同颜色</h3>
-                        <div><a href="#" class="btn btn-primary">primary btn</a><a href="#" class="btn btn-green">green btn</a><a href="#" class="btn btn-red">red btn</a><a href="#" class="btn btn-orange">orange btn</a><a href="#" class="btn btn-blue">blue btn</a><a href="#" class="btn">gray btn</a><a href="#" class="btn btn-gray-light">gray light btn</a><a href="#" class="btn btn-gray-dark">gray dark btn</a></div>
+                <h3>不同颜色</h3>
+                <div><a href="#" class="btn btn-primary">primary btn</a><a href="#" class="btn btn-green">green btn</a><a href="#" class="btn btn-red">red btn</a><a href="#" class="btn btn-orange">orange btn</a><a href="#" class="btn btn-blue">blue btn</a><a href="#" class="btn">gray btn</a><a href="#" class="btn btn-gray-light">gray light btn</a><a href="#" class="btn btn-gray-dark">gray dark btn</a></div>
 
-                        <h3>不同大小</h3>
-                        <div><a href="#" class="btn btn-small">small btn</a><a href="#" class="btn">nomal btn</a><a href="#" class="btn btn-large">large btn</a><br />
-                        <button class="formbtn formbtn-small">small form button btn</button><button class="formbtn">form button btn</button><button class="formbtn formbtn-large">large form button btn</button></div>  
-                    </div>
-                </div>
-            </div><!--main-->
-        </div>
-    </div><!--wrap-container-->
-    <div class="wrap-footer">
-        <div id="footer">
-            <div class="add-inner clearfix">
-              <p>@copyright 天涯社区</p>
+                <h3>不同大小</h3>
+                <div><a href="#" class="btn btn-small">small btn</a><a href="#" class="btn">nomal btn</a><a href="#" class="btn btn-large">large btn</a><br />
+                <button class="formbtn formbtn-small">small form button btn</button><button class="formbtn">form button btn</button><button class="formbtn formbtn-large">large form button btn</button></div>
+
+                <h3>按钮组</h3>
+                <div class="btns-group"><a href="#" class="btn">normal btn</a><a href="#" class="btn">normal btn</a><a href="#" class="btn">normal btn</a></div>
+                <div class="btns-group btns-group-large"><a href="#" class="btn">large btn</a><a href="#" class="btn">large btn</a><a href="#" class="btn">large btn</a></div>
+                <div class="btns-group btns-group-large btns-group-primary"><a href="#" class="btn">large btn</a><a href="#" class="btn">large btn</a><a href="#" class="btn">large btn</a></div>
+
             </div>
         </div>
-    </div><!--wrap-footer-->
+    </div><!--main-->
+</div>
+</div><!--wrap-container-->
+<?php include "../pub/footer.html";?> 
 </div>  
 </body>
 </html>

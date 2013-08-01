@@ -1,0 +1,153 @@
+@charset "UTF-8";
+//-----------------------------------------------------  
+// reset scss
+// normalize之后，设置一些其他的样式及一些归零
+//----------------------------------------------------- 
+
+
+html { 
+  overflow-y: scroll; 
+  -webkit-overflow-scrolling: touch; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+}
+body { 
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight; 
+  color:$textColor;
+  background-color:$bodyBgColor;
+}
+body, 
+button, 
+input, 
+select, 
+textarea{
+  font-family: $baseFontFamily;
+}
+img {
+  border:0 none;
+  vertical-align: middle;
+}
+textarea {
+  resize: vertical;
+}
+h1,h2,h3,h4,h5,h6,p,figure,form {
+  margin:0;
+}
+// ul ol dl
+ul,ol,li,dl,dd{
+  margin: 0;
+  padding:0;
+}
+ul,ol{
+  list-style: none outside none;
+}
+
+// 表单placeholder样式
+// 注意不可联合申明，否则无效（表示非常奇怪，估计搞这个样式的时候脑子浸水了）
+@if nth($placeholder,1) {
+  // Firefox 4-18
+  input:-moz-placeholder,
+  textarea:-moz-placeholder { 
+    color: nth($placeholder,2); 
+  } 
+  // Firefox 19+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder{
+    color: nth($placeholder,2); 
+  } 
+  // Internet Explorer 10+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder{
+    color: nth($placeholder,2); 
+  } 
+  // Safari and Chrome
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder{ 
+    color: nth($placeholder,2); 
+  } 
+}
+
+// 选中文字的样式
+@if nth($selection,1) {
+  ::-moz-selection {
+    background-color: nth($selection,2);
+    color: nth($selection,3);
+  }
+  ::selection {
+    background-color: nth($selection,2);
+    color: nth($selection,3);
+  }
+}
+
+
+// 打印样式
+// 通过变量$printStyleSwitch来设置是否输出
+// 来自于html5 boilerplate:http://html5boilerplate.com/
+//-----------------------------------------------------  
+@if $printStyleSwitch {
+  @media print {
+      * {
+          background: transparent !important;
+          color: #000 !important; // Black prints faster: h5bp.com/s
+          box-shadow: none !important;
+          text-shadow: none !important;
+      }
+
+      a,
+      a:visited {
+          text-decoration: underline;
+      }
+
+      a[href]:after {
+          content: " (" attr(href) ")";
+      }
+
+      abbr[title]:after {
+          content: " (" attr(title) ")";
+      }
+
+      // Don't show links for images, or javascript/internal links
+
+      .ir a:after,
+      a[href^="javascript:"]:after,
+      a[href^="#"]:after {
+          content: "";
+      }
+
+      pre,
+      blockquote {
+          border: 1px solid #999;
+          page-break-inside: avoid;
+      }
+
+      thead {
+          display: table-header-group; // h5bp.com/t
+      }
+
+      tr,
+      img {
+          page-break-inside: avoid;
+      }
+
+      img {
+          max-width: 100% !important;
+      }
+
+      @page {
+          margin: 0.5cm;
+      }
+
+      p,
+      h2,
+      h3 {
+          orphans: 3;
+          widows: 3;
+      }
+
+      h2,
+      h3 {
+          page-break-after: avoid;
+      }
+  }
+}

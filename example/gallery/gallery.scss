@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * tabs
+ * -------------------------------------------------
+*/
+@import 'D:/tobe/function';
+@import 'D:/tobe/components/gallery';
+
+//重置imgtitle的img大小，然后导入
+$imgtitleImgSize:           171px 126px;
+@import 'D:/tobe/components/imgtitle';

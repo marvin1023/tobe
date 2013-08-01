@@ -1,0 +1,103 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// gallery scss
+//-----------------------------------------------------
+
+
+//变量
+//---------------------------------
+$galleryThumbNavBgColor:        darken($grayLight,5%) $primary !default;
+$galleryThumbNavTextColor:      #333 #fff !default;
+$galleryThumbImgBorderColor:    $gray $primary !default;
+$galleryThumbImgNum:            8 !default;
+
+
+//样式
+//---------------------------------
+.gallery{
+	width: 486px;
+	margin-left: auto;
+	margin-right: auto;
+	.gallery-view{
+		margin-bottom: 10px;
+		img{
+			width: 486px;
+			height: 366px;
+			vertical-align: middle;
+		}
+
+		.alpha-bar{
+			@extend %bgcolor-alpha;
+			width: 100%;
+			position: relative;
+			height: 36px;
+			line-height:36px;
+			margin-top: -36px;
+			.title{
+				@extend %ellipsis;
+				@include float;
+				width: 486px - 120px;
+				margin-left: 10px;
+				vertical-align: middle;
+			}
+			.num-calc{
+				@include float(right);
+				width: 80px;
+				text-align: right;
+				margin-right: 10px;
+			}
+		}
+	}
+	.gallery-thumb{
+		position:relative;
+	    @extend %zoom;
+	    .gallery-thumb-view{
+	    	margin: 0 20px;
+	    	width: 446px;
+	    	overflow: hidden;
+	    }
+	    ul{
+			width: 114px * $galleryThumbImgNum;
+		}
+		li{
+			margin-right: 10px;
+			img{
+				border:1px solid nth($galleryThumbImgBorderColor,1);
+				padding: 1px;
+				width: 100px;
+				height: 75px;
+
+				&:hover{
+					border-color: nth($galleryThumbImgBorderColor,2);
+				}
+			}
+		}
+
+		//prev-next
+		.thumb-prev-btn,
+		.thumb-next-btn{
+		    position:absolute;
+			text-align: center;
+			height:79px;//= img height + padding + border
+			line-height:79px;
+			top:0;
+			font-family: $fontCn;
+			width: 10px;
+			font-weight: bold;
+			color: nth($galleryThumbNavTextColor,1);
+			background-color: nth($galleryThumbNavBgColor,1);
+			cursor:pointer;
+
+			&:hover{
+				color: nth($galleryThumbNavTextColor,2);
+				background-color: nth($galleryThumbNavBgColor,2);
+			}
+		}
+		.thumb-prev-btn{
+			left:0;
+		}
+		.thumb-next-btn{
+			right:0;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+/* -------------------------------------------------
+ * breadcrumb
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_breadcrumb\.scss}line{font-family:\000039}}
+#breadcrumb {
+  line-height: 30px;
+  margin-bottom: 21px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_breadcrumb\.scss}line{font-family:\0000312}}
+  #breadcrumb .divider {
+    font-family: "SimSun";
+    margin: 0 8px; }

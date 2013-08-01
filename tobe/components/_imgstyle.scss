@@ -1,0 +1,35 @@
+@charset "utf-8";
+//-----------------------------------------------------	
+// img style scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$imgStyleBorder:         1px solid $gray !default;
+$imgStylePadding:        2px !default;
+$imgStyleRadius:         8px !default;
+
+
+// mixin & placeholder
+//---------------------------------
+@mixin img-border($border:$imgStyleBorder,$padding:$imgStylePadding){
+  padding: $padding;
+  border: $border;
+}
+
+@mixin img-rounded($radius:$imgStyleRadius){
+  @include border-radius($radius);
+}
+
+%img-border{
+  @include img-border;
+}
+
+%img-rounded{
+	@include img-rounded;
+}
+
+%img-circle{
+  @include border-radius(50%)
+}

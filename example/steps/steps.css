@@ -1,0 +1,81 @@
+/* -------------------------------------------------
+ * steps
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_steps\.scss}line{font-family:\0000320}}
+.steps-nav .steps-1st, .steps-2 .steps-1st,
+.steps-2 .steps-2nd, .steps-3 .steps-1st,
+.steps-3 .steps-2nd,
+.steps-3 .steps-3rd, .steps-nav-num .steps-1st {
+  border-top-color: #51b148;
+  color: #51b148;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_steps\.scss}line{font-family:\0000323}}
+.steps-nav .steps-1st .dot, .steps-2 .steps-1st .dot,
+.steps-2 .steps-2nd .dot, .steps-3 .steps-1st .dot,
+.steps-3 .steps-2nd .dot,
+.steps-3 .steps-3rd .dot, .steps-nav-num .steps-1st .dot {
+  border-color: #51b148;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_steps\.scss}line{font-family:\0000333}}
+.steps-nav {
+  padding-top: 3px;
+  margin-bottom: 21px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_steps\.scss}line{font-family:\0000337}}
+.steps-nav li {
+  width: 33.33333%;
+  text-align: center;
+  border-top: 3px double #cccccc;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_steps\.scss}line{font-family:\0000343}}
+.steps-nav li .dot {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -8px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  font-size: 0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_steps\.scss}line{font-family:\0000358}}
+.steps-nav li strong {
+  display: block;
+  margin-top: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/steps\/steps\.scss}line{font-family:\0000312}}
+.steps-nav-num {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 21px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/steps\/steps\.scss}line{font-family:\0000317}}
+.steps-nav-num li {
+  width: 33.33333%;
+  text-align: center;
+  border-top: 3px double #cccccc;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/steps\/steps\.scss}line{font-family:\0000323}}
+.steps-nav-num li .dot {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -13px;
+  width: 21px;
+  height: 21px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}

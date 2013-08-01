@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<?php include "../pub/meta.html";?>
+<title>gallery</title>
+<?php include "../pub/head-cssjs.html";?>
+<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+<div class="page layout-lm">
+<?php include "../pub/top-bar.html";?>
+  <div class="wrap-container">
+    <div id="container" class="clearfix">
+      <div id="aside_first" class="aside">
+        <div class="inner-aside">
+          <?php include "../pub/asidenav-js-block.html";?>
+        </div>
+      </div>
+      <div id="main">
+        <div class="inner-main">
+          <div id="gallery_page">
+            <h2>缩略图滚动类相册</h2>
+            <div class="gallery">
+              <div class="gallery-view">
+                <img src="http://placehold.it/486x366" alt="">
+                <div class="alpha-bar">
+                  <p class="title">我是描述标题</p>
+                  <span class="num-calc"><i class="num-cur">4</i>/<i class="num-total">20</i></span>
+                </div>
+              </div>
+              <div class="gallery-thumb">
+                <div class="gallery-thumb-view">
+                  <ul class="inline-float">
+                    <li><img src="http://placehold.it/100x75" alt=""></li>
+                    <li><img src="http://placehold.it/100x75" alt=""></li>
+                    <li><img src="http://placehold.it/100x75" alt=""></li>
+                    <li><img src="http://placehold.it/100x75" alt=""></li>
+                  </ul>
+                </div>
+                <a class="thumb-prev-btn" href="#">&lt;</a>
+                <a class="thumb-next-btn" href="#">&gt;</a>
+              </div>
+            </div>
+            <h2>lightbox类相册</h2>
+            <div class="gallery-lightbox">
+              <ul class="imgtitle-list">
+                <li>
+                  <a href="#">
+                    <img src="http://placehold.it/170x126" alt="">
+                    <strong class="ellipsis" title="我是标题超出隐藏">我是标题超出隐藏</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="http://placehold.it/170x126" alt="">
+                    <strong class="ellipsis" title="我是标题超出隐藏">我是标题超出隐藏</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="http://placehold.it/170x126" alt="">
+                    <strong class="ellipsis" title="我是标题超出隐藏">我是标题超出隐藏</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="http://placehold.it/170x126" alt="">
+                    <strong class="ellipsis" title="我是标题超出隐藏">我是标题超出隐藏</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="http://placehold.it/170x126" alt="">
+                    <strong class="ellipsis" title="我是标题超出隐藏">我是标题超出隐藏</strong>
+                  </a>
+                </li>                                                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!--main-->
+    </div>
+  </div><!--wrap-container-->
+<?php include "../pub/footer.html";?>
+</div>  
+</body>
+</html>

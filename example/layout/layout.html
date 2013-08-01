@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<?php include "../pub/meta.html";?>
+<title>布局模板</title>
+<?php include "../pub/head-cssjs.html";?>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+<body>
+<div class="page">
+<?php include "../pub/top-bar.html";?>
+  <div class="wrap-container">
+    <div id="container" class="clearfix">
+      <div id="main">
+        <div class="inner-main">
+          <div id="layout_page">
+            <h1 class="visually-hidden">布局模板</h1>
+            <h2>1、模板实例</h2>
+            <div class="col-four">
+              <div class="col">
+                <a href="../templates/templates1.html" target="_blank"><img src="images/templates1.jpg" alt="模板一"></a>
+              </div>
+              <div class="col">
+                <a href="../templates/templates2.html" target="_blank"><img src="images/templates2.jpg" alt="模板二"></a>
+              </div>
+              <div class="col">
+                <a href="../templates/templates3.html" target="_blank"><img src="images/templates3.jpg" alt="模板三"></a>
+              </div>
+              <div class="col">
+                <a href="../templates/templates4.html" target="_blank"><img src="images/templates4.jpg" alt="模板四"></a>
+              </div>
+            </div>
+            <p><a href="../../download/templates.zip" class="btn">模板实例下载</a></p>
+            <h2>2、空白模板创建</h2>
+            <h3>2.1、html结构</h3>
+            <p>下面的html代码结构均采用emmet（zencoding升级版）方式，如不明白，建议先看下<a href="http://docs.emmet.io/" target="_blank">emmet</a>，或者直接下载空模板文件查看</p>
+            <pre>//html5文档申明
+//-------------------------
+html:5
+
+//无边栏
+//-------------------------
+.page>(.wrap-header>#header>.inner-header)+(.wrap-container>#container.clearfix>#main>.inner-main)+(.wrap-footer>#footer>.inner-footer)
+
+//左边栏
+//在无边栏基础上，.page上再添加.layout-lm，然后再在container里面，main前面添加aside-first
+//-------------------------
+.page.layout-lm>(.wrap-header>#header>.inner-header)+(.wrap-container>#container.clearfix>((#aside_first.aside>.inner-aside)+(#main>.inner-main)))+(.wrap-footer>#footer>.inner-footer)
+
+//右边栏
+//在无边栏基础上，.page上再添加.layout-mr，然后再在container里面，main后面添加aside-second
+//-------------------------
+.page.layout-mr>(.wrap-header>#header>.inner-header)+(.wrap-container>#container.clearfix>((#main>.inner-main)+(#aside_second.aside>.inner-aside)))+(.wrap-footer>#footer>.inner-footer)
+
+//左右边栏
+//在无边栏基础上，.page上再添加.layout-lmr，然后再在container里面，main前面添加aside-first，
+//main后面添加aside-second
+//-------------------------
+.page.layout-lm>(.wrap-header>#header>.inner-header)+(.wrap-container>#container.clearfix>((#aside_first.aside>.inner-aside)+(#main>.inner-main)+(#aside_second.aside>.inner-aside)))+(.wrap-footer>#footer>.inner-footer)</pre>
+              
+              <h3>2.2、scss引用</h3>
+              <p>在scss文件中先导入核心文件base，再导入components中的组件layout就ok，默认为固定1000px，如果需要改成960网格系统，请设置$gridColumnWidth为60px就ok，通过设置$gridPercentSwitch来切换到流体布局。</p>
+              <pre>//固定布局
+//-------------------------                
+@import 'D:/tobe/base';
+@import 'D:/tobe/components/layout';
+
+//流体布局
+//-------------------------
+$gridPercentSwitch: true;
+@import 'D:/tobe/base';
+@import 'D:/tobe/components/layout';
+</pre>
+
+            <p><a href="../../download/empty-templates.zip" class="btn">空模板文件下载</a><a href="../../download/layout.zip" class="btn">布局实例下载</a></p>
+          </div>
+        </div>
+      </div><!--main-->
+    </div>
+  </div><!--wrap-container-->
+<?php include "../pub/footer.html";?>
+</div>
+</body>
+</html>

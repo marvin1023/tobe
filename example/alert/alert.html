@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<?php include "../pub/meta.html";?>
+<title>alert</title>
+<?php include "../pub/head-cssjs.html";?>
+<link rel="stylesheet" type="text/css" href="alert.css">
+</head>
+<body>
+<div class="page layout-lm">
+<?php include "../pub/top-bar.html";?>
+  <div class="wrap-container">
+    <div id="container" class="clearfix">
+      <div id="aside_first" class="aside">
+        <div class="inner-aside">
+          <?php include "../pub/asidenav-js-block.html";?>
+        </div>
+      </div>
+      <div id="main">
+        <div class="inner-main">
+          <div id="alert_page">
+            <div class="alert-box">
+              <p class="error">我是alert-box，错误信息</p>
+            </div>
+            <div class="alert-box">
+              <p class="success">我是alert-box，成功信息</p>
+            </div>
+            <div class="alert-box">
+              <p class="warning">我是alert-box，警告信息</p>
+            </div>
+            <div class="alert-box">
+              <p class="info">我是alert-box，说明信息</p>
+            </div>
+          </div>
+        </div>
+      </div><!--main-->
+    </div>
+  </div><!--wrap-container-->
+<?php include "../pub/footer.html";?>
+</div>
+</body>
+</html>

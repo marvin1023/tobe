@@ -1,0 +1,191 @@
+/* -------------------------------------------------
+ * style scss
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\00003262}}
+#featured {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\00003275}}
+.col-three, .col-four, .col-two {
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\0000341}}
+.col-three:before, .col-four:before, .col-two:before, .col-three:after, .col-four:after, .col-two:after {
+  content: "";
+  display: table;
+  font: 0/0 a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\0000346}}
+.col-three:after, .col-four:after, .col-two:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_simple\.scss}line{font-family:\0000317}}
+.btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 16px;
+  line-height: 40px;
+  color: white;
+  background-color: #0078e7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_simple\.scss}line{font-family:\0000332}}
+.btn:hover {
+  background-color: #006bce;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_col\.scss}line{font-family:\0000314}}
+.col-three, .col-four, .col-two {
+  margin-right: -20px;
+  margin-bottom: 21px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_col\.scss}line{font-family:\0000319}}
+.col-three .col, .col-four .col, .col-two .col {
+  float: left;
+  display: inline;
+  margin-right: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_col\.scss}line{font-family:\0000331}}
+.col-three .col {
+  width: 320px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_col\.scss}line{font-family:\0000339}}
+.col-four .col {
+  width: 235px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_imgstyle\.scss}line{font-family:\0000325}}
+.col-four img {
+  padding: 2px;
+  border: 1px solid #cccccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000316}}
+.wrap-featured {
+  background-color: whitesmoke;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000319}}
+#featured {
+  width: 1000px;
+  padding: 20px 0;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000325}}
+#featured h1 {
+  font-size: 48px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000328}}
+#featured p {
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000332}}
+.col-four {
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000333}}
+.col-four h2 {
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000339}}
+.start-zone {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000342}}
+.start-zone p {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 16px;
+  line-height: 2;
+  padding: 10px 30px 10px 10px;
+  background-color: #0078e7;
+  color: #fff;
+  margin-right: -10px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000354}}
+.start-zone .link-start {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-color: #f47837;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 2;
+  position: relative;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000364}}
+.start-zone .link-start:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-left: 25px solid #f47837;
+  border-top: 25px dashed transparent;
+  border-bottom: 25px dashed transparent;
+  position: absolute;
+  right: -25px;
+  top: -5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000371}}
+.start-zone .link-start:hover {
+  background-color: #f3681f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000373}}
+.start-zone .link-start:hover:after {
+  border-left-color: #f3681f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000384}}
+.col-four img {
+  width: 229px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000389}}
+.btn {
+  margin-right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\0000393}}
+pre {
+  border: 3px solid #e8e8e8;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\00003103}}
+.col-two .col {
+  width: 490px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\00003108}}
+.col-begin .col {
+  background-color: whitesmoke;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\00003111}}
+.col-begin h2 {
+  background-color: #0078e7;
+  color: #fff;
+  padding-left: 10px;
+  line-height: 36px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/sass\/style\.scss}line{font-family:\00003117}}
+.col-begin .col-content {
+  padding: 10px;
+}

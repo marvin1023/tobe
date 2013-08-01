@@ -1,10 +1,18 @@
 @charset "utf-8";
 /* -------------------------------------------------
- * form scss
+ * btn scss
  * -------------------------------------------------
 */
-@import 'D:/sassCore/function';
-@import '../../sass/components/btn';
+
+$btnsGrounpSwitch:true;// 开启按钮组
+@import 'D:/tobe/function';
+@import 'D:/tobe/components/btn';
 .btn,.formbtn{
 	margin: 20px;
+}
+.btns-group{
+	margin-bottom: 20px;
+	.btn{
+		margin: 0
+	}
 }

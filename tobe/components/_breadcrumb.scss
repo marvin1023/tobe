@@ -1,0 +1,16 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// breadcrumb scss
+//-----------------------------------------------------
+
+
+// 样式
+//---------------------------------
+#breadcrumb{
+	line-height:30px;
+	margin-bottom: $baseGap;
+	.divider{
+		font-family: $fontCn;
+		margin: 0 8px;
+	}
+} 

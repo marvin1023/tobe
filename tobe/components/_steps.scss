@@ -1,0 +1,137 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// steps scss
+//-----------------------------------------------------
+
+
+// 最多设计了四步，如超过四步，请根据第三步和第四步的的判断添加代码
+
+
+// 变量
+//---------------------------------
+$stepsNum:                  3 !default;//总共多少步，用来计算每步的宽度，注意ie6,7的百分比可能会有bug
+$stepsDotBorderColor:       $gray $green !default;//圆点边框颜色:默认值，激活值
+
+//开关
+$stepsStyleSwitch:          true !default;//默认标题类，如果为false则使用数字类
+
+// placeholder
+//---------------------------------
+%steps-on{
+	border-top-color:nth($stepsDotBorderColor,2);
+	color: nth($stepsDotBorderColor,2);
+	.dot{
+		border-color:nth($stepsDotBorderColor,2);	
+	}
+}
+
+
+// 样式
+//---------------------------------
+@if $stepsStyleSwitch{
+	// 标题类
+	.steps-nav{
+		padding-top: 3px;
+		margin-bottom:$baseGap;
+
+		li{
+			width: 100% / $stepsNum;
+			text-align: center;
+			border-top:3px double nth($stepsDotBorderColor,1);
+			position: relative;
+
+			.dot{
+				background-color: #fff;
+				border:1px solid nth($stepsDotBorderColor,1);
+				position: absolute;
+				left: 50%;
+				margin-left: -5px;
+				margin-top: -8px;
+				top:0;
+				width: 10px;
+				height: 10px;
+				overflow: hidden;
+				font-size: 0;
+				@include border-radius(6px);
+				
+			}
+			strong{
+				display: block;
+				margin-top: 15px;
+			}
+		}
+		.steps-1st{
+			@extend %steps-on;
+		}
+	}
+} @else {
+	// 数字类
+	.steps-nav-num{
+		padding-top: 9px;
+		padding-bottom: 9px;
+		margin-bottom:$baseGap;
+
+		li{
+			width: 100% / $stepsNum;
+			text-align: center;
+			border-top:3px double nth($stepsDotBorderColor,1);
+			position: relative;
+
+			.dot{
+				background-color: #fff;
+				border:1px solid nth($stepsDotBorderColor,1);
+				position: absolute;
+				top:0;
+				left: 50%;
+				margin-left: -10px;
+				margin-top: -13px;
+				width: $baseFontSize * $baseLineHeight;
+				height: $baseFontSize * $baseLineHeight;
+				@include border-radius(50%);
+				
+			}
+		}
+		.steps-1st{
+			@extend %steps-on;
+		}
+	}
+}
+
+
+//第二步
+.steps-2{
+	.steps-1st,
+	.steps-2nd{
+		@extend %steps-on;
+	}
+}
+
+//第三步
+@if $stepsNum == 3{
+	.steps-3{
+		.steps-1st,
+		.steps-2nd,
+		.steps-3rd{
+			@extend %steps-on;
+		}
+	}
+}
+
+//第四步
+@if $stepsNum == 4{
+	.steps-3{
+		.steps-1st,
+		.steps-2nd,
+		.steps-3rd{
+			@extend %steps-on;
+		}
+	}
+	.steps-4{
+		.steps-1st,
+		.steps-2nd,
+		.steps-3rd,
+		.steps-4th{
+			@extend %steps-on;
+		}
+	}
+}

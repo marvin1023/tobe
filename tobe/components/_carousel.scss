@@ -1,0 +1,81 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// carousel scss
+//-----------------------------------------------------
+
+
+//变量
+//---------------------------------
+$carouselView:          920px !default;//视窗大小
+$carouselLiGutter:      20px !default;//li间距
+$carouselItemNums:      10 !default;//总共多少图片
+$carouselImg:           168px 150px !default;//图片大小，第一个为宽度，第二个为高度
+$carouselNavTextColor:  $primary darken($primary,5%) !default;//前、后导航按钮文本颜色，第一个为默认的，第二个鼠标滑过的
+$carouselNavSize:       40px !default;//前、后导航按钮宽度
+
+
+//样式
+//---------------------------------
+.carousel{
+    position:relative;
+    @extend %zoom;
+
+    .carousel-view{
+	    width: $carouselView;
+	    margin:0 $carouselNavSize;
+	    overflow:hidden;
+
+	    ul{
+	    	width:(nth($carouselImg,1) + $carouselLiGutter) * $carouselItemNums;
+	    }
+	}
+    li{
+    	@include float;
+		text-align:center;   
+	    margin-right:$carouselLiGutter;
+	    width:nth($carouselImg,1);
+	    position: relative;
+
+	    strong{
+		    font-weight: normal;
+		    position: absolute;
+		    left: 0;
+		    top: nth($carouselImg,2) - 30px;
+		    width:nth($carouselImg,1);
+			height:30px;
+			line-height:30px;
+		    @extend %ellipsis;
+		    @extend %bgcolor-alpha;
+
+		}
+		img{
+		    width:nth($carouselImg,1);
+			height:nth($carouselImg,2);
+		}
+    }
+
+    //prev-next
+	.prev-btn,
+	.next-btn{
+	    position:absolute;
+		text-align: center;
+		height:nth($carouselImg,2);
+		line-height:nth($carouselImg,2);
+		top:0;
+		font-family: $fontCn;
+		font-size: $carouselNavSize;
+		font-weight: bold;
+		color: nth($carouselNavTextColor,1);
+		cursor:pointer;
+
+		&:hover{
+			color: nth($carouselNavTextColor,2);
+		}
+	}
+	.prev-btn{
+		left:10px;
+	}
+	.next-btn{
+		right:10px;
+	}
+}

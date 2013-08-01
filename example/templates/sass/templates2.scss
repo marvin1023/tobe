@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+//重置变量
+$navAWidth:          100px;
+$colThreeSwitch:     false;
+
+//import scss
+@import "D:/tobe/base";
+@import "D:/tobe/components/layout";
+@import "D:/tobe/components/nav";
+@import "D:/tobe/components/breadcrumb";
+@import "D:/tobe/components/imgtitle";
+@import "D:/tobe/components/pagerNav";
+@import "D:/tobe/components/col";
+
+//base
+//-----------------------------------------------------	
+.wrap-header,
+.wrap-footer{
+	background-color: #333;
+	color:#eee;
+}
+
+//header
+//-----------------------------------------------------	
+#header{
+	position: relative;
+}
+#logo{
+	@include inline-block;
+	margin:10px 0 15px;
+}
+
+//nav
+//-----------------------------------------------------	
+.wrap-nav{
+	background-color: nth($navBgColor,1);
+	position: relative;
+}
+#nav{
+	width:getWidth(12);
+	@extend %center-block;
+	position: relative;
+}
+//form-search
+.form-search-block{
+	position: absolute;
+	right: 0;
+	top:0;
+	.search-text{
+		@extend %simple-text;
+		width: 140px;
+	}
+	.search-submit{
+		@extend %simple-formbtn;
+		background-color: $primary;
+		color: #fff;
+		@include border-radius(3px);
+
+		&:hover{
+			background-color: darken($primary,5%);
+			color: #fff;
+		}
+	}
+}
+
+//footer
+//-----------------------------------------------------
+#footer{
+	padding: 20px 0;
+	text-align: center;
+	.footer-columns{
+		padding-bottom: 20px;
+		border-bottom:1px solid #000;
+		text-align: left;
+
+		.col-content{
+			color: #ccc;
+		}
+	}
+	.col-four{
+		margin-bottom: 0;
+	}
+	.copyright{
+		padding-top: 20px;
+		border-top:1px solid #666;
+	}
+}

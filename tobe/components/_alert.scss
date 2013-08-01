@@ -1,0 +1,16 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// alert scss
+//-----------------------------------------------------
+
+
+// 样式
+//---------------------------------
+.alert-box{
+	position: absolute;
+	z-index:$zindexAlert;
+	
+	.error, .warning, .success, .info{
+		@extend %inline-block;
+	}
+}

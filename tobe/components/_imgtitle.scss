@@ -1,0 +1,69 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// imgtitle scss
+//-----------------------------------------------------
+
+
+// 图片,标题列表变量
+//---------------------------------
+$imgtitleGutter:            20px !default;
+$imgtitleImgSize:           171px 150px !default;//图片的宽高
+$imgtitleItemWidth:         171px !default;//没有边框的情况下，宽度等于图片的宽度
+
+
+// 变量mixin
+//---------------------------------
+@mixin imgtitle-variables($itemWidth:$imgtitleItemWidth, $img:$imgtitleImgSize, $gutter:$imgtitleGutter){
+	
+	margin-right:-$gutter;
+
+	@if $lte7{
+		*padding-bottom: $gutter;
+	}
+	li,strong{
+		width: $itemWidth;
+	}
+	li{
+		margin:0 $gutter $gutter 0;
+	}
+	img{
+		width: nth($img,1);
+		height: nth($img,2);
+	}
+}
+
+// 默认样式
+//---------------------------------
+.imgtitle-list{
+	@extend %clearfix;
+	@include imgtitle-variables;
+	li{
+		@include float;
+	}
+	strong{
+		font-weight:normal;
+		text-align:center;
+		display:block;
+		line-height:30px;
+		@extend %ellipsis;
+	}
+}
+
+
+// 标题半透明背景，在上面的class基础上
+// 加上imgtitle-list-alpha class
+//---------------------------------
+.imgtitle-list-alpha{
+	li{
+		position:relative;
+	}
+	strong{
+		top:nth($imgtitleImgSize,2) - 30px;
+		width:nth($imgtitleImgSize,1) - 10px;
+		position:absolute;
+		left:0;
+		color:#fff;
+		padding:0 5px;
+		@extend %bgcolor-alpha;
+	}
+} 

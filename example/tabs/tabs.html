@@ -1,90 +1,46 @@
 <!DOCTYPE HTML>
 <html lang="zh-cn">
 <head>
-<meta charset="UTF-8">
-<meta name="keywords" content="">
-<meta name="description" content="">	
+<?php include "../pub/meta.html";?>
 <title>tabs</title>
-<link rel="stylesheet" type="text/css" href="../../css/global.css">
+<?php include "../pub/head-cssjs.html";?>
 <link rel="stylesheet" type="text/css" href="tabs.css">
 </head>
 <body>
 <div class="page layout-lm">
-    <div class="wrap-top-bar">
-      <div id="top_bar">
-          <ul id="top_nav">
-              <li class="active"><a href="">首页</a></li>
-               <li><a href="">sassCore</a></li>
-               <li><a href="">布局模板</a></li>
-               <li><a href="">开始使用</a></li>
-               <li><a href="">组件</a></li>
-               <li><a href="">关于/联系</a></li>
-          </ul>
-      </div><!--top_bar-->
-    </div>  
+<?php include "../pub/top-bar.html";?>
   <div class="wrap-container">
     <div id="container" class="clearfix">
       <div id="aside_first" class="aside">
-        <div class="add-inner clearfix">
-          <div id="component_nav" class="aside-bock">
-            <div class="block-content">
-              <ul class="aside-nav">
-                <li><a href="../typo/Typography.html">文字排版</a></li>
-                <li><a href="../table/table.html">表格</a></li>
-                <li><a href="../form/form.html">表单</a></li>
-                <li><a href="../btn/btn.html">按钮</a></li>
-                <li><a href="../nav/nav.html">导航</a></li>
-                <li><a href="../pager-nav/pager-nav.html">分页导航</a></li>
-                <li><a href="../hdtitle/hdtitle.html">右侧信息标题</a></li>
-                <li><a href="../titlelist/titlelist.html">标题列表</a></li>
-                <li><a href="../rank/rank.html">排行榜</a></li>
-                <li><a href="../imgtitle/imgtitle.html">图片标题列表</a></li>
-                <li><a href="../imgtext-vertical/imgtext-vertical.html">图文垂直列表</a></li>
-                <li><a href="../imgtext-horizontal/imgtext-horizontal.html">图文水平列表</a></li>
-                <li><a href="../tabs/tabs.html">选项卡</a></li>
-                <li><a href="../imgslide/imgslide.html">图片滚动</a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="inner-aside">
+          <?php include "../pub/asidenav-js-block.html";?>
         </div>
       </div>
       <div id="main">
-        <div class="add-inner clearfix">
+        <div class="inner-main">
           <div id="tabs_page">
-            <h2>tabs-color</h2>
-            <h3 class="tabs-nav tabs-color">
+            <h2>一级tabs</h2>
+            <h2 class="tabs-primary">
               <a class="active" href="###">选项一</a>
               <a href="###">选项二</a>
+              <a href="###">选项三</a>
+              <a href="###">选项四</a>
+            </h2>
+            <h2>二级tabs</h2>
+            <h3>tabs-color</h3>
+            <h3 class="tabs-nav tabs-color">
+              <a href="###">选项一</a>
+              <a class="active" href="###">选项二</a>
               <a href="###">选项三</a>
             </h3>
             <div class="tabs-content-wrap">
               <div class="tabs-content">我是选项一内容</div>
             </div>
-            <h2>tabs-border</h2>
+            <h3>tabs-border</h3>
             <h3 class="tabs-nav tabs-border">
               <a class="active" href="###">选项一</a>
               <a href="###">选项二</a>
               <a href="###">选项三</a>
-            </h3>
-            <div class="tabs-content-wrap">
-              <div class="tabs-content">我是选项一内容</div>
-            </div>
-            <h2>tabs-full</h2>
-            <h3 class="tabs-nav tabs-full">
-              <a class="active" href="###">选项一</a>
-              <a href="###">选项二</a>
-              <a href="###">选项三</a>
-              <a href="###">选项四</a>
-            </h3>
-            <div class="tabs-content-wrap">
-              <div class="tabs-content">我是选项一内容</div>
-            </div>
-            <h2>tabs-gutter</h2>
-            <h3 class="tabs-nav tabs-gutter">
-              <a class="active" href="###">选项一</a>
-              <a href="###">选项二</a>
-              <a href="###">选项三</a>
-              <a href="###">选项四</a>
             </h3>
             <div class="tabs-content-wrap">
               <div class="tabs-content">我是选项一内容</div>
@@ -94,13 +50,7 @@
       </div><!--main-->
     </div>
   </div><!--wrap-container-->
-  <div class="wrap-footer">
-    <div id="footer">
-      <div class="add-inner clearfix">
-        <p>@copyright 天涯社区</p>
-      </div>
-    </div>
-  </div><!--wrap-footer-->
+<?php include "../pub/footer.html";?>
 </div>  
 </body>
 </html>

@@ -1,0 +1,38 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// progress scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$progressBorder:                 1px solid $gray !default;//边框颜色
+$progressPercentBgColor:         $primary !default;//进度条百分比背景色
+$progressRadiusSwitch:           true !default;//默认不启用圆角
+
+
+// 样式
+//---------------------------------
+.progress{
+	@if length($progressBorder) > 1{
+		border: $progressBorder;
+		padding: 2px;
+	}
+	height: 18px;
+
+	.progress-percent{
+		display: block;
+		width: 50%;
+		height: 100%;
+		@include gradient-striped($progressPercentBgColor, 45deg);
+		background-size: 50px 50px;
+	}
+
+	//是否启用圆角
+	@if $progressRadiusSwitch{
+		&,
+		& .progress-percent{
+			@include border-radius(13px);
+		}
+	}
+}

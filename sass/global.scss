@@ -4,6 +4,31 @@
  * -------------------------------------------------
 */
 
-$_percentLayout: false;
-@import "base";
-@import "components/nav";
+@import "D:/tobe/base";
+@import "D:/tobe/components/layout";
+@import "D:/tobe/components/nav";
+
+#top_nav{
+	position: relative;
+	.others-link{
+		position: absolute;
+		right: 0;
+		top: 0;
+		background-color: $primary;
+		a{
+			@include float;
+			color: #fff;
+			&:hover{
+				background-color: darken($primary,5%);
+			}
+		}
+	}
+}
+
+.wrap-footer{
+	background-color: $grayLight;
+}
+#footer{
+	text-align: center;
+	padding: 20px 0;
+}

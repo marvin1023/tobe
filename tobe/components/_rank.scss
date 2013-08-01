@@ -1,0 +1,65 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// rank scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$rankTitleWidth:              160px !default;
+$rankRateNumRadius:           0 !default;//默认3px的圆角，为0则不启用
+$rankItemLineSwitch:          true !default;//li间隔线开关
+
+
+// 样式
+//---------------------------------
+.rank-list{
+  font-size: 12px;
+  li{
+    @if $rankItemLineSwitch{
+      @extend %horizontal-line;
+    }
+    list-style: none outside none;
+    text-align:right;
+    margin-left:0;
+
+    &.last,
+    &:last-child{
+      border-bottom:none;
+    } 
+  }
+  i{
+    @include float;
+    
+    @if not(unitless($rankRateNumRadius)){
+      @include border-radius($rankRateNumRadius);
+    }
+    font-style: normal;
+    text-align:center;
+    background-color:$gray;
+    overflow:hidden;
+    margin-right:6px;
+    width:16px;
+    height:18px;
+  }
+  .rank-1st i,
+  .rank-2nd i,
+  .rank-3rd i{
+    color: #fff;
+  }
+  .rank-1st i {
+      background-color: #FA4D11;
+  }
+  .rank-2nd i {
+      background-color: #FA8411;
+  }
+  .rank-3rd i {
+      background-color: #FAC011;
+  }
+  .title-link{
+    @include float;
+    @extend %ellipsis;
+    text-align:left;
+    width:$rankTitleWidth;
+  }
+} 

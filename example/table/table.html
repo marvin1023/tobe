@@ -1,57 +1,25 @@
 <!DOCTYPE HTML>
 <html lang="zh-cn">
 <head>
-<meta charset="UTF-8">
-<meta name="keywords" content="">
-<meta name="description" content="">  
+<?php include "../pub/meta.html";?>
 <title>table</title>
-<link rel="stylesheet" type="text/css" href="../../css/global.css">
+<?php include "../pub/head-cssjs.html";?>
 <link rel="stylesheet" type="text/css" href="table.css">
 </head>
 <body>
 <div class="page layout-lm">
-    <div class="wrap-top-bar">
-      <div id="top_bar">
-          <ul id="top_nav">
-              <li class="active"><a href="">首页</a></li>
-               <li><a href="">sassCore</a></li>
-               <li><a href="">布局模板</a></li>
-               <li><a href="">开始使用</a></li>
-               <li><a href="">组件</a></li>
-               <li><a href="">关于/联系</a></li>
-          </ul>
-      </div><!--top_bar-->
-    </div>  
+<?php include "../pub/top-bar.html";?>
     <div class="wrap-container">
         <div id="container" class="clearfix">
             <div id="aside_first" class="aside">
-              <div class="add-inner clearfix">
-                <div id="component_nav" class="aside-bock">
-                  <div class="block-content">
-                    <ul class="aside-nav">
-                      <li><a href="../typo/Typography.html">文字排版</a></li>
-                      <li><a href="../table/table.html">表格</a></li>
-                      <li><a href="../form/form.html">表单</a></li>
-                      <li><a href="../btn/btn.html">按钮</a></li>
-                      <li><a href="../nav/nav.html">导航</a></li>
-                      <li><a href="../pager-nav/pager-nav.html">分页导航</a></li>
-                      <li><a href="../hdtitle/hdtitle.html">右侧信息标题</a></li>
-                      <li><a href="../titlelist/titlelist.html">标题列表</a></li>
-                      <li><a href="../rank/rank.html">排行榜</a></li>
-                      <li><a href="../imgtitle/imgtitle.html">图片标题列表</a></li>
-                      <li><a href="../imgtext-vertical/imgtext-vertical.html">图文垂直列表</a></li>
-                      <li><a href="../imgtext-horizontal/imgtext-horizontal.html">图文水平列表</a></li>
-                      <li><a href="../tabs/tabs.html">选项卡</a></li>
-                      <li><a href="../imgslide/imgslide.html">图片滚动</a></li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="inner-aside">
+                <?php include "../pub/asidenav-basic-css-block.html";?>
               </div>
             </div>
             <div id="main">
-                <div class="add-inner clearfix">
+                <div class="inner-main">
                   <div id="table_page">
-                    <h2>默认</h2>
+                    <h2>默认：.table</h2>
                     <table class="table">
                       <thead>
                         <tr>
@@ -83,7 +51,7 @@
                       </tbody>
                     </table>
 
-                    <h2>单线</h2>
+                    <h2>单线：.table .table-line</h2>
                     <table class="table table-line">
                       <thead>
                         <tr>
@@ -115,7 +83,7 @@
                       </tbody>
                     </table>
 
-                    <h2>边框及圆角</h2>
+                    <h2>边框及圆角：.table .table-radius</h2>
                     <table class="table table-radius">
                       <thead>
                         <tr>
@@ -151,7 +119,7 @@
                       </tbody>
                     </table>
 
-                    <h2>斑马线效果</h2>
+                    <h2>斑马线效果：.table .table-striped</h2>
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -183,7 +151,7 @@
                       </tbody>
                     </table>
 
-                    <h2>鼠标滑过</h2>
+                    <h2>鼠标滑过：.table .table-hover</h2>
                     <table class="table table-hover">
                       <thead>
                         <tr>
@@ -214,7 +182,7 @@
                       </tbody>
                     </table>
 
-                    <h2>小空间</h2>
+                    <h2>小空间：.table .table-condensed</h2>
                     <table class="table table-condensed">
                       <thead>
                         <tr>
@@ -245,7 +213,7 @@
                       </tbody>
                     </table>
 
-                    <h2>不同状态</h2>
+                    <h2>不同状态：.table</h2>
                     <table class="table">
                       <thead>
                         <tr>
@@ -256,29 +224,47 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="success">
+                        <tr class="tr-success">
                           <td>1</td>
                           <td>TB - Monthly</td>
                           <td>01/04/2012</td>
                           <td>Approved</td>
                         </tr>
-                        <tr class="error">
+                        <tr class="tr-error">
                           <td>2</td>
                           <td>TB - Monthly</td>
                           <td>02/04/2012</td>
                           <td>Declined</td>
                         </tr>
-                        <tr class="warning">
+                        <tr class="tr-warning">
                           <td>3</td>
                           <td>TB - Monthly</td>
                           <td>03/04/2012</td>
                           <td>Pending</td>
                         </tr>
-                        <tr class="info">
+                        <tr class="tr-info">
                           <td>4</td>
                           <td>TB - Monthly</td>
                           <td>04/04/2012</td>
                           <td>Call in to confirm</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h2>第一列为th：.table .table-col-th</h2>
+                    <table class="table table-col-th">
+                      <tbody>
+                        <tr>
+                          <th>名称</th>
+                          <td>君子生非异也，善假于物也。</td>
+                        </tr>
+                        <tr>
+                          <th>介绍</th>
+                          <td>吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。登高而招，臂非加长也，而见者远；顺风而呼，声非加疾也，而闻者彰。假舆马者，非利足也，而致千里；假舟楫者，非能水也，而绝江河。</td>
+                        </tr>
+                        <tr>
+                          <th>优惠政策</th>
+                          <td>积土成山，风雨兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。</td>
                         </tr>
                       </tbody>
                     </table>
@@ -287,13 +273,7 @@
             </div><!--main-->
         </div>
     </div><!--wrap-container-->
-    <div class="wrap-footer">
-        <div id="footer">
-            <div class="add-inner clearfix">
-              <p>@copyright 天涯社区</p>
-            </div>
-        </div>
-    </div><!--wrap-footer-->
+<?php include "../pub/footer.html";?>
 </div>  
 </body>
 </html>

@@ -1,0 +1,89 @@
+/* -------------------------------------------------
+ * carousel
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\00003305}}
+.carousel li strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\00003337}}
+.carousel li strong {
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#80000000', endColorstr='#80000000');
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\00003357}}
+.carousel {
+  *zoom: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000319}}
+.carousel {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000323}}
+.carousel .carousel-view {
+  width: 920px;
+  margin: 0 40px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000328}}
+.carousel .carousel-view ul {
+  width: 1880px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000332}}
+.carousel li {
+  float: left;
+  display: inline;
+  text-align: center;
+  margin-right: 20px;
+  width: 168px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000339}}
+.carousel li strong {
+  font-weight: normal;
+  position: absolute;
+  left: 0;
+  top: 120px;
+  width: 168px;
+  height: 30px;
+  line-height: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000351}}
+.carousel li img {
+  width: 168px;
+  height: 150px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000359}}
+.carousel .prev-btn,
+.carousel .next-btn {
+  position: absolute;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  top: 0;
+  font-family: "SimSun";
+  font-size: 40px;
+  font-weight: bold;
+  color: #0078e7;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000371}}
+.carousel .prev-btn:hover,
+.carousel .next-btn:hover {
+  color: #006bce;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000375}}
+.carousel .prev-btn {
+  left: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_carousel\.scss}line{font-family:\0000378}}
+.carousel .next-btn {
+  right: 10px;
+}

@@ -1,0 +1,232 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// btn scss
+//-----------------------------------------------------
+
+
+// 默认按钮为纯色，如果启用渐变背景，则背景色渐变且加上边框及内阴影，开关见25行
+
+
+// 变量
+//----------------------------------
+$btnBaseClass:           btn !default;//按钮的基本class
+$btnFoemBaseClass:       formbtn !default;//form中input和button元素按钮的class
+$btnSizeClass:           small large !default;//三种大小，默认一种，small表示小的，large表示大的
+$btnNormalSize:          16px 30px $baseFontSize $baseRadius !default;//默认按钮的左右padding，高度，字体大小，圆角
+$btnSmallSize:           5px 21px 12px $smallRadius !default;//small按钮的左右padding，高度，字体大小，圆角
+$btnlargeSize:           40px 40px 18px 6px !default;//large按钮的左右padding，高度，字体大小，圆角
+$btnColorClass:          (primary $primary #fff) (blue $blue #fff) (orange $orange #fff) (red $red #fff) (green $green #fff) (gray-light $grayLight #333) (gray-dark $grayDark #fff) !default;//按钮各种颜色
+$btnsGroupBaseClass:     btns-group !default;//默认按钮的class
+$btnsGroupRadius:        $baseRadius !default;//按钮组圆角大小
+$btnsGroupColorClass:    (primary $primary #fff) (blue $blue #fff) !default;//按钮组的颜色
+
+// 开关按钮
+$btnsGrounpSwitch:       false !default;//是否开启按钮组
+$btnBgGradientSwitch:    true !default;//是否启用渐变背景
+
+
+
+// btn placeholder selectors and mixin
+//----------------------------------
+
+// btn common style
+// 按钮基本样式，联合申明
+%btn-common-style{
+  @include inline-block;
+  cursor: pointer;
+  text-align:center;
+}
+
+// btn-gradient
+// 半透明到全透明的白色渐变，通过设置不同的背景色来表示不同的渐变
+%btn-gradient {
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) inset, 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  @extend %gradient-linear-light;
+}
+
+// btn
+// 普通按钮，通过设置line-height来反应其高度
+@mixin btn($padding:nth($btnNormalSize,1), $lineHeight:nth($btnNormalSize,2), $fontSize:nth($btnNormalSize,3), $radius:nth($btnNormalSize,4)){
+  @extend %btn-common-style;
+  padding:0 $padding;
+  font-size:$fontSize;
+  line-height:$lineHeight;
+
+  @if not(unitless($radius)){
+    @include border-radius($radius);
+  }
+}
+
+// form btn (button/input)
+// form元素按钮（如button,input:submit），设置height来反应其高度
+@mixin formbtn($padding:nth($btnNormalSize,1), $height:nth($btnNormalSize,2), $fontSize:nth($btnNormalSize,3), $radius:nth($btnNormalSize,4)){
+  @extend %btn-common-style;
+  padding:0 $padding;
+  font-size:$fontSize;
+  height: $height;
+  
+  @if not(unitless($radius)){
+    @include border-radius($radius);
+  }
+
+  @if $lte7 {
+    *overflow:visible;
+  }
+}
+
+// btn-color
+// 包括按钮背景图，边框
+@mixin btn-color($bgColor:#e6e6e6, $textColor:#333){
+  color:$textColor;
+  background-color: $bgColor;
+  @if $btnBgGradientSwitch {
+    border:1px solid darken($bgColor, 5%);
+    border-color:lighten($bgColor, 2%) darken($bgColor, 5%) darken($bgColor, 5%) lighten($bgColor, 2%);
+  }@else{
+    border:0 none;
+  }
+
+  &:hover{
+    background-color: darken($bgColor,5%);
+    color:$textColor;
+  }
+}
+
+
+// 两种类别元素，不同大小的btn class
+//----------------------------------
+
+.#{$btnBaseClass}{
+  @include btn;
+  @include btn-color;
+}
+.#{$btnFoemBaseClass}{
+  @include formbtn;
+  @include btn-color;
+}
+
+// 大小
+@each $size in $btnSizeClass{
+  @if $size == 'small' {
+    .#{$btnBaseClass}-#{$size}{
+      @include btn(nth($btnSmallSize,1),nth($btnSmallSize,2),nth($btnSmallSize,3),nth($btnSmallSize,4));
+    }
+    .#{$btnFoemBaseClass}-#{$size}{
+      @include formbtn(nth($btnSmallSize,1),nth($btnSmallSize,2),nth($btnSmallSize,3),nth($btnSmallSize,4));
+    }
+  }
+  @if $size == 'large' {
+    .#{$btnBaseClass}-#{$size}{
+      @include btn(nth($btnlargeSize,1),nth($btnlargeSize,2),nth($btnlargeSize,3),nth($btnlargeSize,4));
+    }
+    .#{$btnFoemBaseClass}-#{$size}{
+      @include formbtn(nth($btnlargeSize,1),nth($btnlargeSize,2),nth($btnlargeSize,3),nth($btnlargeSize,4));
+    }
+  }
+}
+
+
+// 如果启用渐变背景，引入%btn-gradient；
+@if $btnBgGradientSwitch {
+  .#{$btnBaseClass}, .#{$btnFoemBaseClass}{
+    @extend %btn-gradient;
+  }
+  @each $size in $btnSizeClass{
+    .#{$btnBaseClass}-#{$size}{
+      @extend %btn-gradient;
+    }
+    .#{$btnFoemBaseClass}-#{$size}{
+      @extend %btn-gradient;
+    }
+  }
+}
+
+
+// 不同颜色的btn class
+//----------------------------------
+@each $colorClass in $btnColorClass{
+  
+  $class:      nth($colorClass,1);
+  $bgColor:    nth($colorClass,2);
+  $textColor:  nth($colorClass,3);
+
+  .#{$btnBaseClass}-#{$class}{
+    @include btn-color($bgColor,$textColor);
+  }
+}
+
+
+// 按钮组
+//----------------------------------
+@if $btnsGrounpSwitch{
+  // 按钮组基本样式
+  .#{$btnsGroupBaseClass}{
+    @include inline-block;
+
+    @if not(unitless($btnsGroupRadius)){
+      @include border-radius($btnsGroupRadius);
+    }
+    border:1px solid $gray;
+    border-right:none;
+
+    .#{$btnBaseClass}{
+      border:none;
+      border-radius: 0;
+      border-right:1px solid $gray;
+      border-left:1px solid $grayLight;
+
+      &:first-child{
+        border-left:none;
+        @if not(unitless($btnsGroupRadius)){
+          @include border-radius($btnsGroupRadius 0 0 $btnsGroupRadius);
+        }
+      }
+      @if $lte7{
+        &.first{
+          border-left:none;
+          @if not(unitless($btnsGroupRadius)){
+            @include border-radius($btnsGroupRadius 0 0 $btnsGroupRadius);
+          }
+        }
+      }
+      &:last-child{
+        @if not(unitless($btnsGroupRadius)){
+          @include border-radius(0 $btnsGroupRadius $btnsGroupRadius 0);
+        }
+      }
+    }
+  }
+
+  // large版的按钮组
+  //----------------------------------
+  @each $size in $btnSizeClass{
+    .#{$btnsGroupBaseClass}-#{$size}{
+      @if $size == 'large' {
+        .btn{
+          @include btn(nth($btnlargeSize,1),nth($btnlargeSize,2),nth($btnlargeSize,3),0);
+        }
+      }
+
+    }
+  }
+
+  // 不同颜色的按钮组
+  //----------------------------------
+  @each $grounpColorClass in $btnsGroupColorClass{
+    
+    $class:      nth($grounpColorClass,1);
+    $bgColor:    nth($grounpColorClass,2);
+    $textColor:  nth($grounpColorClass,3);
+
+    .#{$btnsGroupBaseClass}-#{$class}{
+      border-color:darken($bgColor, 5%);
+
+      .#{$btnBaseClass}{
+        @include btn-color($bgColor,$textColor);
+        border:none;
+        border-right:1px solid darken($bgColor, 5%);
+        border-left:1px solid lighten($bgColor,10%);
+      }
+    }
+  }
+}

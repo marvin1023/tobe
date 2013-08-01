@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * imgstyle
+ * -------------------------------------------------
+*/
+@import 'D:/tobe/function';
+@import 'D:/tobe/components/imgstyle';
+
+.img-border{
+	@extend %img-border;
+}
+
+.img-rounded{
+	@extend %img-rounded;
+}
+
+.img-circle{
+	@extend %img-circle;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<?php include "../pub/meta.html";?>
+<title>tags filter</title>
+<?php include "../pub/head-cssjs.html";?>
+<link rel="stylesheet" type="text/css" href="tags-filter.css">
+</head>
+<body>
+<div class="page layout-lm">
+<?php include "../pub/top-bar.html";?>
+    <div class="wrap-container">
+        <div id="container" class="clearfix">
+            <div id="aside_first" class="aside">
+              <div class="inner-aside">
+                <?php include "../pub/asidenav-common-design-block.html";?>
+              </div>
+            </div>
+            <div id="main">
+                <div class="inner-main">
+                  <div id="filter_tags_page">
+                    <div class="tags-filter-list">
+                      <div class="tags-filter-item">
+                        <strong class="tags-label">区域：</strong>
+                        <div class="tags-content">
+                          <span class="active">不限</span><span>海口（17）</span>
+                        </div>
+                      </div>
+                      <div class="tags-filter-item">
+                        <strong class="tags-label">月租：</strong>
+                        <div class="tags-content">
+                          <span>不限</span><span class="active">80-100万</span><span>100-120万</span><span>120-150万</span><span>150-200万</span><span>200-300万</span>
+                        </div>
+                      </div>
+                      <div class="tags-filter-item">
+                        <strong class="tags-label">户型：</strong>
+                        <div class="tags-content">
+                          <span>不限</span><span class="active">二居</span><span>三居</span><span>四居</span><span>五居</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div><!--main-->
+        </div>
+    </div><!--wrap-container-->
+<?php include "../pub/footer.html";?>
+</div>  
+</body>
+</html>

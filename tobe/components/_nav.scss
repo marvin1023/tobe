@@ -1,0 +1,103 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// nav scss
+//-----------------------------------------------------
+
+// 开关
+//---------------------------------
+$topNavSwitch:          true !default;//顶部导航
+$asideNavSwitch:        true !default;//边栏导航
+$navSwitch:             true !default;//主导航
+
+
+// top nav
+//---------------------------------
+$topNavHeight:           36px !default;
+$topNavAPadding:         15px !default;//a的左右padding
+$topNavTextColor:        $gray lighten($gray,20%) !default;//文本色：默认，激活/滑过
+$topNavBgColor:          #333 !default;//背景色
+
+@if $topNavSwitch{
+  .wrap-top-bar{
+    background-color:$topNavBgColor;
+    z-index: $zindexFixedTopbar;
+  }
+  #top_nav{
+    @extend %center-block;
+    line-height: $topNavHeight;
+    width: getWidth(12);
+    
+    li{
+      text-transform: capitalize;
+    }
+    a{
+      display: block;
+      padding: 0 $topNavAPadding;
+      color: nth($topNavTextColor,1);
+    }
+    li a:hover,
+    .active a{
+      color:nth($topNavTextColor,2);
+    }
+  }
+}
+
+// aside nav
+//---------------------------------
+$asideNavAHeight:        30px !default;//a的高度
+$asideNavTextColor:      #333 #fff !default;//文本色：默认，激活/滑过
+$asideNavBgColor:        darken($grayLight,4%) $primary !default;//背景色：默认，激活/滑过
+
+@if $asideNavSwitch{
+  .aside-nav{
+    background-color: nth($asideNavBgColor,1);
+    li{
+      border-bottom:1px solid lighten(nth($asideNavBgColor,1),5%);
+      &:last-child{
+        border-bottom:none;
+      }
+      a{
+        display: block;
+        line-height: $asideNavAHeight;
+        color:nth($asideNavTextColor,1);
+        padding: 0 10px;
+        @extend %zoom;
+      }
+    }
+    li a:hover,
+    .active a{
+      background-color: nth($asideNavBgColor,2);
+      color: nth($asideNavTextColor,2);
+    }
+  }
+}
+
+// main nav
+//---------------------------------
+$navHeight:         40px !default;
+$navAWidth:         120px !default;
+$navTextColor:      #333 #fff !default;//文本色：默认，激活/滑过
+$navBgColor:        darken($grayLight,4%) $primary !default;//背景色：默认，激活/滑过
+
+@if $navSwitch{
+  #nav{
+    background-color: nth($navBgColor,1);
+    line-height: $navHeight;
+
+    li{
+      border-right:1px solid lighten(nth($navBgColor,1),5%);
+      
+      a{
+        color: nth($navTextColor,1);
+        width: $navAWidth;
+        text-align: center; 
+        display: block;
+      }
+    }
+    li a:hover,
+    .active a{
+      background-color: nth($navBgColor,2);
+      color:nth($navTextColor,2);
+    }
+  }
+}

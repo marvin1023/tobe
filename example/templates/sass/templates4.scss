@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+//重置变量
+$stepsStyleSwitch:   false;
+
+//import scss
+@import "D:/tobe/base";
+@import "D:/tobe/components/layout";
+@import "D:/tobe/components/nav";
+@import "D:/tobe/components/search";
+@import "D:/tobe/components/steps";
+@import "D:/tobe/components/form";
+
+//base
+//-----------------------------------------------------	
+.wrap-header,
+.wrap-footer{
+	background-color: #eee;
+}
+//top nav
+//-----------------------------------------------------
+#top_nav{
+	position: relative;
+}
+//form-search
+.form-search-block{
+	position: absolute;
+	right: 0;
+	top:4px;
+	@extend %search-form-rounded;
+}
+
+//header
+//-----------------------------------------------------	
+#header{
+	position: relative;
+}
+#logo{
+	@include inline-block;
+	margin:10px 0 15px;
+}
+
+//main
+//-----------------------------------------------------	
+#register_page{
+	h1,
+	.form-item{
+		margin-bottom: $baseGap;
+	}
+	.form{
+		width: 600px;
+		@extend %center-block;
+	}
+}
+
+//footer
+//-----------------------------------------------------
+#footer{
+	padding: 20px 0;
+	text-align: center;
+}

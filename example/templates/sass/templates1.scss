@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+//重置变量
+$imgslideView:       1000px 340px;
+
+//import scss
+@import "D:/tobe/base";
+@import "D:/tobe/components/layout";
+@import "D:/tobe/components/nav";
+@import "D:/tobe/components/imgslide";
+@import "D:/tobe/components/col";
+
+//header
+//-----------------------------------------------------	
+#header{
+	position: relative;
+}
+#logo{
+	@include inline-block;
+	margin:10px 0 15px;
+}
+//form-search
+.form-search-block{
+	position: absolute;
+	right: 0;
+	top:40px;
+	.search-text{
+		@extend %simple-text;
+		width: 200px;
+	}
+	.search-submit{
+		@extend %simple-formbtn;
+		@include border-radius(3px);
+	}
+}
+
+//container
+//-----------------------------------------------------
+//col three
+.col-three{
+	img{
+		margin-bottom: 10px;
+	}
+	.more{
+		font-family: $fontCn;
+		margin-left: 5px;
+	}
+}
+
+//footer
+//-----------------------------------------------------
+#footer{
+	border-top:1px solid $gray;
+	padding: 20px 0;
+	text-align: center;
+}

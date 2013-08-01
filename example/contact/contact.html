@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<?php include "../pub/meta.html";?>
+<title>关于/联系</title>
+<?php include "../pub/head-cssjs.html";?>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+<body>
+<div class="page">
+<?php include "../pub/top-bar.html";?>
+  <div class="wrap-container">
+    <div id="container" class="clearfix">
+      <div id="main">
+        <div class="inner-main">
+          <div id="contact_page" class="article">
+            <h1>关于/联系</h1>
+            <p>其实一直在做一些关于html&css方面的总结，从<a href="http://www.w3cplus.com/solution/index/index.html" target="_blank">css解决方案</a>到<a href="http://www.w3cplus.com/framework/index.php" target="_blank">html常用结构</a>，但由于受到css本身的限制，想要再扩大就很艰难了。经过一段时间的瓶颈期，然后了解sass，并逐渐练习，最后鉴于sass的优势弥补了css的一些缺陷，于是又萌起搞ui库的念头。在这感谢前领导“星河棋士”的支持，以使我得偿所愿，开始了tobe之旅。</p>
+            <p>Tobe的出发点是让代码可控，拒绝臃肿不堪，实现按需求加载。所以更多的是为熟悉sass的人写的，是对自己的一次总结，也是一次挑战吧。如果你对sass了解越多，你的代码就会控制得越好，当然解析出来的css就越是你想要的干净无杂乱冗余的代码，你的体验也就越爽。</p>
+            <p>Tobe的核心就是<a href="https://github.com/marvin1023/sassCore" target="_blank">sassCore</a>这个库，所以如果你要想开始tobe，有必要把sassCore这个库搞明白。说白了，sassCore其实就是封装了些mixin和%选择器，然后做了些基础的样式，当然这些样式你还可以选择不调用。而其他所有的组件都是独立开发的，所以实现了按需加载，想要什么就@import什么。打个简单的比喻，sassCore就如jquery，而基于sassCore的ui组件就如基于jquery的js插件。正因为有着如此特性，所以tobe也期待您为它的组件添枝加叶，以使它走得更远。</p>
+            <p>因为tobe的东西比较多，所以有必要说明下结构，以tobe的github上的资源为依据，首先包括6个文件夹和一个readme文件，文件夹分别为：sass文件夹放的是构建tobe这个网站的scss文件，不包括所有的基础文件及组件，你可以打开看下两个scss文件的源码都很简单；而css就是sass中解析过来的；download是放下载打包资源的；pending是放用户提交的打包组件；example是整个tobe的所有组件的demo及页面；tobe文件夹中放的就是所有的基础sass文件及组件，请把它直接放到d盘中去以方便开发。</p>
+            <p>在写tobe中，其实发生了很多意想不到的事，第一件就是最早公开的<a href="https://github.com/marvin1023/sassCore" target="_blank">sassCore</a>库，这个就是写tobe的时候，总结出来的一些基础文件，这些文件多亏了前同事及朋友的反馈，才有今天这些结构及创新式的调用方式，在此表示感谢那些和我一起吃螃蟹的人；第二件就是推广sassCore的时候，很多人不了解sass，于是问我要些教程，然后才发现国内根本就没有一个系统的介绍sass方面的教程，于是又写了<a href="http://www.w3cplus.com/sassguide/" target="_blank">sassGuide</a>这个系列教程，让新手快速入门。还有一些其他的就不在此一一表来，总之由于一些偶然的因素使得tobe的开发工作量越来越大，当然也越来越优秀，也使得身体也每况愈下。所以tobe上线后，我也会好好休息休息调养调养下身体，然后继续积蓄能量，准备下一站。</p>
+            <p>在此感谢所有关心支持的朋友，谢谢你们！</p>
+            <p>如果您对tobe有什么疑问或建议，可以通过<a href="https://github.com/marvin1023/tobe" target="_blank">github</a>或w3cplus群（1041263）或sass群（78142855）或微博进行联系。</p>
+          </div>
+        </div>
+      </div><!--main-->
+    </div>
+  </div><!--wrap-container-->
+<?php include "../pub/footer.html";?>
+</div>
+</body>
+</html>

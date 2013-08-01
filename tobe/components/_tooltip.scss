@@ -1,0 +1,73 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// tooltips scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$tooltipBorderColor:         $gray !default;//边框颜色，三角箭头也用这个颜色
+$tooltipArrowDirection:      'top' 'right' 'bottom' 'left' !default;//箭头方向，每个方向生成对应的css，如果只要部分方向的css，请覆写这个变量
+$tooltipArrowSize:           8px !default;//箭头大小
+$tooltipArrowPosition:       10px !default;//箭头位置
+
+
+// placeholder
+//---------------------------------
+%tip-arrow{
+	font-style:normal;
+	position:absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+
+// 样式
+//---------------------------------
+.tooltip-box{
+	border:1px solid $tooltipBorderColor;
+	background-color: #fff;
+	position: absolute;
+	z-index:$zindexTooltip;
+
+	.tip-content{
+		padding: 10px;
+	}
+}
+
+// 循环得到箭头方向样式
+@each $direction in $tooltipArrowDirection{
+	.tip-arrow-#{$direction}{
+		@extend %tip-arrow;
+
+		@if $direction == 'top' {
+			border-bottom:$tooltipArrowSize solid $tooltipBorderColor;
+			border-left:$tooltipArrowSize dashed transparent;
+			border-right:$tooltipArrowSize dashed transparent;
+			top: -$tooltipArrowSize;
+			left:$tooltipArrowPosition;
+		}
+		@if $direction == 'right' {
+			border-left:$tooltipArrowSize solid $tooltipBorderColor;
+			border-top:$tooltipArrowSize dashed transparent;
+			border-bottom:$tooltipArrowSize dashed transparent;
+			right:-$tooltipArrowSize;
+			top: $tooltipArrowPosition;
+		}
+		@if $direction == 'bottom' {
+			border-top:$tooltipArrowSize solid $tooltipBorderColor;
+			border-left:$tooltipArrowSize dashed transparent;
+			border-right:$tooltipArrowSize dashed transparent;
+			bottom: -$tooltipArrowSize;
+			left:$tooltipArrowPosition;
+		}
+		@if $direction == 'left' {
+			border-right:$tooltipArrowSize solid $tooltipBorderColor;
+			border-top:$tooltipArrowSize dashed transparent;
+			border-bottom:$tooltipArrowSize dashed transparent;
+			left:-$tooltipArrowSize;
+			top: $tooltipArrowPosition;
+		}
+	}
+}

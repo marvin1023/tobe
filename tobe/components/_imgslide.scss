@@ -1,0 +1,113 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// imgslide scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$imgslideView:               745px 300px !default; //滚动图片的视窗大小，其实就是滚动图片的大小
+$imgslideItemNums:           4 !default; //多少个滚动项，默认为4个
+$imgslidePrevNextTextColor:  #fff $blue !default; //前、后导航按钮文本颜色，第一个为默认的，第二个鼠标滑过的
+$imgslidePrevNextSize:       30px 60px !default; //前、后导航按钮大小
+
+// 开关
+$imgslideTitleSwitch:        true !default; //是否显示标题
+$imgslidePrevNextSwitch:     true !default; //是否输出前、后导航按钮
+$imgslideBulletSwitch:       true !default; //是否输出子弹导航
+
+
+// 样式
+//---------------------------------
+.imgslide{
+	position:relative;
+	width: nth($imgslideView,1); 
+	margin-bottom: $baseGap;
+	
+	.slide-view{
+		overflow:hidden;
+		&,
+		& img{
+			width:nth($imgslideView,1); 
+			height:nth($imgslideView,2); 
+		}
+		ul{
+			width:nth($imgslideView,1) * $imgslideItemNums;
+		}
+		li{
+			width:nth($imgslideView,1);
+		}
+	}
+
+	//是否输出子弹导航
+	@if $imgslideBulletSwitch{
+		.slide-bullet{
+			position:absolute;
+			right:10px;
+			bottom:10px;
+
+			a{
+				@include float;
+				font-family: Tahoma;
+				font-size: 24px;
+				line-height: 1;
+				cursor:pointer;
+				margin-right:5px;
+				color: $grayLight;
+
+				&.active,
+				&:hover{
+					color:$blue;
+				}
+			}
+		}
+	}
+
+	// 是否输出标题
+	@if $imgslideTitleSwitch{
+		.slide-control{
+			position:absolute;
+			left:0;
+			bottom:0;
+			height:36px;
+			width:nth($imgslideView,1);
+			line-height:36px;
+			@extend %bgcolor-alpha;
+		}
+		.slide-title{
+			@extend %ellipsis;
+			width:nth($imgslideView,1) - ($imgslideItemNums * 30); 
+			color:#fff;
+			padding-left:10px;
+			@include inline-block;
+		}
+	}
+
+	// 是否输出前后导航按钮
+	@if $imgslidePrevNextSwitch{
+		.prev-btn,.next-btn{
+			position:absolute;
+			top:((nth($imgslideView,2) - nth($imgslidePrevNextSize,2)) / 2) - 18px;
+			font-family: $fontCn;
+			font-size: nth($imgslidePrevNextSize,1);
+			font-weight: bold;
+			width: nth($imgslidePrevNextSize,1);
+			height: nth($imgslidePrevNextSize,2); 
+			line-height: nth($imgslidePrevNextSize,2);
+			cursor:pointer;
+			color: nth($imgslidePrevNextTextColor,1);
+			text-align: center;
+			@extend %bgcolor-alpha;
+
+			&:hover{
+				color: nth($imgslidePrevNextTextColor,2);
+			}
+		}
+		.prev-btn{
+			left:0;
+		}
+		.next-btn{
+			right:0;
+		}
+	}
+}

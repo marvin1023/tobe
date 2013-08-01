@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<?php include "../pub/meta.html";?>
+<title>basic simple</title>
+<?php include "../pub/head-cssjs.html";?>
+<link rel="stylesheet" type="text/css" href="basic-simple.css">
+</head>
+<body>
+<div class="page layout-lm">
+<?php include "../pub/top-bar.html";?>
+  <div class="wrap-container">
+    <div id="container" class="clearfix">
+      <div id="aside_first" class="aside">
+        <div class="inner-aside">
+          <?php include "../pub/asidenav-basic-css-block.html";?>
+        </div>
+      </div>
+      <div id="main">
+        <div class="inner-main">
+          <div id="basic_simple_page">
+            <p>其实很多时候，我们根本要不了那么复杂的表单，表格，按钮，我们的要求很简单，调用上面的那些组件就有点显得大材小用，很浪费很浪费，于是设计了下面这个简洁版的，超级实用。</p>
+            <h2>1、调用simple.scss中的%simple-btn及%simple-formbtn</h2>
+            <div>
+              <a class="btn" href="#">normal btn</a>
+              <button class="formbtn">form button btn</button>
+              <input type="submit" class="formbtn" value="form submit btn">
+            </div>
+            <h2>2、调用simple.scss里面的%simple-table</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>3、调用simple.scss里面中的form部分</h2>
+            <h3>3.1、text</h3>
+            <input type="text" name="username" class="form-text">
+            <h3>3.2、select</h3>
+            <select name="ID">
+              <option value="1">选项1</option>
+              <option value="2">选项2</option>
+            </select>
+            <h3>3.3、textarea</h3>
+            <textarea class="form-textarea"></textarea>
+            <h3>3.4、form btn</h3>
+            <button class="formbtn">button</button>
+            <input type="submit" value="form submit" class="formbtn">
+            <h3>3.5、checkbox/radio</h3>
+            <p>
+              <label class="label-radio"><input type="radio" name="sex" class="form-radio"><span>男</span></label>
+              <label class="label-radio"><input type="radio" name="sex" class="form-radio"><span>女</span></label>
+            </p>
+            <p>
+              <label class="label-checkbox"><input type="checkbox" name="interest" class="form-checkbox"><span>跑步</span></label>
+              <label class="label-checkbox"><input type="checkbox" name="interest" class="form-checkbox"><span>看书</span></label>
+              <label class="label-checkbox"><input type="checkbox" name="interest" class="form-checkbox"><span>发呆</span></label>
+            </p>
+          </div>
+        </div>
+      </div><!--main-->
+    </div>
+  </div><!--wrap-container-->
+<?php include "../pub/footer.html";?>
+</div>  
+</body>
+</html>

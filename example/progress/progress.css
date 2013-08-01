@@ -1,0 +1,32 @@
+/* -------------------------------------------------
+ * progress
+ * -------------------------------------------------
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_progress\.scss}line{font-family:\0000316}}
+.progress {
+  border: 1px solid #cccccc;
+  padding: 2px;
+  height: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_progress\.scss}line{font-family:\0000323}}
+.progress .progress-percent {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #0078e7;
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent);
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent);
+  background-size: 50px 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_progress\.scss}line{font-family:\0000334}}
+.progress, .progress .progress-percent {
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/progress\/progress\.scss}line{font-family:\000039}}
+.progress {
+  margin-bottom: 21px;
+}

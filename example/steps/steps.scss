@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * steps
+ * -------------------------------------------------
+*/
+@import 'D:/tobe/function';
+@import 'D:/tobe/components/steps';
+
+
+// 数字类
+//-------------------------
+.steps-nav-num{
+	padding-top: 9px;
+	padding-bottom: 9px;
+	margin-bottom:$baseGap;
+
+	li{
+		width: 100% / $stepsNum;
+		text-align: center;
+		border-top:3px double nth($stepsDotBorderColor,1);
+		position: relative;
+
+		.dot{
+			background-color: #fff;
+			border:1px solid nth($stepsDotBorderColor,1);
+			position: absolute;
+			top:0;
+			left: 50%;
+			margin-left: -10px;
+			margin-top: -13px;
+			width: $baseFontSize * $baseLineHeight;
+			height: $baseFontSize * $baseLineHeight;
+			@include border-radius(50%);
+			
+		}
+	}
+	.steps-1st{
+		@extend %steps-on;
+	}
+}

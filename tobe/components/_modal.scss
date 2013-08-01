@@ -1,0 +1,82 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// modal scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$modalBoxSize:            500px 220px !default;//弹出框的大小：宽度，高度
+
+
+// 样式
+//---------------------------------
+
+// overlay
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	z-index:$zindexModal;
+
+	@if $filter{
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+	}
+  	background-color: rgba(0, 0, 0, 0.5);
+}
+
+// modal-box
+.modal-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: nth($modalBoxSize,1);
+	height:nth($modalBoxSize,2);
+	margin-left: -(nth($modalBoxSize,1) / 2);
+	margin-top: -(nth($modalBoxSize,2) / 2);
+	border:2px solid $gray;
+	z-index:$zindexModal + 5;
+	background-color: #FFF;
+
+	.modal-header,
+	.modal-body,
+	.modal-footer{
+		padding: 0 15px;
+	}
+
+	.modal-header{
+		height:36px;
+		text-align: right;
+
+		h3{
+			@include float;
+			line-height: 36px;
+			font-weight: bold;
+		}
+		border-bottom:1px solid $gray;
+	}
+	.modal-body{
+		margin: 15px 0;
+	}
+	.modal-footer{
+		text-align: center;
+		padding: 10px 15px;
+		.btn{
+			margin-left: 20px;
+		}
+	}
+	.modal-del{
+		@include inline-block;
+		padding:0 5px;
+		cursor: pointer;
+		font-size: 16px;
+		margin-top: 6px;
+
+		&:hover{
+			background-color: $grayLight;
+			@include border-radius(6px);
+		}
+	}
+}

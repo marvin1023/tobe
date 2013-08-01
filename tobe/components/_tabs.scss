@@ -1,0 +1,180 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// tabs scss
+//-----------------------------------------------------
+
+
+// 统一变量
+$tabsBorderColor:             $gray !default;
+$tabsRadius:                  true !default;//是否开启圆角
+$tabsPrimarySwitch:           true !default;//是否开启一级导航样式
+$tabsColorSwitch:             true !default;//是否开启二级导航样式之tabs-color 
+$tabsBorderSwitch:            true !default;//是否开启二级导航样式之tabs-border     
+
+
+// tabs-primary
+//---------------------------------
+
+// 变量
+$tabsPrimaryClass:            tabs-primary !default;//一级tabs的class
+$tabsPrimaryFontSize:         16px !default;//字体大小
+$tabsPrimaryHeight:           36px !default;//总高度
+$tabsPrimaryPadding:          15px !default;//tabs标题的左右padding
+$tabsPrimaryTextColor:        #333 $primary !default;//文本色：默认，激活
+$tabsPrimaryBgColor:          #fff #fff !default;//背景色：默认，激活
+
+// 样式
+@if $tabsPrimarySwitch{
+  .#{$tabsPrimaryClass}{
+    @extend %clearfix;
+      border-bottom:1px solid $tabsBorderColor;
+      font-size: $tabsPrimaryFontSize;
+    line-height: $tabsPrimaryHeight - 2px;//去掉2px的border
+
+    a{
+      @include float;
+      padding: 0 $tabsPrimaryPadding;
+      border:1px solid $tabsBorderColor;
+      margin-bottom: -1px;
+      margin-left: 10px;
+      color:nth($tabsPrimaryTextColor,1);
+      background-color: nth($tabsPrimaryBgColor,1);
+      
+      @if $lte7{
+        *position: relative;
+      }
+
+      @if $tabsRadius{
+        @include border-radius($baseRadius $baseRadius 0 0);
+      }
+
+      &.active{
+        border-bottom-color: nth($tabsPrimaryBgColor,2);
+        background-color: nth($tabsPrimaryBgColor,2);
+        color:nth($tabsPrimaryTextColor,2);
+      }
+      &:hover{
+        color:nth($tabsPrimaryTextColor,2);
+      }
+    }
+  }
+}
+
+
+// tabs-secondary
+//---------------------------------
+
+// tabs-color
+//------------------
+// 变量
+$tabsColorClass:               tabs-color !default;
+$tabsColorFontSize:            14px !default;//字体大小
+$tabsColorHeight:              36px !default;
+$tabsColorPadding:             20px !default;
+$tabsColorTextColor:           #333 #fff !default;
+$tabsColorBgColor:             $grayLight $primary !default;
+
+// 样式
+@if $tabsColorSwitch{
+  .#{$tabsColorClass}{
+    @extend %clearfix;
+    border-top:2px solid nth($tabsColorBgColor,2);
+    border-right:1px solid $tabsBorderColor;
+    border-left:1px solid $tabsBorderColor;
+    background-color:nth($tabsColorBgColor,1);
+    font-size:$tabsColorFontSize;
+    line-height: $tabsColorHeight;
+
+    a{
+      @include float;
+      margin-right: 1px;
+      padding: 0 $tabsColorPadding;
+      
+      color:nth($tabsColorTextColor,1);
+      text-align: center;
+
+      &.active,
+      &:hover{
+        background-color: nth($tabsColorBgColor,2);
+        color:nth($tabsColorTextColor,2);
+      }
+    }
+    @if $tabsRadius{
+      &{
+        @include border-radius($baseRadius $baseRadius 0 0);
+      }
+      & a:first-child{
+        @include border-radius($baseRadius 0 0 0);
+      }
+      
+    }
+  }
+}
+
+// tabs-border
+//------------------
+// 变量
+$tabsBorderClass:              tabs-border !default;
+$tabsBorderFontSize:           14px !default;
+$tabsBorderHeight:             36px !default;
+$tabsBorderPadding:            20px !default;
+$tabsBorderTextColor:          #333 $primary !default;
+$tabsBorderBgColor:            $grayLight #fff !default;
+
+// 样式
+@if $tabsBorderSwitch{
+  .#{$tabsBorderClass}{
+      @extend %clearfix;
+      border:1px solid $tabsBorderColor;
+      background-color: nth($tabsBorderBgColor,1);
+      font-size: $tabsBorderFontSize;
+      line-height: $tabsBorderHeight - 2px;
+    
+    a{
+      @include float;
+      border:1px solid $tabsBorderColor;
+      border-left:none;
+      margin:-1px 0;
+      padding: 0 $tabsBorderPadding;
+      color:nth($tabsBorderTextColor,1);
+      text-align: center;
+
+      @if $lte7{
+        *position: relative;
+      }
+
+      &.active{
+        background-color: nth($tabsBorderBgColor,2);
+        border-bottom-color: nth($tabsBorderBgColor,2);
+        border-top-color: nth($tabsBorderTextColor,2);
+        
+        color: nth($tabsBorderTextColor,2);  
+      }
+      &:hover{
+        color: nth($tabsBorderTextColor,2);
+      }
+    }
+    
+    @if $tabsRadius{
+      &{
+        @include border-radius($baseRadius $baseRadius 0 0);
+      }
+      & a:first-child{
+        @include border-radius($baseRadius 0 0 0);
+      }
+      
+    }
+  }
+}
+
+// tabs-content-wrap
+//---------------------------------
+.tabs-content-wrap{
+  border:1px solid $tabsBorderColor;
+  border-top:none;
+  padding: 10px;
+  
+  @if $tabsRadius{
+    @include border-radius(0 0 $baseRadius $baseRadius);
+  }
+}

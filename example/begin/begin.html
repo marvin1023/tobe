@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<?php include "../pub/meta.html";?>
+<title>使用/开发</title>
+<?php include "../pub/head-cssjs.html";?>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+<body>
+<div class="page">
+<?php include "../pub/top-bar.html";?>
+  <div class="wrap-container">
+    <div id="container" class="clearfix">
+      <div id="main">
+        <div class="inner-main">
+          <div id="begin_page" class="article">
+            <h1 class="visually-hidden">如何使用tobe及如何为tobe开发组件</h1>
+            <p>如无特殊说明，tobe中所说的所有sass文件都是指以<code>.scss</code>为后缀名的文件，而不是以<code>.sass</code>为后缀名的文件，这两者的区别还是很大的。最大的区别就是前者如css一样需要大括号，而后者则不需要。</p>
+            <div class="col-two col-begin">
+              <div class="col">
+                <h2>如何使用tobe？</h2>
+                <div class="col-content">
+                  <p>1、首先下载<a href="../../download/tobe.zip">tobe压缩版</a>，解压到D盘中，或者从github中把这个项目中的tobe文件夹（这里面只包括所有的scss文件）直接放进D盘</p>
+                  <p>2、新建scss文件，导入tobe中的base或function，如果需要基础的样式及功能，请导入base文件，如果不需要基础样式只需要功能，请导入function文件，代码分为：</p>
+                  <pre>//需要一些基础样式及功能导入base
+@import 'D:/tobe/base';
+</pre>
+                  <pre>//只需要功能导入function
+@import 'D:/tobe/base';
+</pre>
+                  <p>3、接着导入你需要的组件，以<a href="../templates/templates1.html">templates1</a>为例，如布局、导航、滚动图片、三栏等宽。请注意：如果需要改变组件里面默认变量的值，请在导入之前重新申明你需要改变的值，如这里的滚动图片的宽高变量$imgslideView，这也正是为什么我们设置变量的时候要使用!default，因为方便导入到其他scss文件中修改变量的默认值。</p>
+                  <pre>//重置变量
+$imgslideView:       1000px 340px;
+
+//import scss
+@import "D:/tobe/base";
+@import "D:/tobe/components/layout";
+@import "D:/tobe/components/nav";
+@import "D:/tobe/components/imgslide";
+@import "D:/tobe/components/col";</pre>
+                  <p>4、开始你的其他样式</p>
+                  <p><a class="btn" href="../../download/templates.zip">模板实例下载</a></p>
+                </div>
+              </div>
+              <div class="col">
+                <h2>如何开发自己的组件？</h2>
+                <div class="col-content">
+                  <p>1、确保D盘中有你的tobe文件夹，如base的路径为<code>D:/tobe/base</code>，如果没有请参考左边如何使用tobe的第一步</p>
+                  <p>2、新建scss文件，引入tobe中的base文件，注意这里不能用function来替换，因为base里面有一些基础的样式，如reset等，所以不需要你再来另起一些基础的东西。如果你喜欢tobe的这个布局，你也可以导入组件中的layout（关于布局可以在<a href="../layout/layout.html" target="_blank">布局模板</a>页面参考空模板创建或下载下面的两个模板资源）</p>
+                  <pre>@import 'D:/tobe/base';
+@import 'D:/tobe/layout';</pre>
+                  <p>3、现在你可以写自己的scss代码了，注意组件中的变量或mixin请以你组件名称做前缀，以避免冲突，变量和函数命名规则采用驼峰式，mixin/%命名采用中划线。如需引入其他组件作为基础，请按照左边的如何使用tobe的第三步引入。</p>
+                  <p>4、如有疑问，请参考example文件中的实例（注意：因为实例中的html文件已经导入了base生成的基础css文件，所以scss文件中引入的是function和相应组件的scss文件）。</p>
+                  <p>5、开发好了之后，你可以发给<a href="http://w3cplus.com" target="_blank">w3cplus</a>，如果质量好，我们可以放在tobe的components里面；或者你可以打包提交到<a href="https://github.com/marvin1023/tobe" target="_blank">tobe的github</a> pending文件夹里面；如果你只供自己使用的话，可以在tobe中建立一个custom的文件夹，把组件的scss文件改成以下划线开头，并去掉上面的引入基础文件，放进去供你自己使用。</p>
+                  <p>以上属于从空白开始创建自己的组件，当然如果你想和tobe的其他组件保持一致，拥有统一的tobe头部底部布局，tobe为你在example里面预留了一个yourself的文件夹，你可以用这个开始创建你的组件</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--main-->
+    </div>
+  </div><!--wrap-container-->
+<?php include "../pub/footer.html";?>
+</div>
+</body>
+</html>

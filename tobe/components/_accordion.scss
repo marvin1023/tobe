@@ -1,0 +1,83 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// accordion scss
+//-----------------------------------------------------
+
+
+// 如果要支持ie6请注意:
+// ie6不支持兄弟元素选择器，所以请用js来控制，见79行
+// 也不支持非a元素的hover效果，见32行
+
+
+// 变量
+//---------------------------------
+$accordionHdHeight:             36px !default; //默认标题栏高度
+$accordionHdBgColor:            darken($grayLight,4%) $primary !default; //标题背景色：默认色，展开色
+$accordionHdTextColor:          #333 #fff !default; //标题文本色：默认色，展开色
+$accordionArrowColor:           darken($grayLight,15%) #fff !default; //箭头颜色：默认色，展开色
+$accordionArrowSize:            8px !default; //箭头大小
+
+
+// 样式
+//---------------------------------
+.accordion{
+    .accordion-hd{
+        background-color: nth($accordionHdBgColor,1);
+        height: $accordionHdHeight;
+        margin-bottom: 10px;
+        @if $lte7{
+            _overflow:hidden;
+        }
+
+        &:hover{
+            background-color: darken(nth($accordionHdBgColor,2),5%);
+
+            .accordion-title{
+                color:nth($accordionHdTextColor,2);
+            }
+            .accordion-arrow{
+                border-top-color:nth($accordionHdTextColor,2);
+            }
+        }
+    }
+    .accordion-title{
+        @include float;
+        line-height: $accordionHdHeight;
+        padding-left: 10px;
+        color:nth($accordionHdTextColor,1);
+    }
+    .accordion-bd{
+        padding:0 10px;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .accordion-arrow{
+        @include float(right);
+        border-top:$accordionArrowSize solid nth($accordionArrowColor,1);
+        border-left:$accordionArrowSize dashed transparent;
+        border-right:$accordionArrowSize dashed transparent;
+        width: 0;
+        height: 0;
+        margin: (($accordionHdHeight - $accordionArrowSize) / 2) 10px 0 0;
+        cursor: pointer;
+        font-size: 0;
+    }
+    .expanded{
+        background-color: nth($accordionHdBgColor,2);
+        
+        .accordion-title{
+            color: nth($accordionHdTextColor,2);
+        }
+        .accordion-arrow{
+            border-top:none;
+            border-bottom:$accordionArrowSize solid nth($accordionArrowColor,2);
+
+            @if $lte7{
+                _font-size: 0;
+            }
+        }
+        & + .accordion-bd{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+//重置变量
+$navAWidth:                  100px;
+$imgtextHImgSize:            400px 300px;
+$titleListTitleWidth:        200px;
+$navHeight:                  34px;
+
+//import scss
+@import "D:/tobe/base";
+@import "D:/tobe/components/layout";
+@import "D:/tobe/components/nav";
+@import "D:/tobe/components/hdtitle";
+@import "D:/tobe/components/titlelist";
+@import "D:/tobe/components/breadcrumb";
+@import "D:/tobe/components/imgtextH";
+@import "D:/tobe/components/tabs";
+
+//base
+//-----------------------------------------------------	
+.wrap-header,
+.wrap-footer{
+	background-color: #333;
+	color:#eee;
+}
+.aside .block-bd{
+	padding: 10px;
+}
+//header
+//-----------------------------------------------------	
+#header{
+	position: relative;
+}
+#logo{
+	@include inline-block;
+	margin:10px 0 15px;
+}
+#nav{
+	@include border-radius(5px);
+	@extend %center-block;
+	position: absolute;
+	right: 10px;
+	top:10px;
+	li:first-child a{
+		@include border-radius(5px 0 0 5px);
+	}
+	li:last-child{
+		border-right:none;
+		a{
+			@include border-radius(0 5px 5px 0);
+		}
+	} 
+}
+//form-search
+.form-search-block{
+	position: absolute;
+	right: 10px;
+	bottom:20px;
+	.search-text{
+		@extend %simple-text;
+		width: 140px;
+	}
+	.search-submit{
+		@extend %simple-formbtn;
+		background-color: $primary;
+		color: #fff;
+		@include border-radius(3px);
+
+		&:hover{
+			background-color: darken($primary,5%);
+			color: #fff;
+		}
+	}
+}
+//aside
+//-----------------------------------------------------
+.aside{
+	.inner-aside{
+		border:1px solid darken($grayLight,5%);
+		background-color: #FFF;
+		@include border-radius(5px);
+	}
+}
+
+//container
+//-----------------------------------------------------
+.imgtext-h{
+	margin-bottom: 20px;
+}
+
+//footer
+//-----------------------------------------------------
+.wrap-footer{
+	padding-bottom: 10px;
+}
+#footer{
+	padding: 20px 0;
+	text-align: center;
+}

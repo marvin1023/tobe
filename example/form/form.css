@@ -3,46 +3,22 @@
  * form scss
  * -------------------------------------------------
 */
-/* -------------------------------------------------
- * base scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * setting scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * css3 scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * mixin scss
- * -------------------------------------------------
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\00003275}}
 .form .form-item, .form-inline {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\0000341}}
 .form .form-item:before, .form-inline:before, .form .form-item:after, .form-inline:after {
   content: "";
   display: table;
   font: 0/0 a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/core\/_mixin\.scss}line{font-family:\0000346}}
 .form .form-item:after, .form-inline:after {
   clear: both;
 }
 
-/* -------------------------------------------------
- * grid scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * form scss
- * -------------------------------------------------
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003101}}
 .form {
   font-size: 12px;
   margin-bottom: 9px;
@@ -53,13 +29,13 @@
   /* 注册链接 */
   /* description */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003104}}
 .form fieldset {
   padding: 0;
   margin: 0;
   border: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003109}}
 .form legend {
   display: block;
   width: 100%;
@@ -71,13 +47,13 @@
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003120}}
 .form input, .form button, .form textarea {
   vertical-align: middle;
   margin-bottom: 9px;
   font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003125}}
 .form textarea {
   resize: none;
   vertical-align: top;
@@ -85,17 +61,17 @@
   width: 500px;
   height: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003132}}
 .form label {
   display: block;
   font-size: 14px;
   line-height: 28px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003137}}
 .form input:focus, .form textarea:focus, .form select:focus {
   outline: 0 none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003140}}
 .form .form-radio, .form .form-checkbox {
   margin: 0 5px 0 0;
   padding: 0;
@@ -103,19 +79,19 @@
   width: 13px;
   height: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003143}}
 .form .form-item {
   margin-bottom: 9px;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003176}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003148}}
 .form .form-text {
   margin-top: 0;
   margin-bottom: 0;
   width: 180px;
   height: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003154}}
 .form .form-text, .form textarea {
   border: 1px solid #cccccc;
   -webkit-border-radius: 4px;
@@ -128,29 +104,13 @@
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000350}}
 .form .form-text:focus, .form textarea:focus {
   border-color: rgba(82, 168, 236, 0.8);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000392}}
-.form .form-text:-moz-placeholder, .form textarea:-moz-placeholder {
-  color: #999999;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000393}}
-.form .form-text::-moz-placeholder, .form textarea::-moz-placeholder {
-  color: #999999;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000394}}
-.form .form-text:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
-  color: #999999;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000395}}
-.form .form-text::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
-  color: #999999;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003157}}
 .form select {
   border: 1px solid #cccccc;
   -webkit-border-radius: 4px;
@@ -160,19 +120,19 @@
   *margin-bottom: 5px;
   *vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003167}}
 .form .form-field-rc, .form input, .form textarea, .form select, .form .form-text {
   margin-bottom: 9px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003171}}
 .form .form-item .form-field-rc, .form .form-item input, .form .form-item textarea, .form .form-item select, .form .form-item .form-text {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003174}}
 .form .form-item select {
   *margin-bottom: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003183}}
 .form .file-wrap {
   display: inline-block;
   *display: inline;
@@ -185,7 +145,7 @@
   overflow: hidden;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003193}}
 .form .file-wrap .replace-text {
   display: block;
   line-height: 28px;
@@ -193,7 +153,7 @@
   color: #fff;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003229}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003200}}
 .form .file-wrap .form-file {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -206,11 +166,11 @@
   position: absolute;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003212}}
 .form .file-wrap:hover {
   background-color: #007b9c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003248}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003219}}
 .form .form-field-rc label {
   float: left;
   display: inline;
@@ -221,7 +181,7 @@
   line-height: 18px;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003228}}
 .form .form-field-rc .field-list-block {
   display: block;
   float: none;
@@ -229,64 +189,64 @@
   overflow: auto;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003237}}
 .form .form-field-rc .field-list-block:last-child {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003242}}
 .form .form-field-rc .form-radio,
 .form .form-field-rc .form-checkbox,
 .form .form-field-rc span {
   float: left;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003246}}
 .form .form-field-rc .form-radio,
 .form .form-field-rc .form-checkbox {
   margin-top: 2.5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003252}}
 .form .form-action {
   clear: both;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003256}}
 .form .form-action .inputbtn {
   margin-bottom: 0;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003261}}
 .form .action-left {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003265}}
 .form .icon-required {
   color: #cc3300;
   margin-right: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003274}}
 .form .code-pic {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003276}}
 .form .code-pic img {
   height: 28px;
   vertical-align: middle;
   margin: 0 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003283}}
 .form .inline-ele {
   margin-right: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003286}}
 .form .inline-item {
   float: left;
   display: inline;
   clear: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003291}}
 .form .inputbtn {
   display: inline-block;
   *display: inline;
@@ -301,7 +261,7 @@
   height: 28px;
   overflow: visible;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003297}}
 .form .btn {
   display: inline-block;
   *display: inline;
@@ -315,46 +275,42 @@
   line-height: 28px;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003302}}
 .form .greybtn {
   border: 1px solid #cccccc;
   color: #666;
   background-color: #eee;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background-color: whitesmoke;
   background-image: -moz-linear-gradient(top, white, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
   background-image: -webkit-linear-gradient(top, white, #e6e6e6);
   background-image: -o-linear-gradient(top, white, #e6e6e6);
   background-image: linear-gradient(to bottom, white, #e6e6e6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
   -webkit-box-shadow: inset 0 1px 1px white, 0 0 1px white inset;
   box-shadow: inset 0 1px 1px white, 0 0 1px white inset;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003310}}
 .form .greybtn:hover {
   background: #e6e6e6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003314}}
 .form .p-bluebtn {
   color: #fff;
   background-color: #1081DD;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003317}}
 .form .p-bluebtn:hover {
   background-color: #2597f4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003321}}
 .form .p-greybtn {
   background-color: #eee;
   color: #444;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003324}}
 .form .p-greybtn:hover {
   background-color: #e6e6e6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003329}}
 .form .link-register {
   display: inline-block;
   *display: inline;
@@ -362,17 +318,17 @@
   line-height: 28px;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003335}}
 .form .form-des {
   color: #999999;
   margin-left: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003339}}
 .form p.form-des {
   margin: 0;
   line-height: 28px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003350}}
 .form input[disabled],
 .form select[disabled],
 .form textarea[disabled],
@@ -383,7 +339,7 @@
   cursor: not-allowed;
   background-color: whitesmoke;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003358}}
 .form input[type="radio"][disabled],
 .form input[type="checkbox"][disabled],
 .form input[type="radio"][readonly],
@@ -391,59 +347,48 @@
   background-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003370}}
 .form-inline * {
   float: left;
   display: inline;
   margin-right: 5px;
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003376}}
 .form-inline .form-radio,
 .form-inline .form-checkbox {
   margin-top: 7.5px;
 }
 
 /* 火狐bug 最新版本已经修复了这两个问题 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003428}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003399}}
 .form-horizontal label {
   float: left;
   display: inline;
   text-align: right;
   width: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003434}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003405}}
 .form-horizontal .form-field,
 .form-horizontal .action-left {
   margin-left: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003437}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003408}}
 .form-horizontal .form-field-rc {
   margin-top: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003444}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003415}}
 .form {
   /* block status tips */
   /* span inline status tips */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003446}}
-.form .error, .form .alert, .form .warning, .form .success, .form .info {
-  border: 2px solid #cccccc;
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003417}}
+.form .error, .form .warning, .form .success, .form .info {
   margin-bottom: 9px;
-  padding: 8px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  padding-left: 25px;
-  background-position: 5px center;
-  background-repeat: no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\0000377}}
-.form .error a, .form .alert a, .form .warning a, .form .success a, .form .info a {
-  text-decoration: underline;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003450}}
-.form span.error, .form span.alert, .form span.warning, .form span.success, .form span.info {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\00003421}}
+.form span.error, .form span.warning, .form span.success, .form span.info {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -452,87 +397,13 @@
   vertical-align: middle;
   padding: 0 5px;
   margin: 0 0 0 5px;
-  padding-left: 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003462}}
-.form .error, .form .alter {
-  background-color: #fbe3e4;
-  border-color: #fbc2c4;
-  color: #8a1f11;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAKlBMVEX////XY1Hma1rsfGbzhm3vloXwqZz3uanxwLX4z8f76+j//v7////KWkTZGHxrAAAAAXRSTlMAQObYZgAAAAFiS0dEDIGzUWMAAAAJcEhZcwAACxMAAAsTAQCanBgAAACSSURBVHheTc4xC4JAAEDhBwaZUy5tQYgYrl0QBW3aUNvh5WqEBI2WzbU2FbS5SESEa/QT2htb/C/R5pve+FHpEXhHgIa32okTcAkDP3XB8FNPhDJHH0xvw2cSUYv7RSZVB20rZm/L+aBtRFb0/qPc1+iqmtS7jrQOiwjDTiyzNc7hPJH28gvo5jwu9wD3drmuGH4w6SDkKQ/JcAAAAABJRU5ErkJggg==);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\0000393}}
-.form .error a, .form .alter a {
-  color: #8a1f11;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003468}}
-.form .success {
-  background-color: #e6efc2;
-  border-color: #c6d880;
-  color: #264409;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEX///88kTZIoTZnuktxwGB+xG2Vyoag1pSr2J2y26e64LPT4c7j8OD9/vz///80fTAtdG2AAAAAAXRSTlMAQObYZgAAAAFiS0dEDm+9ME8AAAAJcEhZcwAACxMAAAsTAQCanBgAAACcSURBVHheTY6vCsJQHIUPLih6g/gCJotFmEMw+1PwRrmiQ8SBfxhilctewGRSh1XDjBZ9gCXBF1j0Ce5A65J3baecD074DjJ5d5r7tEuWdzYvAB7r7ehWB1grEEN7EKLABVFwdGBIQVytysj5/HmPxl8NUxUvNBiy+4ksPeXbNJnTwQGrnYj6sxC42suenwAoVtxdI1XgVf1tMh/++cUnmPeAc0MAAAAASUVORK5CYII=);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\0000393}}
-.form .success a {
-  color: #264409;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003474}}
-.form .warning {
-  background-color: #fff6bf;
-  border-color: #ffd324;
-  color: #514721;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEX////4ol3+lDf8nEP7hTH3sHb8uHr9x5HvgjTccCbxdCv0ey365M/98ur////UZyH41bQKCY76AAAAAXRSTlMAQObYZgAAAAFiS0dEDm+9ME8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAB/SURBVHhebc83FoRQDENR5Phj2P9qR3CYDnfvqvL1efNAFTn/PaCRGaLnbY6hNNgjE0jVtUQSZRJS2TdQShIQoSIEM6AQJNkE48Um2A02lvXeH1AHN8/eGlAJWdKsr9Vai+qEWcAVYJc9CNepGkywD/ORCndU9nvD697bx+fnP09wBLDgAeJUAAAAAElFTkSuQmCC);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\0000393}}
-.form .warning a {
-  color: #514721;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003480}}
-.form .info {
-  background-color: #d5edf8;
-  border-color: #92cae4;
-  color: #205791;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEX///9YjONeju9qlex7ou2Fqe+UsvCkvffc5PXw9f67y/FNe9FDb8rE0/H///+wxPK4ye8p1NT7AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAIVJREFUeF5tj8kOg0AMQ2tnnQ36/1/bDNAbPkR6T0rkfF7Tuoro2f6cKh7hIuthsTCpobhMUwvm0Zxl9tYpQXZfjQxECXVjxQ/SDCUYsrmtPeclWDk6gVvItZIGQG3sowgSXQHE8BINGkBqsczcRdbQMECLv3fVPoa52yh+kj7mnJ6vn/8A/N4D4ObQweQAAAAASUVORK5CYII=);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\0000393}}
-.form .info a {
-  color: #205791;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003102}}
-.form .item-warning label,
-.form .item-warning .form-des {
-  color: #514721;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003110}}
-.form .item-warning .checkbox,
-.form .item-warning .radio,
-.form .item-warning input,
-.form .item-warning select,
-.form .item-warning textarea {
-  color: #514721;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003115}}
-.form .item-warning input,
-.form .item-warning select,
-.form .item-warning textarea {
-  border-color: #ffd324;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003118}}
-.form .item-warning input:focus,
-.form .item-warning select:focus,
-.form .item-warning textarea:focus {
-  border-color: #f0c000;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffe78a;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffe78a;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000374}}
 .form .item-error label,
 .form .item-error .form-des {
   color: #8a1f11;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000382}}
 .form .item-error .checkbox,
 .form .item-error .radio,
 .form .item-error input,
@@ -540,7 +411,7 @@
 .form .item-error textarea {
   color: #8a1f11;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000387}}
 .form .item-error input,
 .form .item-error select,
 .form .item-error textarea {
@@ -548,7 +419,7 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000390}}
 .form .item-error input:focus,
 .form .item-error select:focus,
 .form .item-error textarea:focus {
@@ -556,12 +427,12 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000374}}
 .form .item-success label,
 .form .item-success .form-des {
   color: #264409;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000382}}
 .form .item-success .checkbox,
 .form .item-success .radio,
 .form .item-success input,
@@ -569,7 +440,7 @@
 .form .item-success textarea {
   color: #264409;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000387}}
 .form .item-success input,
 .form .item-success select,
 .form .item-success textarea {
@@ -577,7 +448,7 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000390}}
 .form .item-success input:focus,
 .form .item-success select:focus,
 .form .item-success textarea:focus {
@@ -585,12 +456,41 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e9f0ce;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e9f0ce;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000374}}
+.form .item-warning label,
+.form .item-warning .form-des {
+  color: #514721;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000382}}
+.form .item-warning .checkbox,
+.form .item-warning .radio,
+.form .item-warning input,
+.form .item-warning select,
+.form .item-warning textarea {
+  color: #514721;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000387}}
+.form .item-warning input,
+.form .item-warning select,
+.form .item-warning textarea {
+  border-color: #ffd324;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000390}}
+.form .item-warning input:focus,
+.form .item-warning select:focus,
+.form .item-warning textarea:focus {
+  border-color: #f0c000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffe78a;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffe78a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000374}}
 .form .item-info label,
 .form .item-info .form-des {
   color: #205791;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000382}}
 .form .item-info .checkbox,
 .form .item-info .radio,
 .form .item-info input,
@@ -598,7 +498,7 @@
 .form .item-info textarea {
   color: #205791;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000387}}
 .form .item-info input,
 .form .item-info select,
 .form .item-info textarea {
@@ -606,7 +506,7 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/wamp\/www\/tobe\/sass\/components\/_form\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/tobe\/components\/_form\.scss}line{font-family:\0000390}}
 .form .item-info input:focus,
 .form .item-info select:focus,
 .form .item-info textarea:focus {

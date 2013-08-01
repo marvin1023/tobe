@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" name="Default" comment="">
+      <change type="DELETED" beforePath="G:\www\tobePHP\example\imgslide\images\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\example\typo\Typography.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\_function.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_btn.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_form.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_hdtitle.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_imgslide.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_imgtextH.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_imgtextV.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_imgtitle.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_pagerNav.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_rank.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_table.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\components\_titlelist.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_css3.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_helpers.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_layout.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_media-queries.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_mixin.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_normalize.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_setting.scss" afterPath="" />
+      <change type="DELETED" beforePath="G:\www\tobePHP\sass\core\_typography.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgslide/images/1.jpg" afterPath="$PROJECT_DIR$/example/imgslide/images/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgslide/images/2.jpg" afterPath="$PROJECT_DIR$/example/imgslide/images/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgslide/images/3.jpg" afterPath="$PROJECT_DIR$/example/imgslide/images/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgslide/images/4.jpg" afterPath="$PROJECT_DIR$/example/imgslide/images/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/btn/btn.css" afterPath="$PROJECT_DIR$/example/btn/btn.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/btn/btn.html" afterPath="$PROJECT_DIR$/example/btn/btn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/btn/btn.scss" afterPath="$PROJECT_DIR$/example/btn/btn.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/demo.css" afterPath="$PROJECT_DIR$/layout/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fixed/fixed.css" afterPath="$PROJECT_DIR$/layout/fixed/fixed.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fixed/fixed.scss" afterPath="$PROJECT_DIR$/layout/fixed/fixed.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fluid/fluid.css" afterPath="$PROJECT_DIR$/layout/fluid/fluid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fluid/fluid.scss" afterPath="$PROJECT_DIR$/layout/fluid/fluid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/form/form.css" afterPath="$PROJECT_DIR$/example/form/form.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/form/form.html" afterPath="$PROJECT_DIR$/example/form/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/form/form.scss" afterPath="$PROJECT_DIR$/example/form/form.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/form/js/formStyle.js" afterPath="$PROJECT_DIR$/example/form/js/formStyle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/global.css" afterPath="$PROJECT_DIR$/css/global.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/global.scss" afterPath="$PROJECT_DIR$/sass/global.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/hdtitle/hdtitle.css" afterPath="$PROJECT_DIR$/example/hdtitle/hdtitle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/hdtitle/hdtitle.html" afterPath="$PROJECT_DIR$/example/hdtitle/hdtitle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/hdtitle/hdtitle.scss" afterPath="$PROJECT_DIR$/example/hdtitle/hdtitle.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgslide/imgslide.css" afterPath="$PROJECT_DIR$/example/imgslide/imgslide.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgslide/imgslide.html" afterPath="$PROJECT_DIR$/example/imgslide/imgslide.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgslide/imgslide.scss" afterPath="$PROJECT_DIR$/example/imgslide/imgslide.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtext-horizontal/imgtext-horizontal.css" afterPath="$PROJECT_DIR$/example/imgtext-horizontal/imgtext-horizontal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtext-horizontal/imgtext-horizontal.html" afterPath="$PROJECT_DIR$/example/imgtext-horizontal/imgtext-horizontal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtext-horizontal/imgtext-horizontal.scss" afterPath="$PROJECT_DIR$/example/imgtext-horizontal/imgtext-horizontal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtext-vertical/imgtext-vertical.css" afterPath="$PROJECT_DIR$/example/imgtext-vertical/imgtext-vertical.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtext-vertical/imgtext-vertical.html" afterPath="$PROJECT_DIR$/example/imgtext-vertical/imgtext-vertical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtext-vertical/imgtext-vertical.scss" afterPath="$PROJECT_DIR$/example/imgtext-vertical/imgtext-vertical.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtitle/imgtitle.css" afterPath="$PROJECT_DIR$/example/imgtitle/imgtitle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtitle/imgtitle.html" afterPath="$PROJECT_DIR$/example/imgtitle/imgtitle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/imgtitle/imgtitle.scss" afterPath="$PROJECT_DIR$/example/imgtitle/imgtitle.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fixed/lm.html" afterPath="$PROJECT_DIR$/layout/fixed/lm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fluid/lm.html" afterPath="$PROJECT_DIR$/layout/fluid/lm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fixed/lmr.html" afterPath="$PROJECT_DIR$/layout/fixed/lmr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fluid/lmr.html" afterPath="$PROJECT_DIR$/layout/fluid/lmr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fixed/m.html" afterPath="$PROJECT_DIR$/layout/fixed/m.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fluid/m.html" afterPath="$PROJECT_DIR$/layout/fluid/m.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fixed/mr.html" afterPath="$PROJECT_DIR$/layout/fixed/mr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/fluid/mr.html" afterPath="$PROJECT_DIR$/layout/fluid/mr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/nav/nav.css" afterPath="$PROJECT_DIR$/example/nav/nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/nav/nav.html" afterPath="$PROJECT_DIR$/example/nav/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/nav/nav.scss" afterPath="$PROJECT_DIR$/example/nav/nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/pager-nav/pager-nav.css" afterPath="$PROJECT_DIR$/example/pager-nav/pager-nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/pager-nav/pager-nav.html" afterPath="$PROJECT_DIR$/example/pager-nav/pager-nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/pager-nav/pager-nav.scss" afterPath="$PROJECT_DIR$/example/pager-nav/pager-nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/rank/rank.css" afterPath="$PROJECT_DIR$/example/rank/rank.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/rank/rank.html" afterPath="$PROJECT_DIR$/example/rank/rank.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/rank/rank.scss" afterPath="$PROJECT_DIR$/example/rank/rank.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/table/table.css" afterPath="$PROJECT_DIR$/example/table/table.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/table/table.html" afterPath="$PROJECT_DIR$/example/table/table.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/table/table.scss" afterPath="$PROJECT_DIR$/example/table/table.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/tabs/tabs.css" afterPath="$PROJECT_DIR$/example/tabs/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/tabs/tabs.html" afterPath="$PROJECT_DIR$/example/tabs/tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/tabs/tabs.scss" afterPath="$PROJECT_DIR$/example/tabs/tabs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/templates/template.html" afterPath="$PROJECT_DIR$/example/templates/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/titlelist/titlelist.css" afterPath="$PROJECT_DIR$/example/titlelist/titlelist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/titlelist/titlelist.html" afterPath="$PROJECT_DIR$/example/titlelist/titlelist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/titlelist/titlelist.scss" afterPath="$PROJECT_DIR$/example/titlelist/titlelist.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/typo/typo.css" afterPath="$PROJECT_DIR$/example/typo/typo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/typo/typo.scss" afterPath="$PROJECT_DIR$/example/typo/typo.scss" />
+    </list>
+    <ignored path="tobePHP.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885372064" ignored="false" />
+    <file path="/*.regexp" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374890394098" ignored="false" />
+    <file path="/_mixin.scss" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1373717727824" ignored="false" />
+    <file path="$PROJECT_DIR$/example/form2/form.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374244196839" ignored="false" />
+    <file path="/footer.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885417172" ignored="false" />
+    <file path="/accordion.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885616836" ignored="false" />
+    <file path="/alert.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885659417" ignored="false" />
+    <file path="/avatar.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885699278" ignored="false" />
+    <file path="/basic-simple.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885719683" ignored="false" />
+    <file path="/breadcrumb.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885747147" ignored="false" />
+    <file path="/btn.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885759340" ignored="false" />
+    <file path="/carousel.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885816461" ignored="false" />
+    <file path="/form.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885873558" ignored="false" />
+    <file path="/gallery.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885889060" ignored="false" />
+    <file path="/hdtitle.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885906513" ignored="false" />
+    <file path="/imgslide.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885951371" ignored="false" />
+    <file path="/imgstyle.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885971671" ignored="false" />
+    <file path="/imgtext-horizontal.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374885984327" ignored="false" />
+    <file path="/imgtext-vertical.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886025580" ignored="false" />
+    <file path="/imgtitle.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886046364" ignored="false" />
+    <file path="/index.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886084750" ignored="false" />
+    <file path="/layout.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886099633" ignored="false" />
+    <file path="/modal.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886125892" ignored="false" />
+    <file path="/nav.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886153094" ignored="false" />
+    <file path="/pager-nav.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886173273" ignored="false" />
+    <file path="/progress.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886191034" ignored="false" />
+    <file path="/rank.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886216490" ignored="false" />
+    <file path="/speak-list.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886235909" ignored="false" />
+    <file path="/steps.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886251161" ignored="false" />
+    <file path="/table.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886273942" ignored="false" />
+    <file path="/tabs.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886289705" ignored="false" />
+    <file path="/tags-filter.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886305156" ignored="false" />
+    <file path="/titlelist.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886327419" ignored="false" />
+    <file path="/tooltip.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886344103" ignored="false" />
+    <file path="/typo.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886361888" ignored="false" />
+    <file path="/templates1.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886448111" ignored="false" />
+    <file path="/dummy.xml" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886805777" ignored="false" />
+    <file path="/templates2.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886899740" ignored="false" />
+    <file path="/templates3.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886607099" ignored="false" />
+    <file path="/templates4.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374886707954" ignored="false" />
+    <file path="/templates1.scss" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374890347747" ignored="false" />
+    <file path="/fluid.scss" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374890303669" ignored="false" />
+    <file path="/templates4.scss" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374890457780" ignored="false" />
+    <file path="/lm.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374891364205" ignored="false" />
+    <file path="/lmr.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374891413130" ignored="false" />
+    <file path="/m.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374891435999" ignored="false" />
+    <file path="/mr.html" changelist="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" time="1374891467232" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="tobePHP" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="templates1.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sass/templates1.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="33" selection-start="243" selection-end="243" vertical-scroll-proportion="-7.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templates2.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sass/templates2.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="23" selection-start="144" selection-end="144" vertical-scroll-proportion="-4.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lm.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/fixed/lm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="255" selection-end="2017" vertical-scroll-proportion="-6.785714">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lm.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/fluid/lm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="7" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-8.142858">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lmr.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/fluid/lmr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="7" selection-start="2382" selection-end="2382" vertical-scroll-proportion="-8.142858">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lmr.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/fixed/lmr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="256" selection-end="2362" vertical-scroll-proportion="-6.785714">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/fixed/m.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="255" selection-end="1707" vertical-scroll-proportion="-6.785714">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/fluid/m.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="7" selection-start="1715" selection-end="1715" vertical-scroll-proportion="-8.142858">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mr.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/fixed/mr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="255" selection-end="2061" vertical-scroll-proportion="-6.785714">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mr.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/layout/fluid/mr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="7" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.45059288">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/example/titlelist/titlelist.scss" />
+        <option value="$PROJECT_DIR$/example/tooltip/tooltip.scss" />
+        <option value="$PROJECT_DIR$/layout/fluid/fluid.scss" />
+        <option value="$PROJECT_DIR$/layout/fixed/fixed.scss" />
+        <option value="$PROJECT_DIR$/templates/sass/templates1.scss" />
+        <option value="$PROJECT_DIR$/templates/sass/templates3.scss" />
+        <option value="$PROJECT_DIR$/templates/sass/templates4.scss" />
+        <option value="$PROJECT_DIR$/templates/sass/templates2.scss" />
+        <option value="$PROJECT_DIR$/layout/fixed/lm.html" />
+        <option value="$PROJECT_DIR$/layout/fixed/lmr.html" />
+        <option value="$PROJECT_DIR$/layout/fixed/m.html" />
+        <option value="$PROJECT_DIR$/layout/fixed/mr.html" />
+        <option value="$PROJECT_DIR$/layout/fluid/lm.html" />
+        <option value="$PROJECT_DIR$/layout/fluid/lmr.html" />
+        <option value="$PROJECT_DIR$/layout/fluid/m.html" />
+        <option value="$PROJECT_DIR$/layout/fluid/mr.html" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fluid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tobePHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/sassCore" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fba0fdc2-3fb3-4ec3-a72e-eeed1249f552" name="Default" comment="" />
+      <created>1372768501016</created>
+      <updated>1372768501016</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19242424" sideWeight="0.67066896" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/example/progress/progress.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="1" selection-start="245" selection-end="245" vertical-scroll-proportion="-7.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fluid/fluid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="44" selection-end="67" vertical-scroll-proportion="-1.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fixed/fixed.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sass/templates3.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="442" selection-end="442" vertical-scroll-proportion="-11.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sass/templates4.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="-6.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sass/templates1.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="33" selection-start="243" selection-end="243" vertical-scroll-proportion="-7.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sass/templates2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="144" selection-end="144" vertical-scroll-proportion="-4.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fixed/lm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="255" selection-end="2017" vertical-scroll-proportion="-6.785714">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fluid/lm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="7" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-8.142858">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fixed/lmr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="256" selection-end="2362" vertical-scroll-proportion="-6.785714">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fluid/lmr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="7" selection-start="2382" selection-end="2382" vertical-scroll-proportion="-8.142858">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fixed/m.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="255" selection-end="1707" vertical-scroll-proportion="-6.785714">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fluid/m.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="7" selection-start="1715" selection-end="1715" vertical-scroll-proportion="-8.142858">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fixed/mr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="255" selection-end="2061" vertical-scroll-proportion="-6.785714">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/fluid/mr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="7" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.45059288">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
