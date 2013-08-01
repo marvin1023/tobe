@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Tobe by marvin1023</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Tobe</h1>
+        <h2>Tobe是一个写给面向熟悉sass人员使用的框架，代码精简更加可控</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/marvin1023/tobe/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/marvin1023/tobe/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/marvin1023/tobe" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="%E6%97%A0tobe%E4%B8%8Dsass" class="anchor" href="#%E6%97%A0tobe%E4%B8%8Dsass"><span class="octicon octicon-link"></span></a>无TOBE，不SASS</h1>
+
+<p>Tobe是一个写给面向熟悉sass人员使用的框架，以<a href="https://github.com/marvin1023/sassCore">sassCore</a>为核心，所有的组件都单独开发，根据实际需求来调用，避免了臃肿的杂乱代码。由于有着sass的优良基因，tobe的代码更加灵活可控，如果你是一个有着代码洁癖的人，那么tobe的精彩一定不可错过。</p>
+
+<h2>
+<a name="tobe%E7%9A%84%E5%88%9B%E6%96%B0%E6%80%A7" class="anchor" href="#tobe%E7%9A%84%E5%88%9B%E6%96%B0%E6%80%A7"><span class="octicon octicon-link"></span></a>Tobe的创新性：</h2>
+
+<p>基于sass，以<a href="https://github.com/marvin1023/sassCore">sassCore</a>为核心，为所有组件打好良好的基石。所有组件根据实际需求来调用，结构清晰明了，scss文件一目了然，再也不需要在众多代码中大海捞针，想修改什么立马找到，有的是时间跟妹子聊天。除此之外，因为有着良好的基石，合理的设计，tobe允许你自由开发组件，从此设计自己或公司的ui库不是问题。</p>
+
+<h2>
+<a name="tobe%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E" class="anchor" href="#tobe%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>tobe结构说明</h2>
+
+<ul>
+<li>sass文件夹放的是构建tobe这个网站的scss文件，不包括所有的基础文件及组件，你可以打开看下两个scss文件的源码都很简单；</li>
+<li>css就是sass中解析过来的；</li>
+<li>download是放下载打包资源的；</li>
+<li>pending是放用户提交的打包组件；</li>
+<li>example是整个tobe的所有组件的demo及页面；</li>
+<li>tobe文件夹中放的就是所有的基础sass文件及组件，请把它直接放到d盘中去以方便开发。</li>
+</ul><h2>
+<a name="tobe%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" class="anchor" href="#tobe%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>tobe使用说明</h2>
+
+<p>1、首先把这个项目中的tobe文件夹（这里面只包括所有的scss文件）直接放进D盘，或者在download文件夹中找到tobe的压缩版，然后解压到D盘中</p>
+
+<p>2、新建scss文件，导入tobe中的base或function，如果需要基础的样式及功能，请导入base文件，如果不需要基础样式只需要功能，请导入function文件，代码分别为：</p>
+
+<div class="highlight"><pre><span class="c1">//需要一些基础样式及功能导入base</span>
+<span class="k">@import</span> <span class="s1">'</span><span class="s2">D:/tobe/base'</span><span class="p">;</span>
+</pre></div>
+
+<div class="highlight"><pre><span class="c1">//只需要功能导入function</span>
+<span class="k">@import</span> <span class="s1">'</span><span class="s2">D:/tobe/function'</span><span class="p">;</span>
+</pre></div>
+
+<p>3、接着导入你需要的组件，以templates1为例，如布局、导航、滚动图片、三栏等宽。请注意：如果需要改变组件里面默认变量的值，请在导入之前重新申明你需要改变的值，如这里的滚动图片的宽高变量$imgslideView，这也正是为什么我们设置变量的时候要使用!default，因为方便导入到其他scss文件中修改变量的默认值。</p>
+
+<div class="highlight"><pre><span class="c1">//重置变量</span>
+<span class="nv">$imgslideView</span><span class="o">:</span>       <span class="mi">1000</span><span class="kt">px</span> <span class="mi">340</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="c1">//import scss</span>
+<span class="k">@import</span> <span class="s2">"D:/tobe/base"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"D:/tobe/components/layout"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"D:/tobe/components/nav"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"D:/tobe/components/imgslide"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"D:/tobe/components/col"</span><span class="p">;</span>
+</pre></div>
+
+<p>4、开始你的其他样式</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
