@@ -27,7 +27,7 @@ Tobe是一个写给面向熟悉sass人员使用的框架，以[sassCore](https:/
 ```
 ```scss
 //只需要功能导入function
-@import 'D:/tobe/base';
+@import 'D:/tobe/function';
 ```
 
 3、接着导入你需要的组件，以templates1为例，如布局、导航、滚动图片、三栏等宽。请注意：如果需要改变组件里面默认变量的值，请在导入之前重新申明你需要改变的值，如这里的滚动图片的宽高变量$imgslideView，这也正是为什么我们设置变量的时候要使用!default，因为方便导入到其他scss文件中修改变量的默认值。
