@@ -3,36 +3,42 @@
  * avatar
  * -------------------------------------------------
 */
-@import 'D:/tobe/function';
-@import 'D:/sassCore/simple';
+@import 'D:/sassCore/function';
+// @import 'D:/sassCore/simple';
 
-.btn{
-	@extend %simple-btn;
-}
-.formbtn{
-	@extend %simple-formbtn;
-}
-.table{
-	@extend %simple-table;
-}
+// .btn{
+// 	@extend %simple-btn;
+// }
+// .formbtn{
+// 	@extend %simple-formbtn;
+// }
+// .table{
+// 	@extend %simple-table;
+// }
 .search-text,
 .form-text{
 	@extend %simple-text;
 }
 .search-btn{
-	@extend %simple-formbtn;
-	@include border-radius(3px);
+	@include simple-btn(true)
 }
 .form-textarea{
 	@extend %simple-textarea;
-	width: 400px;
-	height: 100px;
 }
 select{
 	@extend %simple-select;
-	@extend %reset-form-ele;
 }
 .form-checkbox,
 .form-radio{
 	@extend %reset-radio-checkbox;
+}
+
+.btn{
+	@include simple-btn;
+}
+.formbtn{
+	@include simple-btn(true);
+}
+.table{
+	@include simple-table(false, $thBgColor: $orange);
 }
