@@ -1,0 +1,88 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// paging scss
+//-----------------------------------------------------
+
+
+// 变量
+//---------------------------------
+$pagingTextColor:           #333 $white !default;//文本色：默认色，激活色
+$pagingBgColor:             lighten($gray,7%) $primary !default;//背景色:默认色，激活色
+$pagingBreifColor:          #fff $primary !default;//简洁分页导航颜色:文本色，背景色
+
+
+// 样式
+//---------------------------------
+
+//默认居中
+.paging{
+  // font-family: $fontCn;
+  margin:0 0 $baseGap;
+  text-align: center;
+
+  ul{
+    @include inline-block;
+  }
+  li{
+    margin:0 5px;
+    @include float;
+  }
+  .active span,
+  .disabled span,
+  a{
+    @include float;
+    padding:0 8px;
+    line-height:24px;
+    height:24px;
+    text-decoration:none;
+  }
+  a{
+    color: nth($pagingTextColor,1);
+    background-color: nth($pagingBgColor,1);
+    &:hover{
+      text-decoration:none;
+      color: nth($pagingTextColor,2);
+      background-color: nth($pagingBgColor,2);
+    }
+  }
+  .active span{
+      background-color: nth($pagingBgColor,2);
+      color: nth($pagingTextColor,2);
+  }
+  .disabled span{
+      @include disabled;
+  }
+}
+
+// 向左，向右对齐
+.paging-left{
+  text-align: left;
+}
+.paging-right{
+  text-align: right;
+}
+
+
+// paging-brief
+// 简洁版分页导航只有上一页/下一页
+//---------------------------------
+.paging-brief{
+  text-align: right;
+  height:30px;
+  line-height:30px;
+
+  a{
+    text-align: center;
+    padding: 0 10px;
+    color: nth($pagingBreifColor,1);
+    background-color:nth($pagingBreifColor,2);
+    @include inline-block;
+
+    &:hover{
+      background-color:darken(nth($pagingBreifColor,2),5%);
+    }
+  }
+  .prev{
+    @include float;
+  }
+}

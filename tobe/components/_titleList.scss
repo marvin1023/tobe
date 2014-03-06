@@ -18,7 +18,7 @@ $titleListBgPaddingLeft:     12px !default;//开启图片后li的左padding
 		line-height:$titleListLiHeight;
 	}
 	.title-link{ 
-		@extend %ellipsis;
+		@extend %ellipsis-basic;
 		display: block;
 		width:$titleListTitleWidth;
 	}

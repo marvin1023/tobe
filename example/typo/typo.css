@@ -1,4 +1,1 @@
-/* -------------------------------------------------
- * typo
- * -------------------------------------------------
-*/
+blockquote{padding:0 0 0 15px;margin:0 0 10px;border-left:3px solid #ccc}blockquote small{font-size:11.9px;display:block;line-height:1.5;color:#999}blockquote small:before{content:'\2014 \00A0'}q:before,q:after,blockquote:before,blockquote:after{content:""}address{display:block;margin-bottom:10px;font-style:normal;line-height:1.5}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}.article{line-height:1.6}.article h1,.article h2,.article h3,.article h4,.article h5,.article h6{line-height:1.3;margin-bottom:10px}.article ul,.article ol{margin-left:25px;list-style-type:disc}.article ol{list-style-type:decimal}.article p,.article ul,.article ol,.article dl{margin-bottom:10px}.article ul ul,.article ul ol,.article ol ol,.article ol ul{margin-bottom:0}.article dt{font-weight:bold;line-height:1.8}.article dd{margin-left:2em}.article img{margin-bottom:10px;border:1px solid #ccc;padding:2px}.article .fr img{margin-left:10px}.article .fl img{margin-right:10px}

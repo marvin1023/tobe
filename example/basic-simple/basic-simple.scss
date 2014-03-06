@@ -36,27 +36,3 @@ select{
 .form-radio{
 	@extend %reset-radio-checkbox;
 }
-// .form-checkbox{
-// 	margin-top: 1px;
-// 	@if $lte7{
-// 		*margin-top: 0;
-// 	}
-// }
-
-// checkbox/radio
-// .label-radio,
-// .label-checkbox{
-//   @include inline-block;
-//   margin-top:5px;
-
-//   span{
-//     @include float;
-//     font-size: 13px;
-//   }
-// }
-// .label-checkbox .form-checkbox,
-// .label-radio .form-radio{
-//   @extend %reset-radio-checkbox;
-//   @include float;
-//   margin-top:2.5px;//($simpleFormRowHeight - (10px + 13px)) / 2
-// }

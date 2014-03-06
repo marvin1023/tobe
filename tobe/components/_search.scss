@@ -7,36 +7,37 @@
 // 变量
 //---------------------------------
 $searchFormTextWidth:             140px !default;
+$searchRounded:                   false !default;
 
 
 // 样式
 //---------------------------------
-%search-form{
-	.search-text{
-		@extend %simple-text;
-		width: $searchFormTextWidth;
+@if $searchRounded {
+	.form-search-block{
+		.search-text,
+		.search-submit{
+			@include float;
+		}
+		.search-text{
+			@extend %simple-text;
+			padding-left: 10px;
+			width: $searchFormTextWidth;
+			border-radius:15px 0 0 15px;
+		}
+		.search-submit{
+			@include simple-btn(ture);
+			padding-left: 12px;
+			border-radius:0 15px 15px 0;
+		}
 	}
-	.search-submit{
-		@extend %simple-formbtn;
-		@include border-radius(3px);
+} @else {
+	.form-search-block{
+		.search-text{
+			@extend %simple-text;
+			width: $searchFormTextWidth;
+		}
+		.search-submit{
+			@include simple-btn(true);
+		}
 	}	
-}
-
-//
-%search-form-rounded{
-	.search-text,
-	.search-submit{
-		@include float;
-	}
-	.search-text{
-		@extend %simple-text;
-		padding-left: 10px;
-		width: $searchFormTextWidth;
-		@include border-radius(15px 0 0 15px);
-	}
-	.search-submit{
-		@extend %simple-formbtn;
-		padding-left: 12px;
-		@include border-radius(0 15px 15px 0);
-	}
 }

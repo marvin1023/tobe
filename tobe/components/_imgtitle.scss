@@ -45,7 +45,7 @@ $imgtitleItemWidth:         171px !default;//没有边框的情况下，宽度�
 		text-align:center;
 		display:block;
 		line-height:30px;
-		@extend %ellipsis;
+		@extend %ellipsis-basic;
 	}
 }
 

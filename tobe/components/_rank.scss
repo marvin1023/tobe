@@ -58,7 +58,7 @@ $rankItemLineSwitch:          true !default;//li间隔线开关
   }
   .title-link{
     @include float;
-    @extend %ellipsis;
+    @extend %ellipsis-basic;
     text-align:left;
     width:$rankTitleWidth;
   }

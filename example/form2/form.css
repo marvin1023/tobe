@@ -1,552 +1,316 @@
-@charset "UTF-8";
 /* -------------------------------------------------
  * form scss
  * -------------------------------------------------
 */
-/* -------------------------------------------------
- * function scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * setting scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * css3 scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * mixin scss
- * -------------------------------------------------
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\00003322}}
-.form .form-item, .form-inline {
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000343}}
-.form .form-item:before, .form-inline:before, .form .form-item:after, .form-inline:after {
-  content: "";
-  display: table;
-  font: 0/0 a;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\0000348}}
-.form .form-item:after, .form-inline:after {
-  clear: both;
-}
+.btn-right, .form-inline .form-label, .form-inline .form-label-rc {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/sassCore\/_mixin\.scss}line{font-family:\00003417}}
-.form input[disabled],
-.form select[disabled],
-.form textarea[disabled],
-.form input[readonly],
-.form select[readonly],
-.form textarea[readonly],
-.form .disabled {
+.form .form-item {
+  *zoom: 1; }
+  .form .form-item:before, .form .form-item:after {
+    content: "";
+    display: table;
+    font: 0/0 a; }
+  .form .form-item:after {
+    clear: both; }
+
+.form-disabled {
   background-color: #e6e6e6 !important;
   color: #ababab !important;
-  cursor: not-allowed !important;
-}
+  cursor: not-allowed !important; }
 
-/* -------------------------------------------------
- * grid scss
- * -------------------------------------------------
-*/
-/* -------------------------------------------------
- * form scss
- * -------------------------------------------------
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000335}}
-.form .form-radio, .form .form-checkbox {
-  margin: 0 5px 0 0;
-  padding: 0;
-  font-size: 13px;
-  width: 13px;
-  height: 13px;
-}
+.form-label {
+  font-size: 14px;
+  line-height: 28px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000355}}
-.form select {
-  border: 1px solid #cccccc;
-  padding: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003141}}
-.form {
-  font-size: 12px;
-  margin-bottom: 9px;
-  /*form-required*/
-  /* codePic */
-  /* inline */
-  /*inputbtn*/
-  /* 注册链接 */
-  /* description */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003144}}
-.form fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003149}}
-.form legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 9px;
-  font-size: 21px;
-  line-height: 3;
-  color: #999999;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003160}}
-.form input, .form button, .form textarea {
+.form-text {
   vertical-align: middle;
-  margin-bottom: 9px;
-  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003165}}
-.form textarea {
+  width: 200px;
+  height: 18px; }
+
+.form-textarea {
   resize: none;
   vertical-align: top;
   overflow: auto;
   width: 500px;
-  height: 80px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003172}}
-.form label {
-  display: block;
-  font-size: 14px;
-  line-height: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003177}}
-.form input:focus, .form textarea:focus, .form select:focus {
-  outline: 0 none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003183}}
-.form .form-item {
-  margin-bottom: 9px;
-  clear: both;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003188}}
-.form .form-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 180px;
-  height: 18px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003194}}
-.form .form-text, .form textarea {
+  height: 80px; }
+
+.form-text, .form-textarea {
   border: 1px solid #cccccc;
   padding: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
   -o-transition: border linear 0.2s, box-shadow linear 0.2s;
   transition: border linear 0.2s, box-shadow linear 0.2s;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000365}}
-.form .form-text:focus, .form textarea:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003197}}
-.form select {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+  .form-text:focus, .form-textarea:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6); }
+
+.form-radio, .form-checkbox {
+  margin: 0 5px 0 0;
+  padding: 0;
+  font-size: 13px;
+  width: 13px;
+  height: 13px; }
+
+.form-select {
+  border: 1px solid #cccccc;
+  padding: 4px;
   *margin-top: 5px;
   *margin-bottom: 5px;
-  *vertical-align: top;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003207}}
-.form .form-field-rc, .form input, .form textarea, .form select, .form .form-text {
-  margin-bottom: 9px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003211}}
-.form .form-item .form-field-rc, .form .form-item input, .form .form-item textarea, .form .form-item select, .form .form-item .form-text {
-  margin-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003214}}
-.form .form-item select {
-  *margin-bottom: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003223}}
-.form .file-wrap {
+  *vertical-align: top; }
+
+.form-text:focus, .form-textarea:focus, .form-select:focus {
+  outline: 0 none; }
+
+.form-file-wrap {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   padding: 0px;
   width: 70px;
   height: 28px;
-  background-color: #00a3cf;
+  background-color: #0078e7;
   position: relative;
-  overflow: hidden;
-  border-radius: 3px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003233}}
-.form .file-wrap .replace-text {
-  display: block;
-  line-height: 28px;
-  cursor: pointer;
-  color: #fff;
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003240}}
-.form .file-wrap .form-file {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  width: 70px;
-  height: 28px;
-  left: 0;
-  top: 0;
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003252}}
-.form .file-wrap:hover {
-  background-color: #007b9c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003259}}
-.form .form-field-rc label {
-  float: left;
+  overflow: hidden; }
+  .form-file-wrap .form-file-replace-text {
+    display: block;
+    line-height: 28px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center; }
+  .form-file-wrap .form-file {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 70px;
+    height: 28px;
+    left: 0;
+    top: 0;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1; }
+  .form-file-wrap:hover {
+    background-color: #005eb4; }
+
+.form-label-rc {
   display: inline;
-  text-align: left;
-  width: auto;
-  font-weight: normal;
-  margin: 0 5px 0 0;
-  line-height: 18px;
+  float: left;
   font-size: 12px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003268}}
-.form .form-field-rc .field-list-block {
+  margin-right: 5px;
+  line-height: 18px; }
+  .form-label-rc .form-radio,
+  .form-label-rc .form-checkbox,
+  .form-label-rc span {
+    float: left;
+    display: inline; }
+  .form-label-rc .form-radio,
+  .form-label-rc .form-checkbox {
+    margin-top: 2.5px; }
+
+.form-label-rc-block {
   display: block;
   float: none;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   overflow: auto;
+  padding-left: 20px;
   *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003277}}
-.form .form-field-rc .field-list-block:last-child {
-  margin-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003282}}
-.form .form-field-rc .form-radio,
-.form .form-field-rc .form-checkbox,
-.form .form-field-rc span {
-  float: left;
-  display: inline;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003286}}
-.form .form-field-rc .form-radio,
-.form .form-field-rc .form-checkbox {
-  margin-top: 2.5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003292}}
-.form .form-action {
-  clear: both;
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003296}}
-.form .form-action .inputbtn {
-  margin-bottom: 0;
-  margin-right: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003301}}
-.form .action-left {
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003305}}
-.form .icon-required {
+  _padding-left: 17px; }
+  .form-label-rc-block .form-radio,
+  .form-label-rc-block .form-checkbox {
+    margin-left: -20px;
+    *margin-left: -17px; }
+
+.form-des {
+  color: #999999;
+  margin-left: 5px; }
+
+p.form-des {
+  margin: 0;
+  line-height: 28px; }
+
+.form-required {
   color: #cc3300;
-  margin-right: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003314}}
-.form .code-pic {
+  margin-right: 5px; }
+
+.form-captcha {
   display: inline-block;
   *display: inline;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003316}}
-.form .code-pic img {
-  height: 28px;
-  vertical-align: middle;
-  margin: 0 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003323}}
-.form .inline-ele {
-  margin-right: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003326}}
-.form .inline-item {
-  float: left;
-  display: inline;
-  clear: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003331}}
-.form .inputbtn {
+  *zoom: 1; }
+  .form-captcha img {
+    height: 28px;
+    vertical-align: middle;
+    margin: 0 5px; }
+
+.btn {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   cursor: pointer;
   text-align: center;
+  vertical-align: middle;
   padding: 0 16px;
   font-size: 14px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  line-height: 28px;
+  text-decoration: none; }
+
+.inputbtn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 16px;
+  font-size: 14px;
   border: 0 none;
   height: 28px;
-  overflow: visible;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003337}}
-.form .btn {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  cursor: pointer;
-  text-align: center;
-  padding: 0 16px;
-  font-size: 14px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  line-height: 28px;
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003342}}
-.form .greybtn {
+  overflow: visible; }
+
+.p-bluebtn {
+  color: #fff;
+  background-color: #0078e7; }
+  .p-bluebtn:hover {
+    background-color: #005eb4; }
+
+.p-graybtn {
+  background-color: #eee;
+  color: #444; }
+  .p-graybtn:hover {
+    background-color: #e6e6e6; }
+
+.g-graybtn {
   border: 1px solid #cccccc;
   color: #666;
   background-color: #eee;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background-color: whitesmoke;
   background-image: -moz-linear-gradient(top, white, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
   background-image: -webkit-linear-gradient(top, white, #e6e6e6);
   background-image: -o-linear-gradient(top, white, #e6e6e6);
   background-image: linear-gradient(to bottom, white, #e6e6e6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
   -webkit-box-shadow: inset 0 1px 1px white, 0 0 1px white inset;
-  box-shadow: inset 0 1px 1px white, 0 0 1px white inset;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003350}}
-.form .greybtn:hover {
-  background: #e6e6e6;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003354}}
-.form .p-bluebtn {
-  color: #fff;
-  background-color: #1081DD;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003357}}
-.form .p-bluebtn:hover {
-  background-color: #2597f4;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003361}}
-.form .p-greybtn {
-  background-color: #eee;
-  color: #444;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003364}}
-.form .p-greybtn:hover {
-  background-color: #e6e6e6;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003369}}
-.form .link-register {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  line-height: 28px;
-  vertical-align: top;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003375}}
-.form .form-des {
-  color: #999999;
-  margin-left: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003379}}
-.form p.form-des {
-  margin: 0;
-  line-height: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003397}}
-.form input[type="radio"][disabled],
-.form input[type="checkbox"][disabled],
-.form input[type="radio"][readonly],
-.form input[type="checkbox"][readonly] {
-  background-color: transparent;
-}
+  box-shadow: inset 0 1px 1px white, 0 0 1px white inset; }
+  .g-graybtn:hover {
+    background: #e6e6e6; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003409}}
-.form-inline * {
-  float: left;
-  display: inline;
-  margin-right: 5px;
-  margin-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003415}}
-.form-inline .form-radio,
-.form-inline .form-checkbox {
-  margin-top: 7.5px;
-}
+.btn-right {
+  vertical-align: middle;
+  line-height: 28px;
+  margin-left: 10px; }
 
-/* 火狐bug 最新版本已经修复了这两个问题 */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003438}}
-.form-horizontal label {
+.form {
+  font-size: 12px;
+  margin-bottom: 9px;
+  /* inline */ }
+  .form fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  .form legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 9px;
+    font-size: 21px;
+    line-height: 3;
+    color: #999999;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5; }
+  .form .form-item {
+    margin-bottom: 9px;
+    clear: both; }
+  .form .form-action {
+    clear: both;
+    text-align: center; }
+  .form .action-left {
+    text-align: left; }
+  .form .inline-ele {
+    margin-right: 5px; }
+  .form .inline-item {
+    float: left;
+    display: inline;
+    clear: none; }
+
+.form-horizontal .form-label {
   float: left;
   display: inline;
   text-align: right;
-  width: 100px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003444}}
+  width: 100px; }
 .form-horizontal .form-field,
 .form-horizontal .action-left {
-  margin-left: 100px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003447}}
+  margin-left: 100px; }
 .form-horizontal .form-field-rc {
-  margin-top: 5px;
-}
+  margin-top: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003454}}
+.form-inline .form-label {
+  vertical-align: middle; }
+.form-inline .form-label-rc {
+  float: none;
+  vertical-align: middle; }
+.form-inline .form-text, .form-inline .form-label-rc {
+  margin-right: 5px; }
+
+.form-simple .form-label {
+  display: block; }
+.form-simple .form-text, .form-simple .form-textarea, .form-simple .form-select, .form-simple .form-field-rc, .form-simple .form-captcha {
+  margin-bottom: 9px; }
+
 .form {
   /* block status tips */
-  /* span inline status tips */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003456}}
-.form .error, .form .warning, .form .success, .form .info {
-  margin-bottom: 9px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003460}}
-.form span.error, .form span.warning, .form span.success, .form span.info {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  border-width: 1px;
-  line-height: 26px;
-  vertical-align: middle;
-  padding: 0 5px;
-  margin: 0 0 0 5px;
-  padding-left: 25px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000389}}
-.form .item-error label,
-.form .item-error .form-des {
-  color: #8a1f11;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000397}}
-.form .item-error .checkbox,
-.form .item-error .radio,
-.form .item-error input,
-.form .item-error select,
-.form .item-error textarea {
-  color: #8a1f11;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003102}}
-.form .item-error input,
-.form .item-error select,
-.form .item-error textarea {
-  border-color: #fbc2c4;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003105}}
-.form .item-error input:focus,
-.form .item-error select:focus,
-.form .item-error textarea:focus {
-  border-color: #f89296;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000389}}
-.form .item-success label,
-.form .item-success .form-des {
-  color: #264409;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000397}}
-.form .item-success .checkbox,
-.form .item-success .radio,
-.form .item-success input,
-.form .item-success select,
-.form .item-success textarea {
-  color: #264409;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003102}}
-.form .item-success input,
-.form .item-success select,
-.form .item-success textarea {
-  border-color: #c6d880;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003105}}
-.form .item-success input:focus,
-.form .item-success select:focus,
-.form .item-success textarea:focus {
-  border-color: #b4cc59;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e9f0ce;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e9f0ce;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000389}}
-.form .item-warning label,
-.form .item-warning .form-des {
-  color: #514721;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000397}}
-.form .item-warning .checkbox,
-.form .item-warning .radio,
-.form .item-warning input,
-.form .item-warning select,
-.form .item-warning textarea {
-  color: #514721;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003102}}
-.form .item-warning input,
-.form .item-warning select,
-.form .item-warning textarea {
-  border-color: #ffd324;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003105}}
-.form .item-warning input:focus,
-.form .item-warning select:focus,
-.form .item-warning textarea:focus {
-  border-color: #f0c000;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffe78a;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffe78a;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000389}}
-.form .item-info label,
-.form .item-info .form-des {
-  color: #205791;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\0000397}}
-.form .item-info .checkbox,
-.form .item-info .radio,
-.form .item-info input,
-.form .item-info select,
-.form .item-info textarea {
-  color: #205791;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003102}}
-.form .item-info input,
-.form .item-info select,
-.form .item-info textarea {
-  border-color: #92cae4;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/www\/tobePHP\/example\/form2\/form\.scss}line{font-family:\00003105}}
-.form .item-info input:focus,
-.form .item-info select:focus,
-.form .item-info textarea:focus {
-  border-color: #69b6da;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e4f2f8;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e4f2f8;
-}
+  /* span inline status tips */ }
+  .form .error, .form .warning, .form .success, .form .info {
+    margin-bottom: 9px;
+    border-radius: 0; }
+  .form span.error, .form span.warning, .form span.success, .form span.info {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border-width: 1px;
+    line-height: 26px;
+    vertical-align: middle;
+    padding: 0 5px 0 25px;
+    *padding-left: 5px;
+    margin: 0 0 0 5px; }
+  .form .item-error .form-text,
+  .form .item-error .form-select,
+  .form .item-error .form-textarea {
+    border-color: #fbc2c4;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+    .form .item-error .form-text:focus,
+    .form .item-error .form-select:focus,
+    .form .item-error .form-textarea:focus {
+      border-color: rgba(82, 168, 236, 0.8);
+      -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6); }
+  .form .item-success .form-text,
+  .form .item-success .form-select,
+  .form .item-success .form-textarea {
+    border-color: #c6d880;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+    .form .item-success .form-text:focus,
+    .form .item-success .form-select:focus,
+    .form .item-success .form-textarea:focus {
+      border-color: rgba(82, 168, 236, 0.8);
+      -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6); }
+  .form .item-warning .form-text,
+  .form .item-warning .form-select,
+  .form .item-warning .form-textarea {
+    border-color: #ffd324;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+    .form .item-warning .form-text:focus,
+    .form .item-warning .form-select:focus,
+    .form .item-warning .form-textarea:focus {
+      border-color: rgba(82, 168, 236, 0.8);
+      -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6); }
+
+/*# sourceMappingURL=form.css.map */

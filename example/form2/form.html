@@ -12,90 +12,90 @@
     <div class="wrap-container">
         <div id="container" class="clearfix">
             <div id="aside_first" class="aside">
-              <div class="add-inner clearfix">
-                <?php include "../pub/asidenav-common-design-block.html";?>
+              <div class="inner-aside">
+                <?php include "../pub/asidenav-basic-css-block.html";?>
               </div>
             </div>
             <div id="main">
-                <div class="add-inner clearfix">
+                <div class="inner-main">
                   <div id="form_page">
                    <h2 class="title">搜索表单</h2>
                    <form method="get" action="#" class="form form-search">
-                      <input type="text" placeholder="" id="search_text" class="form-text inline-ele"><input type="submit" id="submit_btn" value="搜索" class="inputbtn greybtn">
+                      <input type="text" placeholder="" id="search_text" class="form-text inline-ele"><input type="submit" id="submit_btn" value="搜索" class="inputbtn p-bluebtn">
                     </form>
                     <h2 class="title">语音搜索表单</h2>
                     <form method="get" action="#" class="form form-search">
-                      <input type="text" class="form-text inline-ele" name="" id="" placeholder="请对准麦克风说话" x-webkit-speech="true" x-webkit-grammar="builtin:translate"><input type="submit" id="submit_btn" value="搜索" class="inputbtn greybtn">
+                      <input type="text" class="form-text inline-ele" name="" id="" placeholder="请对准麦克风说话" x-webkit-speech="true" x-webkit-grammar="builtin:translate"><input type="submit" id="submit_btn" value="搜索" class="inputbtn p-bluebtn">
                     </form>
                     <h2 class="title">登录表单</h2>
                     <form method="get" action="#" class="form-horizontal form">
                       <div class="form-item">
-                          <label for="username">用户名：</label>
+                          <label class="form-label" for="username">用户名：</label>
                           <div class="form-field"><input type="text" class="form-text" id="username" name="username"></div>
                       </div>
                       <div class="form-item">
-                        <label for="pwd">密码：</label>
+                        <label class="form-label" for="pwd">密码：</label>
                           <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"></div>
                       </div>
                       <div class="form-item">
                           <div class="form-field form-field-rc">
-                              <label><input type="checkbox" name="" class="form-checkbox" value="1" checked="checked"><span>下次自动登录</span></label><a class="forget-link" href="#">忘记密码？</a>                            </div>
+                              <label class="form-label-rc"><input type="checkbox" name="" class="form-checkbox" value="1" checked="checked"><span>下次自动登录</span></label><a class="forget-link" href="#">忘记密码？</a>                            </div>
                       </div>
                       <div class="form-action action-left">
-                        <input type="submit" class="inputbtn greybtn" value="登录"><a class="link-register" href="#">注册</a> 
+                        <input type="submit" class="inputbtn p-bluebtn" value="登录"><a class="btn-right" href="#">注册</a> 
                       </div>
                     </form>
                     <h2 class="title">单行登录表单</h2>
                     <form method="get" action="#" class="form form-inline">
-                          <label for="username3">用户名：</label>
+                          <label class="form-label" for="username3">用户名：</label>
                           <input type="text" class="form-text" id="username3" name="username3">
-                          <label for="pwd3">密码：</label>
+                          <label class="form-label" for="pwd3">密码：</label>
                           <input type="password" class="form-text" id="pwd3" name="pwd3">
-                          <label class="label-rc"><input type="checkbox" name="" class="form-checkbox" value="1" checked="checked"><span>记住密码</span></label>
-                          <input type="submit" class="inputbtn greybtn" value="登录">
-                          <a class="link-register" href="#">注册</a> 
+                          <label class="form-label-rc"><input type="checkbox" name="" class="form-checkbox" value="1" checked="checked"><span>记住密码</span></label>
+                          <input type="submit" class="inputbtn p-bluebtn" value="登录">
+                          <a class="btn-right" href="#">注册</a> 
                     </form>
                     <h2 class="title">注册表单</h2>
-                    <form method="post" action="#" class="form" id="register_form">
+                    <form method="post" action="#" class="form form-horizontal" id="register_form">
                           <div class="form-item">
-                            <label for="username">昵称：<span class="icon-required">*</span></label>
+                            <label class="form-label" for="username">昵称：<span class="form-required">*</span></label>
                             <div class="form-field"><input type="text" placeholder="6-32个字符" class="form-text" id="username" name="username"><span class="success">昵称可用</span></div>
                           </div>
                           <div class="form-item">
-                            <label for="avatar">头像：</label>
-                            <div class="form-field"><div class="file-wrap"><span class="replace-text">选择文件</span><input type="file" class="form-file" size="1" name="avatar" id="avatar"></div></div>
+                            <label class="form-label" for="avatar">头像：</label>
+                            <div class="form-field"><div class="form-file-wrap"><span class="form-file-replace-text">选择文件</span><input type="file" class="form-file" size="1" name="avatar" id="avatar"></div></div>
                           </div>
                           <div class="form-item">
-                            <label for="name">邮箱：<span class="icon-required">*</span></label>
+                            <label class="form-label" for="name">邮箱：<span class="form-required">*</span></label>
                             <div class="form-field"><input type="email" class="form-text" id="email" name="email"><span class="error">请输入正确的邮箱格式</span></div>
                           </div>
                           <div class="form-item">
-                            <label for="pwd">密码：<span class="icon-required">*</span></label>
+                            <label class="form-label" for="pwd">密码：<span class="form-required">*</span></label>
                             <div class="form-field"><input type="password" name="pwd" id="pwd" class="form-text"></div>
                           </div>
                           <div class="form-item">
-                            <label>性别：</label>
+                            <label class="form-label">性别：</label>
                             <div class="form-field form-field-rc">    
-                              <label><input type="radio" checked="checked" value="man" class="form-radio" name="sex"><span>男</span></label>
-                              <label><input type="radio" value="woman" class="form-radio" name="sex"><span>女</span></label>
+                              <label class="form-label-rc"><input type="radio" checked="checked" value="man" class="form-radio" name="sex"><span>男</span></label>
+                              <label class="form-label-rc"><input type="radio" value="woman" class="form-radio" name="sex"><span>女</span></label>
                             </div>
                           </div>
                           <div class="form-item">
-                            <label>Options：</label>
+                            <label class="form-label">Options：</label>
                             <div class="form-field form-field-rc">
-                              <label class="field-list-block"><input type="checkbox" checked="checked" value="1" class="form-checkbox" name=""><span>Option one is this and that&mdash;be sure to include why it’s great</span></label>
-                              <label class="field-list-block"><input type="checkbox" value="2" class="form-checkbox" name=""><span>Option two can also be checked and included in form results </span></label>
-                              <label class="field-list-block"><input type="checkbox" value="3" class="form-checkbox" name=""><span>Option three can&mdash;yes, you guessed it&mdash;also be checked and included in form results </span></label>
+                              <label class="form-label-rc form-label-rc-block"><input type="checkbox" checked="checked" value="1" class="form-checkbox" name=""><span>Option one is this and that&mdash;be sure to include why it’s great</span></label>
+                              <label class="form-label-rc form-label-rc-block"><input type="checkbox" value="2" class="form-checkbox" name=""><span>Option two can also be checked and included in form results </span></label>
+                              <label class="form-label-rc form-label-rc-block"><input type="checkbox" value="3" class="form-checkbox" name=""><span>Option three can&mdash;yes, you guessed it&mdash;also be checked and included in form results </span></label>
                             </div>
                           </div>
                           <div class="form-item">
-                            <label for="realname">姓名：</label>
+                            <label class="form-label" for="realname">姓名：</label>
                             <div class="form-field"><input type="text" placeholder="请填入真实姓名" class="form-text" id="realname" name="realname"></div>
                           </div>                                                   
                           <div class="form-item">
-                            <label>证件号码：</label>
+                            <label class="form-label">证件号码：</label>
                             <div class="form-field form-id-num-wrap">
-                              <select name="id_type" size="1" id="id_type" class="inline-ele">
+                              <select class="form-select inline-ele" name="id_type" size="1" id="id_type" class="inline-ele">
                                 <option selected="selected" value="1">身份证</option>
                                 <option value="2">学生证</option>
                                 <option value="3">军官证</option>
@@ -104,36 +104,47 @@
                             </div>
                           </div>
                           <div class="form-item">
-                            <label>个人简介：</label>
-                            <div class="form-field"><textarea id="intro" name="intro"></textarea><p class="form-des">说明注释文字可以放在这里啊</p></div>
+                            <label class="form-label">个人简介：</label>
+                            <div class="form-field"><textarea class="form-textarea" id="intro" name="intro"></textarea><p class="form-des">说明注释文字可以放在这里啊</p></div>
                           </div>
                           <div class="form-item">
-                            <label for="interest">爱好：<span class="icon-required">*</span></label>
+                            <label class="form-label" for="interest">爱好：<span class="form-required">*</span></label>
                             <div class="form-field"><input type="email" class="form-text disabled" id="interest" name="interest" disabled placeholder="禁用"></div>
                           </div>
                           <div class="form-item">
-                            <label for="codetext">验证码：</label>
+                            <label class="form-label" for="codetext">验证码：</label>
                             <div class="form-field form-code-text-wrap">
                               <input type="text" class="form-text code-text" name="codetext" id="codetext">
-                              <div class="code-pic"><img src="images/code.jpg" alt="" id="codePic"><a href="#" id="change_code">换一个</a></div>
+                              <div class="form-captcha"><img src="images/code.jpg" alt="" id="codePic"><a href="#" id="change_code">换一个</a></div>
                             </div>
                           </div>
                           <div class="form-item">
                             <div class="form-field form-field-rc">
-                              <label><input type="checkbox" checked="checked" value="1" class="form-checkbox" name=""><span>我同意所有条款……</span></label>
+                              <label class="form-label-rc"><input type="checkbox" checked="checked" value="1" class="form-checkbox" name=""><span>我同意所有条款……</span></label>
                             </div>
                           </div>                        
                           <div class="form-action  action-left">
-                            <input type="submit" class="inputbtn greybtn" value="提交">
+                            <input type="submit" class="inputbtn p-bluebtn" value="提交">
                           </div>            
                      </form>
                     <h2 class="title">简洁表单</h2>
-                    <form method="post" action="#" class="form" id="">
-                      <label for="username2">用户名：</label>
+                    <form method="post" action="#" class="form form-simple" id="">
+                      <label class="form-label" for="username2">用户名：</label>
                       <input type="text" placeholder="请填入用户名" class="form-text" id="username2" name="username2">
-                      <label for="intro2">写下您的评论吧：</label>
-                      <textarea id="intro2" name="intro2"></textarea>
-                      <p><input type="submit" class="inputbtn greybtn" value="提交"></p>
+                      <label class="form-label">性别：</label>
+                      <div class="form-field-rc clearfix">    
+                        <label class="form-label-rc"><input type="radio" name="sex" class="form-radio" value="man" checked="checked"><span>男</span></label>
+                        <label class="form-label-rc"><input type="radio" name="sex" class="form-radio" value="woman"><span>女</span></label>
+                      </div>
+
+                      <label class="form-label">从哪知道本站：</label>
+                      <select id="how_know" size="1" name="how_know" class="form-select">
+                        <option value="1" selected="selected">朋友推荐</option>
+                        <option value="2">百度/谷歌</option>
+                      </select>
+                      <label class="form-label" for="intro2">写下您的评论吧：</label>
+                      <textarea class="form-textarea" id="intro2" name="intro2" placeholder="写下评论"></textarea>
+                      <p><input type="submit" class="inputbtn p-bluebtn" value="提交"></p>
                     </form>
                     <h2 class="title">块级状态信息</h2>
                     <form action="" class="form">
@@ -142,26 +153,21 @@
                       <div class="success">This is a &lt;div&gt; with the class <strong>.success</strong>. <a href="#">Link</a>.
                       </div>
                       <div class="warning">This is a &lt;div&gt; with the class <strong>.warning</strong>. <a href="#">Link</a>.
-                      </div>
-                      <div class="info">This is a &lt;div&gt; with the class <strong>.info</strong>. <a href="#">Link</a>.</div> 
+                      </div> 
                     </form>
                     <h2 class="title">整个item块级状态信息</h2>
                     <form action="" class="form">
                       <div class="form-item item-error">
-                        <label for="email">邮箱：<span class="icon-required">*</span></label>
+                        <label class="form-label" for="email">邮箱：<span class="form-required">*</span></label>
                         <div class="form-field"><input type="email" class="form-text" id="email" name="email"><span class="error">请输入正确的邮箱格式</span></div>
                       </div>
                       <div class="form-item item-success">
-                        <label for="name">用户名：<span class="icon-required">*</span></label>
+                        <label class="form-label" for="name">用户名：<span class="form-required">*</span></label>
                         <div class="form-field"><input type="text" class="form-text" id="username" name="username"><span class="success">用户名可用</span></div>
                       </div>
                       <div class="form-item item-warning">
-                        <label for="pwd">密码：<span class="icon-required">*</span></label>
+                        <label class="form-label" for="pwd">密码：<span class="form-required">*</span></label>
                         <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"><span class="warning">密码强度比较弱</span></div>
-                      </div>
-                      <div class="form-item item-info">
-                        <label for="interest">爱好：<span class="icon-required">*</span></label>
-                        <div class="form-field"><input type="email" class="form-text" id="interest" name="interest"><span class="info">以英文逗号隔开</span></div>
                       </div>
                     </form>
                   </div>

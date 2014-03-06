@@ -1,8 +1,20 @@
 @charset "utf-8";
-/* -------------------------------------------------
- * form scss
- * -------------------------------------------------
-*/
-$inputTextWidth:180px;
-@import 'D:/tobe/function';
-@import 'D:/tobe/components/form';
+//-----------------------------------------------------
+// form scss
+//-----------------------------------------------------
+
+$lte7: true;
+
+$msgClassSwitch:             true true true true; //错误 成功 警告 提示
+
+$formMsgSwitch:            true; //是否开启报错等信息，如设为true则需导入message.scss
+$formConditionSwitch:      true; //是否开启条件选项
+
+$formHorizontalSwitch:     true; //是否启用水平表单样式
+$formInlineSwitch:         true; //是否启用单行表单样式
+$formSimpleSwitch:         true; //是否启用简洁表单样式
+
+@import "d:/sassCore/function";
+@import "d:/sassCore/ext/btn";
+@import "d:/sassCore/ext/message";
+@import "d:/sassCore/ext/form";

@@ -47,6 +47,6 @@ $avatarItemWidth:         56px !default; //没有边框的情况下，宽度等�
 		text-align:center;
 		display:block;
 		line-height:30px;
-		@extend %ellipsis;
+		@extend %ellipsis-basic;
 	}
 }

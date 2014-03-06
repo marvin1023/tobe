@@ -19,8 +19,8 @@
             <div id="main">
                 <div class="inner-main">
                   <div id="table_page">
-                    <h2>默认：.table</h2>
-                    <table class="table">
+                    <h2>默认：.table.table-border</h2>
+                    <table class="table table-border">
                       <thead>
                         <tr>
                           <th>#</th>
@@ -51,8 +51,8 @@
                       </tbody>
                     </table>
 
-                    <h2>单线：.table .table-line</h2>
-                    <table class="table table-line">
+                    <h2>数据列表：.table.table-list</h2>
+                    <table class="table table-list">
                       <thead>
                         <tr>
                           <th>#</th>
@@ -68,7 +68,7 @@
                           <td>Otto</td>
                           <td>@mdo</td>
                         </tr>
-                        <tr>
+                        <tr class="even">
                           <td>2</td>
                           <td>Jacob</td>
                           <td>Thornton</td>
@@ -80,10 +80,40 @@
                           <td>the Bird</td>
                           <td>@twitter</td>
                         </tr>
+                        <tr class="even">
+                          <td>4</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
                       </tbody>
                     </table>
 
-                    <h2>边框及圆角：.table .table-radius</h2>
+                    <h2>第一列为th：.table.table-col-th</h2>
+                    <table class="table table-col-th">
+                      <tbody>
+                        <tr>
+                          <th>名称</th>
+                          <td>君子生非异也，善假于物也。</td>
+                        </tr>
+                        <tr>
+                          <th>介绍</th>
+                          <td>吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。登高而招，臂非加长也，而见者远；顺风而呼，声非加疾也，而闻者彰。假舆马者，非利足也，而致千里；假舟楫者，非能水也，而绝江河。</td>
+                        </tr>
+                        <tr>
+                          <th>优惠政策</th>
+                          <td>积土成山，风雨兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h2>边框及圆角：.table.table-radius</h2>
                     <table class="table table-radius">
                       <thead>
                         <tr>
@@ -119,8 +149,8 @@
                       </tbody>
                     </table>
 
-                    <h2>斑马线效果：.table .table-striped</h2>
-                    <table class="table table-striped">
+                    <h2>单线：.table.table-line</h2>
+                    <table class="table table-line">
                       <thead>
                         <tr>
                           <th>#</th>
@@ -151,8 +181,40 @@
                       </tbody>
                     </table>
 
-                    <h2>鼠标滑过：.table .table-hover</h2>
-                    <table class="table table-hover">
+                    <h2>斑马线效果：.table.table-border.table-striped</h2>
+                    <table class="table table-border table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h2>鼠标滑过：.table.table-border.table-hover</h2>
+                    <table class="table table-border table-hover">
                       <thead>
                         <tr>
                           <th>#</th>
@@ -182,8 +244,8 @@
                       </tbody>
                     </table>
 
-                    <h2>小空间：.table .table-condensed</h2>
-                    <table class="table table-condensed">
+                    <h2>小空间：.table.table-border.table-condensed</h2>
+                    <table class="table table-border table-condensed">
                       <thead>
                         <tr>
                           <th>#</th>
@@ -213,61 +275,7 @@
                       </tbody>
                     </table>
 
-                    <h2>不同状态：.table</h2>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>Product</th>
-                          <th>Payment Taken</th>
-                          <th>Status</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="tr-success">
-                          <td>1</td>
-                          <td>TB - Monthly</td>
-                          <td>01/04/2012</td>
-                          <td>Approved</td>
-                        </tr>
-                        <tr class="tr-error">
-                          <td>2</td>
-                          <td>TB - Monthly</td>
-                          <td>02/04/2012</td>
-                          <td>Declined</td>
-                        </tr>
-                        <tr class="tr-warning">
-                          <td>3</td>
-                          <td>TB - Monthly</td>
-                          <td>03/04/2012</td>
-                          <td>Pending</td>
-                        </tr>
-                        <tr class="tr-info">
-                          <td>4</td>
-                          <td>TB - Monthly</td>
-                          <td>04/04/2012</td>
-                          <td>Call in to confirm</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <h2>第一列为th：.table .table-col-th</h2>
-                    <table class="table table-col-th">
-                      <tbody>
-                        <tr>
-                          <th>名称</th>
-                          <td>君子生非异也，善假于物也。</td>
-                        </tr>
-                        <tr>
-                          <th>介绍</th>
-                          <td>吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。登高而招，臂非加长也，而见者远；顺风而呼，声非加疾也，而闻者彰。假舆马者，非利足也，而致千里；假舟楫者，非能水也，而绝江河。</td>
-                        </tr>
-                        <tr>
-                          <th>优惠政策</th>
-                          <td>积土成山，风雨兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    
                   </div>
                 </div>
             </div><!--main-->

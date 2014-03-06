@@ -90,7 +90,8 @@ $imgtextHBlockGutter:       5px !default;//区块图文混排默认间距
     h3{
       font-size: 12px;
       font-weight: normal;
-      @extend %ellipsis;
+      @extend %ellipsis-basic;
+      width: 100%;
     }
   }
 }

@@ -10,6 +10,12 @@ $progressBorder:                 1px solid $gray !default;//边框颜色
 $progressPercentBgColor:         $primary !default;//进度条百分比背景色
 $progressRadiusSwitch:           true !default;//默认不启用圆角
 
+// 斑马线渐变
+// 传入的$bgColor即为实现的斑马线背景色
+@mixin gradient-striped($bgColor: #555, $angle: 45deg) {
+  background-color: $bgColor;
+  @include gradient-angle($angle, rgba(255,255,255,.3) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.3) 50%, rgba(255,255,255,.3) 75%, transparent 75%, transparent);
+}
 
 // 样式
 //---------------------------------

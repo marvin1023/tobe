@@ -40,13 +40,13 @@ $modalBoxSize:            500px 220px !default;//弹出框的大小：宽度，�
 	z-index:$zindexModal + 5;
 	background-color: #FFF;
 
-	.modal-header,
-	.modal-body,
-	.modal-footer{
+	.modal-hd,
+	.modal-bd,
+	.modal-ft{
 		padding: 0 15px;
 	}
 
-	.modal-header{
+	.modal-hd{
 		height:36px;
 		text-align: right;
 
@@ -57,10 +57,10 @@ $modalBoxSize:            500px 220px !default;//弹出框的大小：宽度，�
 		}
 		border-bottom:1px solid $gray;
 	}
-	.modal-body{
+	.modal-bd{
 		margin: 15px 0;
 	}
-	.modal-footer{
+	.modal-ft{
 		text-align: center;
 		padding: 10px 15px;
 		.btn{
@@ -71,8 +71,10 @@ $modalBoxSize:            500px 220px !default;//弹出框的大小：宽度，�
 		@include inline-block;
 		padding:0 5px;
 		cursor: pointer;
-		font-size: 16px;
-		margin-top: 6px;
+		font-size: 30px;
+		line-height: 36px;
+		height: 36px;
+		margin-right: -10px;
 
 		&:hover{
 			background-color: $grayLight;

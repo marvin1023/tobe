@@ -1,16 +1,13 @@
 @charset "utf-8";
 /* -------------------------------------------------
- * alert
+ * message
  * -------------------------------------------------
 */
-@import 'D:/tobe/function';
-@import 'D:/tobe/components/alert';
+@import 'D:/sassCore/function';
+$msgClassSwitch:             true true true true;
+@import 'D:/sassCore/ext/message';
 
-.alert-box{
+.msg-box{
 	margin-bottom: 20px;
-}
-
-//样式
-.alert-box{
 	position: relative;
 }

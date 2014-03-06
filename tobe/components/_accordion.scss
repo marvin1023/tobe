@@ -25,6 +25,7 @@ $accordionArrowSize:            8px !default; //箭头大小
         background-color: nth($accordionHdBgColor,1);
         height: $accordionHdHeight;
         margin-bottom: 10px;
+        cursor: pointer;
         @if $lte7{
             _overflow:hidden;
         }

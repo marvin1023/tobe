@@ -4,7 +4,10 @@
 $imgslideView:       1000px 340px;
 
 //import scss
-@import "D:/tobe/base";
+@import "D:/sassCore/base";
+@import "D:/sassCore/ext/helper";
+
+@import "D:/tobe/components/search";
 @import "D:/tobe/components/layout";
 @import "D:/tobe/components/nav";
 @import "D:/tobe/components/imgslide";
@@ -25,12 +28,7 @@ $imgslideView:       1000px 340px;
 	right: 0;
 	top:40px;
 	.search-text{
-		@extend %simple-text;
 		width: 200px;
-	}
-	.search-submit{
-		@extend %simple-formbtn;
-		@include border-radius(3px);
 	}
 }
 
@@ -40,6 +38,9 @@ $imgslideView:       1000px 340px;
 .col-three{
 	img{
 		margin-bottom: 10px;
+	}
+	p{
+		line-height: 1.6;
 	}
 	.more{
 		font-family: $fontCn;

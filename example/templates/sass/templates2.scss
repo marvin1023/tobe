@@ -5,12 +5,15 @@ $navAWidth:          100px;
 $colThreeSwitch:     false;
 
 //import scss
-@import "D:/tobe/base";
+@import "D:/sassCore/base";
+@import "D:/sassCore/ext/helper";
+
 @import "D:/tobe/components/layout";
+@import "D:/tobe/components/search";
 @import "D:/tobe/components/nav";
 @import "D:/tobe/components/breadcrumb";
 @import "D:/tobe/components/imgtitle";
-@import "D:/tobe/components/pagerNav";
+@import "D:/tobe/components/paging";
 @import "D:/tobe/components/col";
 
 //base
@@ -47,21 +50,6 @@ $colThreeSwitch:     false;
 	position: absolute;
 	right: 0;
 	top:0;
-	.search-text{
-		@extend %simple-text;
-		width: 140px;
-	}
-	.search-submit{
-		@extend %simple-formbtn;
-		background-color: $primary;
-		color: #fff;
-		@include border-radius(3px);
-
-		&:hover{
-			background-color: darken($primary,5%);
-			color: #fff;
-		}
-	}
 }
 
 //footer

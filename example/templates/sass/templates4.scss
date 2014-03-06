@@ -1,15 +1,21 @@
 @charset "utf-8";
 
 //重置变量
-$stepsStyleSwitch:   false;
+$stepsStyleSwitch:         false;
+$formMsgSwitch:            true;
+$formHorizontalSwitch:     true;
+$searchRounded:            true;
 
 //import scss
-@import "D:/tobe/base";
+@import "D:/sassCore/base";
+@import "D:/sassCore/ext/btn";
+@import "D:/sassCore/ext/message";
+@import "D:/sassCore/ext/helper";
+@import "D:/sassCore/ext/form";
 @import "D:/tobe/components/layout";
 @import "D:/tobe/components/nav";
 @import "D:/tobe/components/search";
 @import "D:/tobe/components/steps";
-@import "D:/tobe/components/form";
 
 //base
 //-----------------------------------------------------	
@@ -27,7 +33,7 @@ $stepsStyleSwitch:   false;
 	position: absolute;
 	right: 0;
 	top:4px;
-	@extend %search-form-rounded;
+	// @extend %search-form-rounded;
 }
 
 //header

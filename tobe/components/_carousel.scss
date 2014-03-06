@@ -44,7 +44,8 @@ $carouselNavSize:       40px !default;//前、后导航按钮宽度
 		    width:nth($carouselImg,1);
 			height:30px;
 			line-height:30px;
-		    @extend %ellipsis;
+		    @extend %ellipsis-basic;
+		    width: 100%;
 		    @extend %bgcolor-alpha;
 
 		}

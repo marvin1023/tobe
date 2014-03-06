@@ -4,9 +4,15 @@
  * -------------------------------------------------
 */
 
-$btnsGrounpSwitch:true;// 开启按钮组
-@import 'D:/tobe/function';
-@import 'D:/tobe/components/btn';
+
+
+@import 'D:/sassCore/function';
+
+$btnSizeClass:           (small 5px 21px 12px) (large 40px 40px 18px);
+$btnColorClass:          (blue $blue #fff) (orange $orange #fff) (red $red #fff) (green $green #fff) (gray-light $grayLight #333) (gray-dark $grayDark #fff);
+@import 'D:/sassCore/ext/btn';
+
+
 .btn,.formbtn{
 	margin: 20px;
 }
@@ -16,3 +22,5 @@ $btnsGrounpSwitch:true;// 开启按钮组
 		margin: 0
 	}
 }
+@include btn-color-multi();
+@include btn-size-multi();

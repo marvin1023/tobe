@@ -3,5 +3,14 @@
  * table scss
  * -------------------------------------------------
 */
-@import 'D:/tobe/function';
-@import 'D:/tobe/components/table';
+$tableListSwitch:                true;
+$tableColThSwitch:               true;
+$tableRadiusSwitch:              true;
+$tableLineSwitch:                true;
+$tableStripedSwitch:             true;
+$tableHoverSwitch:               true;
+$tableCondensedSwitch:           true;
+$tableStatusSwitch:              true;
+
+@import 'D:/sassCore/function';
+@import 'D:/sassCore/ext/table';

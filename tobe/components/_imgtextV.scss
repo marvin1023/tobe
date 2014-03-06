@@ -41,7 +41,8 @@ $imgtextVItemWidth:         220px !default;//没有边框的情况下，宽度�
 		display: block;
 	}
 	h3{
-		@extend %ellipsis;
+		@extend %ellipsis-basic;
+		width: 100%;
 		font-weight:normal;
 		line-height:30px;
 	}
